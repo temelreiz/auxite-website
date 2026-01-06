@@ -1,0 +1,21 @@
+{
+  "name": "Auxite",
+  "short_name": "Auxite",
+  "description": "On-chain tokenized precious metals",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B1121",
+  "theme_color": "#E2B857",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "/[locale]/buy-sell/page": "app/[locale]/buy-sell/page.js",
+  "/[locale]/how-it-works/page": "app/[locale]/how-it-works/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/staking/page": "app/[locale]/staking/page.js",
+  "/[locale]/trust-center/page": "app/[locale]/trust-center/page.js"
+}

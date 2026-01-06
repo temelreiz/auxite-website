@@ -1,0 +1,214 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/[locale]",
+      "regex": "^/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/buy-sell",
+      "regex": "^/([^/]+?)/buy\\-sell(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/buy\\-sell(?:/)?$"
+    },
+    {
+      "page": "/[locale]/contact",
+      "regex": "^/([^/]+?)/contact(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/contact(?:/)?$"
+    },
+    {
+      "page": "/[locale]/faq",
+      "regex": "^/([^/]+?)/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/how-it-works",
+      "regex": "^/([^/]+?)/how\\-it\\-works(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/how\\-it\\-works(?:/)?$"
+    },
+    {
+      "page": "/[locale]/legal",
+      "regex": "^/([^/]+?)/legal(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/legal(?:/)?$"
+    },
+    {
+      "page": "/[locale]/legal/privacy",
+      "regex": "^/([^/]+?)/legal/privacy(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/legal/privacy(?:/)?$"
+    },
+    {
+      "page": "/[locale]/legal/risk",
+      "regex": "^/([^/]+?)/legal/risk(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/legal/risk(?:/)?$"
+    },
+    {
+      "page": "/[locale]/legal/terms",
+      "regex": "^/([^/]+?)/legal/terms(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/legal/terms(?:/)?$"
+    },
+    {
+      "page": "/[locale]/metals",
+      "regex": "^/([^/]+?)/metals(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/metals(?:/)?$"
+    },
+    {
+      "page": "/[locale]/metals/[metal]",
+      "regex": "^/([^/]+?)/metals/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale",
+        "nxtPmetal": "nxtPmetal"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/metals/(?<nxtPmetal>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/[locale]/roadmap",
+      "regex": "^/([^/]+?)/roadmap(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/roadmap(?:/)?$"
+    },
+    {
+      "page": "/[locale]/staking",
+      "regex": "^/([^/]+?)/staking(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/staking(?:/)?$"
+    },
+    {
+      "page": "/[locale]/team",
+      "regex": "^/([^/]+?)/team(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/team(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center",
+      "regex": "^/([^/]+?)/trust\\-center(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center/on-chain-supply",
+      "regex": "^/([^/]+?)/trust\\-center/on\\-chain\\-supply(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/on\\-chain\\-supply(?:/)?$"
+    },
+    {
+      "page": "/[locale]/vaults",
+      "regex": "^/([^/]+?)/vaults(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/vaults(?:/)?$"
+    },
+    {
+      "page": "/[locale]/whitepaper",
+      "regex": "^/([^/]+?)/whitepaper(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/whitepaper(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/lease-rates",
+      "regex": "^/api/lease\\-rates(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/lease\\-rates(?:/)?$"
+    },
+    {
+      "page": "/api/sitemap",
+      "regex": "^/api/sitemap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/sitemap(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

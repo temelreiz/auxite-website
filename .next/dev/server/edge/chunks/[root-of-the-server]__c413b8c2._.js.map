@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Desktop/auxite-website/src/i18n/routing.ts"],"sourcesContent":["import { defineRouting } from 'next-intl/routing';\n\nexport const routing = defineRouting({\n  locales: ['en', 'tr', 'de', 'fr', 'ar', 'ru'],\n  defaultLocale: 'en'\n});\n\nexport const localeNames: Record<string, string> = {\n  en: 'English',\n  tr: 'Türkçe',\n  de: 'Deutsch',\n  fr: 'Français',\n  ar: 'العربية',\n  ru: 'Русский'\n};\n\nexport const rtlLocales = ['ar'];\n"],"names":[],"mappings":";;;;;;;;AAAA;;AAEO,MAAM,UAAU,IAAA,2RAAa,EAAC;IACnC,SAAS;QAAC;QAAM;QAAM;QAAM;QAAM;QAAM;KAAK;IAC7C,eAAe;AACjB;AAEO,MAAM,cAAsC;IACjD,IAAI;IACJ,IAAI;IACJ,IAAI;IACJ,IAAI;IACJ,IAAI;IACJ,IAAI;AACN;AAEO,MAAM,aAAa;IAAC;CAAK"}},
+    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/Desktop/auxite-website/src/middleware.ts"],"sourcesContent":["import createMiddleware from 'next-intl/middleware';\nimport { routing } from './i18n/routing';\n\nexport default createMiddleware(routing);\n\nexport const config = {\n  matcher: ['/', '/(en|tr|de|fr|ar|ru)/:path*']\n};\n"],"names":[],"mappings":";;;;;;AAAA;AACA;;;uCAEe,IAAA,yOAAgB,EAAC,yKAAO;AAEhC,MAAM,SAAS;IACpB,SAAS;QAAC;QAAK;KAA8B;AAC/C"}}]
+}
