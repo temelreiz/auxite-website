@@ -1,5 +1,5 @@
 var R=require("../../../../chunks/ssr/[turbopack]_runtime.js")("server/app/[locale]/trust-center/on-chain-supply/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__4a00d0d3._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a4313b6e._.js")
 R.c("server/chunks/ssr/942f5_next_dist_f4f0c853._.js")
 R.c("server/chunks/ssr/Desktop_auxite-website_fb1e4982._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__2af16b60._.js")

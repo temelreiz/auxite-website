@@ -1,5 +1,6 @@
 import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 
 // Coverage Ratio Logic
 function getCoverageStatus(ratio: number | null, t: any) {
@@ -57,7 +58,8 @@ export default async function OnChainSupplyPage() {
       ratio: 1.00,
       unit: 'oz',
       color: 'var(--metal-gold)',
-      contract: contracts.AUXG
+      contract: contracts.AUXG,
+      icon: '/metals/gold.png'
     },
     { 
       symbol: 'AUXS', 
@@ -67,7 +69,8 @@ export default async function OnChainSupplyPage() {
       ratio: 1.00,
       unit: 'oz',
       color: 'var(--metal-silver)',
-      contract: contracts.AUXS
+      contract: contracts.AUXS,
+      icon: '/metals/silver.png'
     },
     { 
       symbol: 'AUXPT', 
@@ -77,7 +80,8 @@ export default async function OnChainSupplyPage() {
       ratio: 1.00,
       unit: 'oz',
       color: 'var(--metal-platinum)',
-      contract: contracts.AUXPT
+      contract: contracts.AUXPT,
+      icon: '/metals/platinum.png'
     },
     { 
       symbol: 'AUXPD', 
@@ -87,7 +91,8 @@ export default async function OnChainSupplyPage() {
       ratio: 1.00,
       unit: 'oz',
       color: 'var(--metal-palladium)',
-      contract: contracts.AUXPD
+      contract: contracts.AUXPD,
+      icon: '/metals/palladium.png'
     },
   ];
 
@@ -180,9 +185,15 @@ export default async function OnChainSupplyPage() {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        fontSize: '20px'
+                        overflow: 'hidden'
                       }}>
-                        {metal.symbol === 'AUXG' ? '🥇' : metal.symbol === 'AUXS' ? '🥈' : metal.symbol === 'AUXPT' ? '⬜' : '⬛'}
+                        <Image 
+                          src={metal.icon} 
+                          alt={metal.name} 
+                          width={28} 
+                          height={28}
+                          style={{ objectFit: 'contain' }}
+                        />
                       </div>
                       <div>
                         <h3 style={{ 
