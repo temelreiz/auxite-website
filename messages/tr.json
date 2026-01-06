@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Auxite | Geleneğin Dijital Formu",
+    "title": "Auxite | Gelenekselin Dijital Hali",
     "description": "Fiziksel olarak desteklenen altın, gümüş, platin ve paladyum tokenlerini alın, satın ve stake edin — tamamen zincir üstü.",
     "keywords": "tokenize altın, tokenize gümüş, kıymetli madenler, blok zinciri, DeFi, kripto"
   },
@@ -24,9 +24,9 @@
     "limits": "Geçici limitlerle gerçek işlemler"
   },
   "home": {
-    "heroSlogan1": "Geleneğin",
+    "heroSlogan1": "Gelenekselin",
     "heroSloganHighlight": "Dijital",
-    "heroSlogan2": "Formu",
+    "heroSlogan2": "Hali",
     "heroSubline1": "Fiziksel Olarak Tahsis Edilmiş Kıymetli Madenler.",
     "heroSubline2": "Tamamen Zincir Üstünde.",
     "getStarted": "Başla",
@@ -534,7 +534,7 @@
     }
   },
   "footer": {
-    "description": "On-chain tokenize değerli metaller. Fiziksel olarak ayrılmış altın, gümüş, platin ve paladyumu alın, satın, stake edin ve doğrulayın.",
+    "description": "Blokzincir üzerinde dijitalleşen değerli metaller. Fiziksel olarak ayrılmış altın, gümüş, platin ve paladyumu alın, satın, stake edin ve doğrulayın.",
     "products": "Ürünler",
     "resources": "Kaynaklar",
     "trust": "Güven",
@@ -544,6 +544,6 @@
     "onChainSupply": "Zincir Üzeri Arz"
   },
   "common": {
-    "slogan": "Gelenekselin Dijital Formu"
+    "slogan": "Gelenekselin Dijital Hali"
   }
 }

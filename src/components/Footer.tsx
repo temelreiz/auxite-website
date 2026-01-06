@@ -66,10 +66,9 @@ export default function Footer() {
             
             <p style={{ 
               color: 'var(--aux-gold)', 
-              fontSize: '11px', 
+              fontSize: '12px', 
               fontWeight: 600,
-              letterSpacing: '0.15em',
-              textTransform: 'uppercase',
+              letterSpacing: '0.05em',
               marginBottom: '16px',
               opacity: 0.9
             }}>
