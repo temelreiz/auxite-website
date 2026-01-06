@@ -476,64 +476,63 @@
     }
   },
   "trustCenter": {
-  "badge": "Şeffaflık Öncelikli",
-  "title": "Şeffaflık",
-  "titleHighlight": "Merkezi",
-  "subtitle": "Tam şeffaflık — yalnızca gerçek zincir üstü veriler.",
-  "proofOfReserves": "Rezerv Kanıtı",
-  "proofOfReservesDesc": "Gerçek zamanlı 1:1 destek doğrulaması.",
-  "onChainSupply": "Zincir Üstü Arz",
-  "onChainSupplyDesc": "Canlı token arz takibi.",
-  "smartContracts": "Akıllı Sözleşmeler",
-  "smartContractsDesc": "Denetlenmiş sözleşmeler, açık kaynak.",
-  "custody": "Saklama",
-  "custodyDesc": "Kasa konumları ve sigorta.",
-  "statementsTitle": "Temel İlkeler",
-  "statements": {
-    "1": "Tamamen zincir üstü operasyonlar.",
-    "2": "Tüm tokenlar fiziksel metallerle desteklenir.",
-    "3": "Staking ödülleri garanti değildir.",
-    "4": "Borç verme faaliyeti yoktur."
-  },
-  "realDataTitle": "Yalnızca Gerçek Veriler",
-  "realDataDesc": "Auxite asla simüle edilmiş metrikler yayınlamaz. Gösterilen tüm veriler gerçek zincir üstü bilgilerdir.",
-  "commitmentTitle": "Taahhüdümüz",
-  "startTrading": "Ticarete Başla",
-  "statusLive": "Aktif",
-  "statusInitializing": "Başlatılıyor",
-  "statusDelayed": "Gecikmeli"
-  }
+    "badge": "Şeffaflık Öncelikli",
+    "title": "Şeffaflık",
+    "titleHighlight": "Merkezi",
+    "subtitle": "Tam şeffaflık — yalnızca gerçek zincir üstü veriler.",
+    "proofOfReserves": "Rezerv Kanıtı",
+    "proofOfReservesDesc": "Gerçek zamanlı 1:1 destek doğrulaması.",
+    "onChainSupply": "Zincir Üstü Arz",
+    "onChainSupplyDesc": "Canlı token arz takibi.",
+    "smartContracts": "Akıllı Sözleşmeler",
+    "smartContractsDesc": "Denetlenmiş sözleşmeler, açık kaynak.",
+    "custody": "Saklama",
+    "custodyDesc": "Kasa konumları ve sigorta.",
+    "statementsTitle": "Temel İlkeler",
+    "statements": {
+      "1": "Tamamen zincir üstü operasyonlar.",
+      "2": "Tüm tokenlar fiziksel metallerle desteklenir.",
+      "3": "Staking ödülleri garanti değildir.",
+      "4": "Borç verme faaliyeti yoktur."
+    },
+    "realDataTitle": "Yalnızca Gerçek Veriler",
+    "realDataDesc": "Auxite asla simüle edilmiş metrikler yayınlamaz. Gösterilen tüm veriler gerçek zincir üstü bilgilerdir.",
+    "commitmentTitle": "Taahhüdümüz",
+    "startTrading": "Ticarete Başla",
+    "statusLive": "Aktif",
+    "statusInitializing": "Başlatılıyor",
+    "statusDelayed": "Gecikmeli"
   },
   "whitepaper": {
-  "badge": "Teknik Dokümantasyon",
-  "title": "Auxite",
-  "titleHighlight": "Whitepaper",
-  "subtitle": "Tokenize kıymetli madenler ekosistemi, teknik mimari ve yönetim çerçevesine kapsamlı bir kılavuz.",
-  "documentTitle": "Auxite Whitepaper v1.0",
-  "pages": "sayfa",
-  "download": "Whitepaper İndir",
-  "contents": "İçindekiler",
-  "cta": "Kıymetli madenler yolculuğunuza başlamaya hazır mısınız?",
-  "getStarted": "Hemen Başla",
-  "toc": {
-    "executiveSummary": "Yönetici Özeti",
-    "introduction": "Giriş ve Pazar Genel Görünümü",
-    "solution": "Auxite Çözümü",
-    "tokenArchitecture": "Token Mimarisi",
-    "physicalBacking": "Fiziksel Metal Desteği",
-    "vaultNetwork": "Kasa Ağı ve Güvenlik",
-    "smartContracts": "Akıllı Sözleşme Altyapısı",
-    "tierSystem": "Auxiteer Seviye Sistemi",
-    "stakingRewards": "Staking ve Ödüller",
-    "governance": "Yönetişim",
-    "roadmap": "Yol Haritası",
-    "team": "Ekip ve Danışmanlar",
-    "legal": "Hukuki ve Uyumluluk",
-    "risks": "Risk Faktörleri",
-    "conclusion": "Sonuç",
-    "references": "Referanslar"
-  }
-},
+    "badge": "Teknik Dokümantasyon",
+    "title": "Auxite",
+    "titleHighlight": "Whitepaper",
+    "subtitle": "Tokenize kıymetli madenler ekosistemi, teknik mimari ve yönetim çerçevesine kapsamlı bir kılavuz.",
+    "documentTitle": "Auxite Whitepaper v1.0",
+    "pages": "sayfa",
+    "download": "Whitepaper İndir",
+    "contents": "İçindekiler",
+    "cta": "Kıymetli madenler yolculuğunuza başlamaya hazır mısınız?",
+    "getStarted": "Hemen Başla",
+    "toc": {
+      "executiveSummary": "Yönetici Özeti",
+      "introduction": "Giriş ve Pazar Genel Görünümü",
+      "solution": "Auxite Çözümü",
+      "tokenArchitecture": "Token Mimarisi",
+      "physicalBacking": "Fiziksel Metal Desteği",
+      "vaultNetwork": "Kasa Ağı ve Güvenlik",
+      "smartContracts": "Akıllı Sözleşme Altyapısı",
+      "tierSystem": "Auxiteer Seviye Sistemi",
+      "stakingRewards": "Staking ve Ödüller",
+      "governance": "Yönetişim",
+      "roadmap": "Yol Haritası",
+      "team": "Ekip ve Danışmanlar",
+      "legal": "Hukuki ve Uyumluluk",
+      "risks": "Risk Faktörleri",
+      "conclusion": "Sonuç",
+      "references": "Referanslar"
+    }
+  },
   "footer": {
     "description": "On-chain tokenize değerli metaller. Fiziksel olarak ayrılmış altın, gümüş, platin ve paladyumu alın, satın, stake edin ve doğrulayın.",
     "products": "Ürünler",
@@ -543,9 +542,8 @@
     "copyright": "© {year} Auxite. Tüm hakları saklıdır.",
     "backed": "Tüm tokenlar fiziksel olarak ayrılmış metallerle desteklenir.",
     "onChainSupply": "Zincir Üzeri Arz"
-}
   },
   "common": {
-  "slogan": "Gelenekselin Dijital Formu"
+    "slogan": "Gelenekselin Dijital Formu"
   }
 }
