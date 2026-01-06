@@ -420,5 +420,35 @@
   },
   "common": {
     "slogan": "La forme numérique de la tradition"
+  },
+  "onChainSupply": {
+    "backToTrustCenter": "Retour au Centre de transparence",
+    "title": "Offre",
+    "titleHighlight": "On-Chain",
+    "subtitle": "Vérification en temps réel de l'offre de tokens par rapport aux métaux physiquement alloués dans les coffres accrédités LBMA.",
+    "systemStatus": "État du système",
+    "allAssetsFullyBacked": "Tous les actifs entièrement adossés",
+    "live": "En direct",
+    "updated": "Mis à jour",
+    "justNow": "À l'instant",
+    "gold": "Or",
+    "silver": "Argent",
+    "platinum": "Platine",
+    "palladium": "Palladium",
+    "tokenSupply": "Offre de tokens",
+    "allocated": "Alloué",
+    "coverageRatio": "Ratio de couverture",
+    "statusInitializing": "Initialisation",
+    "statusFullyBacked": "Entièrement adossé",
+    "statusSettlementPending": "Règlement en attente",
+    "statusCoverageAlert": "Alerte de couverture",
+    "messageInitializing": "Les données on-chain réelles apparaîtront lors de l'activité.",
+    "messageFullyBacked": "Tous les tokens sont entièrement adossés par des métaux physiques.",
+    "messageSettlementPending": "Légère variance due au timing de règlement. Résolu sous 24h.",
+    "messageCoverageAlert": "Couverture en dessous du seuil. Les contrôles d'urgence peuvent être activés.",
+    "howVerificationWorksTitle": "Comment fonctionne la vérification",
+    "howVerificationWorksDesc": "L'offre de tokens est lue directement depuis les smart contracts sur Polygon. Les métaux alloués sont vérifiés par les rapports de garde des coffres des installations accréditées LBMA à Zurich, Singapour, Londres et Dubaï.",
+    "smartContracts": "Smart Contracts",
+    "viewOnPolygonScan": "Voir sur PolygonScan"
   }
 }

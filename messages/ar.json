@@ -420,5 +420,35 @@
   },
   "common": {
     "slogan": "الشكل الرقمي للتقاليد"
+  },
+  "onChainSupply": {
+    "backToTrustCenter": "العودة إلى مركز الشفافية",
+    "title": "العرض",
+    "titleHighlight": "على السلسلة",
+    "subtitle": "التحقق في الوقت الفعلي من عرض التوكنات مقابل المعادن المخصصة فعليًا في خزائن معتمدة من LBMA.",
+    "systemStatus": "حالة النظام",
+    "allAssetsFullyBacked": "جميع الأصول مدعومة بالكامل",
+    "live": "مباشر",
+    "updated": "تم التحديث",
+    "justNow": "الآن",
+    "gold": "ذهب",
+    "silver": "فضة",
+    "platinum": "بلاتين",
+    "palladium": "بلاديوم",
+    "tokenSupply": "عرض التوكن",
+    "allocated": "مخصص",
+    "coverageRatio": "نسبة التغطية",
+    "statusInitializing": "جاري التهيئة",
+    "statusFullyBacked": "مدعوم بالكامل",
+    "statusSettlementPending": "التسوية معلقة",
+    "statusCoverageAlert": "تنبيه التغطية",
+    "messageInitializing": "ستظهر البيانات الحقيقية على السلسلة عند حدوث النشاط.",
+    "messageFullyBacked": "جميع التوكنات مدعومة بالكامل بمعادن فعلية.",
+    "messageSettlementPending": "تباين طفيف بسبب توقيت التسوية. يُحل خلال 24 ساعة.",
+    "messageCoverageAlert": "التغطية أقل من الحد. قد يتم تفعيل ضوابط الطوارئ.",
+    "howVerificationWorksTitle": "كيف يعمل التحقق",
+    "howVerificationWorksDesc": "يُقرأ عرض التوكنات مباشرة من العقود الذكية على Polygon. يتم التحقق من المعادن المخصصة من خلال تقارير حفظ الخزائن من المنشآت المعتمدة من LBMA في زيورخ وسنغافورة ولندن ودبي.",
+    "smartContracts": "العقود الذكية",
+    "viewOnPolygonScan": "عرض على PolygonScan"
   }
 }

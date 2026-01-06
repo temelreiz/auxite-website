@@ -420,5 +420,35 @@
   },
   "common": {
     "slogan": "Die digitale Form der Tradition"
+  },
+  "onChainSupply": {
+    "backToTrustCenter": "Zurück zum Transparenzzentrum",
+    "title": "On-Chain",
+    "titleHighlight": "Angebot",
+    "subtitle": "Echtzeit-Verifizierung des Token-Angebots gegen physisch allokierte Metalle in LBMA-akkreditierten Tresoren.",
+    "systemStatus": "Systemstatus",
+    "allAssetsFullyBacked": "Alle Vermögenswerte vollständig gedeckt",
+    "live": "Live",
+    "updated": "Aktualisiert",
+    "justNow": "Gerade eben",
+    "gold": "Gold",
+    "silver": "Silber",
+    "platinum": "Platin",
+    "palladium": "Palladium",
+    "tokenSupply": "Token-Angebot",
+    "allocated": "Allokiert",
+    "coverageRatio": "Deckungsquote",
+    "statusInitializing": "Initialisierung",
+    "statusFullyBacked": "Vollständig gedeckt",
+    "statusSettlementPending": "Abwicklung ausstehend",
+    "statusCoverageAlert": "Deckungswarnung",
+    "messageInitializing": "Echte On-Chain-Daten erscheinen bei Aktivität.",
+    "messageFullyBacked": "Alle Token sind vollständig durch physische Metalle gedeckt.",
+    "messageSettlementPending": "Geringe Abweichung durch Abwicklungszeitpunkt. Löst sich innerhalb von 24h.",
+    "messageCoverageAlert": "Deckung unter Schwellenwert. Notfallkontrollen können aktiviert werden.",
+    "howVerificationWorksTitle": "So funktioniert die Verifizierung",
+    "howVerificationWorksDesc": "Das Token-Angebot wird direkt aus Smart Contracts auf Polygon gelesen. Allokierte Metalle werden durch Tresor-Verwahrungsberichte von LBMA-akkreditierten Einrichtungen in Zürich, Singapur, London und Dubai verifiziert.",
+    "smartContracts": "Smart Contracts",
+    "viewOnPolygonScan": "Auf PolygonScan ansehen"
   }
 }

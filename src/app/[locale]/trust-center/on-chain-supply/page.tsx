@@ -2,36 +2,36 @@ import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 
 // Coverage Ratio Logic
-function getCoverageStatus(ratio: number | null) {
+function getCoverageStatus(ratio: number | null, t: any) {
   if (ratio === null) {
     return { 
       class: 'coverage-initializing', 
       badge: 'badge-info',
-      text: 'Initializing',
-      message: 'Real on-chain data will appear as activity occurs.'
+      text: t('statusInitializing'),
+      message: t('messageInitializing')
     };
   }
   if (ratio >= 1.00) {
     return { 
       class: 'coverage-success', 
       badge: 'badge-success',
-      text: 'Fully Backed',
-      message: 'All tokens are fully backed by physical metals.'
+      text: t('statusFullyBacked'),
+      message: t('messageFullyBacked')
     };
   }
   if (ratio >= 0.995) {
     return { 
       class: 'coverage-warning', 
       badge: 'badge-warning',
-      text: 'Settlement Pending',
-      message: 'Minor variance due to settlement timing. Resolves within 24h.'
+      text: t('statusSettlementPending'),
+      message: t('messageSettlementPending')
     };
   }
   return { 
     class: 'coverage-danger', 
     badge: 'badge-danger',
-    text: 'Coverage Alert',
-    message: 'Coverage below threshold. Emergency controls may be activated.'
+    text: t('statusCoverageAlert'),
+    message: t('messageCoverageAlert')
   };
 }
 
@@ -42,7 +42,7 @@ export default async function OnChainSupplyPage() {
   const metals = [
     { 
       symbol: 'AUXG', 
-      name: 'Gold', 
+      name: t('gold'), 
       supply: '1,000.00', 
       allocated: '1,000.00', 
       ratio: 1.00,
@@ -51,7 +51,7 @@ export default async function OnChainSupplyPage() {
     },
     { 
       symbol: 'AUXS', 
-      name: 'Silver', 
+      name: t('silver'), 
       supply: '50,000.00', 
       allocated: '50,000.00', 
       ratio: 1.00,
@@ -60,7 +60,7 @@ export default async function OnChainSupplyPage() {
     },
     { 
       symbol: 'AUXPT', 
-      name: 'Platinum', 
+      name: t('platinum'), 
       supply: '100.00', 
       allocated: '100.00', 
       ratio: 1.00,
@@ -69,7 +69,7 @@ export default async function OnChainSupplyPage() {
     },
     { 
       symbol: 'AUXPD', 
-      name: 'Palladium', 
+      name: t('palladium'), 
       supply: '50.00', 
       allocated: '50.00', 
       ratio: 1.00,
@@ -97,7 +97,7 @@ export default async function OnChainSupplyPage() {
               <svg style={{ width: '16px', height: '16px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              Back to Trust Center
+              {t('backToTrustCenter')}
             </Link>
             
             <h1 style={{ 
@@ -108,11 +108,11 @@ export default async function OnChainSupplyPage() {
               marginBottom: '16px', 
               letterSpacing: '-0.02em' 
             }}>
-              On-Chain <span className="text-gold-gradient">Supply</span>
+              {t('title')} <span className="text-gold-gradient">{t('titleHighlight')}</span>
             </h1>
             
             <p style={{ fontSize: '16px', color: 'var(--text-muted)', maxWidth: '600px', lineHeight: 1.7 }}>
-              Real-time verification of token supply against physically allocated metals in LBMA-accredited vaults.
+              {t('subtitle')}
             </p>
           </div>
 
@@ -134,18 +134,18 @@ export default async function OnChainSupplyPage() {
                   </svg>
                 </div>
                 <div>
-                  <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>System Status</p>
-                  <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--state-success)', margin: 0 }}>All Assets Fully Backed</p>
+                  <p style={{ fontSize: '14px', color: 'var(--text-muted)', margin: '0 0 4px 0' }}>{t('systemStatus')}</p>
+                  <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--state-success)', margin: 0 }}>{t('allAssetsFullyBacked')}</p>
                 </div>
               </div>
               
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <span className="badge badge-success">
                   <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'currentColor' }}></span>
-                  Live
+                  {t('live')}
                 </span>
                 <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                  Updated: Just now
+                  {t('updated')}: {t('justNow')}
                 </span>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default async function OnChainSupplyPage() {
           {/* Metal Cards */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '16px', marginBottom: '32px' }} className="grid-2">
             {metals.map((metal) => {
-              const status = getCoverageStatus(metal.ratio);
+              const status = getCoverageStatus(metal.ratio, t);
               return (
                 <div key={metal.symbol} className="card" style={{ padding: '24px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
@@ -189,13 +189,13 @@ export default async function OnChainSupplyPage() {
                   
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                     <div>
-                      <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '4px' }}>Token Supply</p>
+                      <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('tokenSupply')}</p>
                       <p className="font-mono" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>
                         {metal.supply} <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{metal.unit}</span>
                       </p>
                     </div>
                     <div>
-                      <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '4px' }}>Allocated</p>
+                      <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '4px' }}>{t('allocated')}</p>
                       <p className="font-mono" style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>
                         {metal.allocated} <span style={{ fontSize: '13px', color: 'var(--text-muted)' }}>{metal.unit}</span>
                       </p>
@@ -205,7 +205,7 @@ export default async function OnChainSupplyPage() {
                   {/* Coverage Bar */}
                   <div style={{ marginTop: '16px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                      <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Coverage Ratio</span>
+                      <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{t('coverageRatio')}</span>
                       <span className={`font-mono ${status.class}`} style={{ fontSize: '14px', fontWeight: 600 }}>
                         {(metal.ratio * 100).toFixed(2)}%
                       </span>
@@ -237,10 +237,10 @@ export default async function OnChainSupplyPage() {
             </svg>
             <div>
               <p style={{ color: 'var(--text-primary)', fontSize: '14px', fontWeight: 500, marginBottom: '4px' }}>
-                How Verification Works
+                {t('howVerificationWorksTitle')}
               </p>
               <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0, lineHeight: 1.6 }}>
-                Token supply is read directly from smart contracts on Polygon. Allocated metals are verified through vault custody reports from LBMA-accredited facilities in Zurich, Singapore, London, and Dubai.
+                {t('howVerificationWorksDesc')}
               </p>
             </div>
           </div>
@@ -254,7 +254,7 @@ export default async function OnChainSupplyPage() {
               color: 'var(--text-primary)', 
               marginBottom: '16px' 
             }}>
-              Smart Contracts
+              {t('smartContracts')}
             </h3>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -276,7 +276,7 @@ export default async function OnChainSupplyPage() {
                     className="btn-tertiary"
                     style={{ fontSize: '13px' }}
                   >
-                    View on PolygonScan
+                    {t('viewOnPolygonScan')}
                     <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>

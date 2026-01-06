@@ -545,5 +545,35 @@
   },
   "common": {
     "slogan": "The Digital Form of Tradition"
+  },
+  "onChainSupply": {
+    "backToTrustCenter": "Back to Trust Center",
+    "title": "On-Chain",
+    "titleHighlight": "Supply",
+    "subtitle": "Real-time verification of token supply against physically allocated metals in LBMA-accredited vaults.",
+    "systemStatus": "System Status",
+    "allAssetsFullyBacked": "All Assets Fully Backed",
+    "live": "Live",
+    "updated": "Updated",
+    "justNow": "Just now",
+    "gold": "Gold",
+    "silver": "Silver",
+    "platinum": "Platinum",
+    "palladium": "Palladium",
+    "tokenSupply": "Token Supply",
+    "allocated": "Allocated",
+    "coverageRatio": "Coverage Ratio",
+    "statusInitializing": "Initializing",
+    "statusFullyBacked": "Fully Backed",
+    "statusSettlementPending": "Settlement Pending",
+    "statusCoverageAlert": "Coverage Alert",
+    "messageInitializing": "Real on-chain data will appear as activity occurs.",
+    "messageFullyBacked": "All tokens are fully backed by physical metals.",
+    "messageSettlementPending": "Minor variance due to settlement timing. Resolves within 24h.",
+    "messageCoverageAlert": "Coverage below threshold. Emergency controls may be activated.",
+    "howVerificationWorksTitle": "How Verification Works",
+    "howVerificationWorksDesc": "Token supply is read directly from smart contracts on Polygon. Allocated metals are verified through vault custody reports from LBMA-accredited facilities in Zurich, Singapore, London, and Dubai.",
+    "smartContracts": "Smart Contracts",
+    "viewOnPolygonScan": "View on PolygonScan"
   }
 }

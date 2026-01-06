@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Auxite | Gelenekselin Dijital Hali",
+    "title": "Auxite | Geleneğin Dijital Formu",
     "description": "Fiziksel olarak desteklenen altın, gümüş, platin ve paladyum tokenlerini alın, satın ve stake edin — tamamen zincir üstü.",
     "keywords": "tokenize altın, tokenize gümüş, kıymetli madenler, blok zinciri, DeFi, kripto"
   },
@@ -24,9 +24,9 @@
     "limits": "Geçici limitlerle gerçek işlemler"
   },
   "home": {
-    "heroSlogan1": "Gelenekselin",
+    "heroSlogan1": "Geleneğin",
     "heroSloganHighlight": "Dijital",
-    "heroSlogan2": "Hali",
+    "heroSlogan2": "Formu",
     "heroSubline1": "Fiziksel Olarak Tahsis Edilmiş Kıymetli Madenler.",
     "heroSubline2": "Tamamen Zincir Üstünde.",
     "getStarted": "Başla",
@@ -534,7 +534,7 @@
     }
   },
   "footer": {
-    "description": "Blokzincir üzerinde dijitalleşen değerli metaller. Fiziksel olarak ayrılmış altın, gümüş, platin ve paladyumu alın, satın, stake edin ve doğrulayın.",
+    "description": "On-chain tokenize değerli metaller. Fiziksel olarak ayrılmış altın, gümüş, platin ve paladyumu alın, satın, stake edin ve doğrulayın.",
     "products": "Ürünler",
     "resources": "Kaynaklar",
     "trust": "Güven",
@@ -544,6 +544,36 @@
     "onChainSupply": "Zincir Üzeri Arz"
   },
   "common": {
-    "slogan": "Gelenekselin Dijital Hali"
+    "slogan": "Gelenekselin Dijital Formu"
+  },
+  "onChainSupply": {
+    "backToTrustCenter": "Şeffaflık Merkezine Dön",
+    "title": "Zincir Üstü",
+    "titleHighlight": "Arz",
+    "subtitle": "LBMA akreditasyonlu kasalarda fiziksel olarak ayrılmış metallere karşı token arzının gerçek zamanlı doğrulaması.",
+    "systemStatus": "Sistem Durumu",
+    "allAssetsFullyBacked": "Tüm Varlıklar Tam Destekli",
+    "live": "Canlı",
+    "updated": "Güncellendi",
+    "justNow": "Az önce",
+    "gold": "Altın",
+    "silver": "Gümüş",
+    "platinum": "Platin",
+    "palladium": "Paladyum",
+    "tokenSupply": "Token Arzı",
+    "allocated": "Ayrılmış",
+    "coverageRatio": "Kapsama Oranı",
+    "statusInitializing": "Başlatılıyor",
+    "statusFullyBacked": "Tam Destekli",
+    "statusSettlementPending": "Uzlaşma Bekliyor",
+    "statusCoverageAlert": "Kapsama Uyarısı",
+    "messageInitializing": "Gerçek zincir üstü veriler aktivite gerçekleştikçe görünecektir.",
+    "messageFullyBacked": "Tüm tokenlar fiziksel metallerle tam olarak desteklenmektedir.",
+    "messageSettlementPending": "Uzlaşma zamanlamasından kaynaklanan küçük fark. 24 saat içinde çözülür.",
+    "messageCoverageAlert": "Kapsama eşiğin altında. Acil durum kontrolleri etkinleştirilebilir.",
+    "howVerificationWorksTitle": "Doğrulama Nasıl Çalışır",
+    "howVerificationWorksDesc": "Token arzı doğrudan Polygon üzerindeki akıllı sözleşmelerden okunur. Ayrılmış metaller, Zürih, Singapur, Londra ve Dubai'deki LBMA akreditasyonlu tesislerden gelen kasa saklama raporları aracılığıyla doğrulanır.",
+    "smartContracts": "Akıllı Sözleşmeler",
+    "viewOnPolygonScan": "PolygonScan'de Görüntüle"
   }
 }
