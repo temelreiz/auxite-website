@@ -574,6 +574,6 @@
     "howVerificationWorksTitle": "How Verification Works",
     "howVerificationWorksDesc": "Token supply is read directly from smart contracts on Polygon. Allocated metals are verified through vault custody reports from LBMA-accredited facilities in Zurich, Singapore, London, and Dubai.",
     "smartContracts": "Smart Contracts",
-    "viewOnPolygonScan": "View on PolygonScan"
+    "viewOnEtherscan": "View on Etherscan"
   }
 }

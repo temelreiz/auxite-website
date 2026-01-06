@@ -449,6 +449,6 @@
     "howVerificationWorksTitle": "So funktioniert die Verifizierung",
     "howVerificationWorksDesc": "Das Token-Angebot wird direkt aus Smart Contracts auf Polygon gelesen. Allokierte Metalle werden durch Tresor-Verwahrungsberichte von LBMA-akkreditierten Einrichtungen in Zürich, Singapur, London und Dubai verifiziert.",
     "smartContracts": "Smart Contracts",
-    "viewOnPolygonScan": "Auf PolygonScan ansehen"
+    "viewOnEtherscan": "Auf Etherscan ansehen"
   }
 }

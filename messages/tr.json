@@ -574,6 +574,6 @@
     "howVerificationWorksTitle": "Doğrulama Nasıl Çalışır",
     "howVerificationWorksDesc": "Token arzı doğrudan Polygon üzerindeki akıllı sözleşmelerden okunur. Ayrılmış metaller, Zürih, Singapur, Londra ve Dubai'deki LBMA akreditasyonlu tesislerden gelen kasa saklama raporları aracılığıyla doğrulanır.",
     "smartContracts": "Akıllı Sözleşmeler",
-    "viewOnPolygonScan": "PolygonScan'de Görüntüle"
+    "viewOnEtherscan": "Etherscan'de Görüntüle"
   }
 }

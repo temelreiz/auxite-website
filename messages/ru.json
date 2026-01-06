@@ -449,6 +449,6 @@
     "howVerificationWorksTitle": "Как работает верификация",
     "howVerificationWorksDesc": "Предложение токенов читается напрямую из смарт-контрактов на Polygon. Распределённые металлы верифицируются через отчёты о хранении из аккредитованных LBMA учреждений в Цюрихе, Сингапуре, Лондоне и Дубае.",
     "smartContracts": "Смарт-контракты",
-    "viewOnPolygonScan": "Смотреть на PolygonScan"
+    "viewOnEtherscan": "Смотреть на Etherscan"
   }
 }

@@ -38,6 +38,15 @@ function getCoverageStatus(ratio: number | null, t: any) {
 export default async function OnChainSupplyPage() {
   const t = await getTranslations('onChainSupply');
 
+  // Contract addresses on Ethereum
+  const contracts = {
+    AUXG: '0xD14D32B1e03B3027D1f8381EeeC567e147De9CCe',
+    AUXS: '0xc924EE950BF5A5Fbe3c26eECB27D99031B441caD',
+    AUXPT: '0x37402EA435a91567223C132414C3A50C6bBc7200',
+    AUXPD: '0x6026338B9Bfd94fed07EA61cbE60b15e300911DC',
+    STAKING: '0x96ff8358183BA045e3d6cDA4ca2AfF30423A9dC8'
+  };
+
   // Example data - In production, fetch from API/blockchain
   const metals = [
     { 
@@ -47,7 +56,8 @@ export default async function OnChainSupplyPage() {
       allocated: '1,000.00', 
       ratio: 1.00,
       unit: 'oz',
-      color: 'var(--metal-gold)'
+      color: 'var(--metal-gold)',
+      contract: contracts.AUXG
     },
     { 
       symbol: 'AUXS', 
@@ -56,7 +66,8 @@ export default async function OnChainSupplyPage() {
       allocated: '50,000.00', 
       ratio: 1.00,
       unit: 'oz',
-      color: 'var(--metal-silver)'
+      color: 'var(--metal-silver)',
+      contract: contracts.AUXS
     },
     { 
       symbol: 'AUXPT', 
@@ -65,7 +76,8 @@ export default async function OnChainSupplyPage() {
       allocated: '100.00', 
       ratio: 1.00,
       unit: 'oz',
-      color: 'var(--metal-platinum)'
+      color: 'var(--metal-platinum)',
+      contract: contracts.AUXPT
     },
     { 
       symbol: 'AUXPD', 
@@ -74,7 +86,8 @@ export default async function OnChainSupplyPage() {
       allocated: '50.00', 
       ratio: 1.00,
       unit: 'oz',
-      color: 'var(--metal-palladium)'
+      color: 'var(--metal-palladium)',
+      contract: contracts.AUXPD
     },
   ];
 
@@ -270,19 +283,58 @@ export default async function OnChainSupplyPage() {
                     borderRadius: '10px'
                   }}
                 >
-                  <span style={{ fontSize: '14px', color: 'var(--text-primary)', fontWeight: 500 }}>{metal.symbol}</span>
+                  <div>
+                    <span style={{ fontSize: '14px', color: 'var(--text-primary)', fontWeight: 500 }}>{metal.symbol}</span>
+                    <p className="font-mono" style={{ fontSize: '11px', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>
+                      {metal.contract.slice(0, 6)}...{metal.contract.slice(-4)}
+                    </p>
+                  </div>
                   <a 
-                    href="#" 
+                    href={`https://sepolia.etherscan.io/address/${metal.contract}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="btn-tertiary"
                     style={{ fontSize: '13px' }}
                   >
-                    {t('viewOnPolygonScan')}
+                    {t('viewOnEtherscan')}
                     <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
                 </div>
               ))}
+              
+              {/* Staking Contract */}
+              <div 
+                style={{ 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'space-between',
+                  padding: '12px 16px',
+                  background: 'var(--bg-tertiary)',
+                  borderRadius: '10px',
+                  borderLeft: '3px solid var(--aux-gold)'
+                }}
+              >
+                <div>
+                  <span style={{ fontSize: '14px', color: 'var(--text-primary)', fontWeight: 500 }}>Staking</span>
+                  <p className="font-mono" style={{ fontSize: '11px', color: 'var(--text-muted)', margin: '4px 0 0 0' }}>
+                    {contracts.STAKING.slice(0, 6)}...{contracts.STAKING.slice(-4)}
+                  </p>
+                </div>
+                <a 
+                  href={`https://sepolia.etherscan.io/address/${contracts.STAKING}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-tertiary"
+                  style={{ fontSize: '13px' }}
+                >
+                  {t('viewOnEtherscan')}
+                  <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
 

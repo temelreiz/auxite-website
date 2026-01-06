@@ -449,6 +449,6 @@
     "howVerificationWorksTitle": "كيف يعمل التحقق",
     "howVerificationWorksDesc": "يُقرأ عرض التوكنات مباشرة من العقود الذكية على Polygon. يتم التحقق من المعادن المخصصة من خلال تقارير حفظ الخزائن من المنشآت المعتمدة من LBMA في زيورخ وسنغافورة ولندن ودبي.",
     "smartContracts": "العقود الذكية",
-    "viewOnPolygonScan": "عرض على PolygonScan"
+    "viewOnEtherscan": "عرض على Etherscan"
   }
 }
