@@ -2,15 +2,40 @@ import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 
+// Lease rates API'den veri çek
+async function getLeaseRates() {
+  try {
+    const res = await fetch('https://wallet.auxite.io/api/lease-rates', {
+      next: { revalidate: 300 }, // 5 dakikada bir yenile
+    });
+    
+    if (!res.ok) throw new Error('API error');
+    
+    const data = await res.json();
+    return data.rates;
+  } catch (error) {
+    console.error('Lease rates fetch error:', error);
+    // Fallback rates
+    return {
+      gold: { "3m": 2.5, "6m": 3.0, "12m": 3.5 },
+      silver: { "3m": 2.0, "6m": 2.5, "12m": 3.0 },
+      platinum: { "3m": 3.0, "6m": 3.5, "12m": 4.0 },
+      palladium: { "3m": 2.8, "6m": 3.3, "12m": 3.8 },
+    };
+  }
+}
+
 export default async function StakingPage() {
   const t = await getTranslations('staking');
+  const leaseRates = await getLeaseRates();
 
+  // 12 aylık APY'leri kullan (en yüksek)
   const tiers = [
     { 
       metal: 'AUXG',
       icon: '/metals/gold.png',
       minStake: '1', 
-      apy: '2%', 
+      apy: `${leaseRates?.gold?.["12m"] || 3.5}%`, 
       color: '#D4AF37',
       bgColor: 'rgba(212, 175, 55, 0.12)'
     },
@@ -18,7 +43,7 @@ export default async function StakingPage() {
       metal: 'AUXS',
       icon: '/metals/silver.png',
       minStake: '10', 
-      apy: '3%', 
+      apy: `${leaseRates?.silver?.["12m"] || 3.0}%`, 
       color: '#C0C0C0',
       bgColor: 'rgba(192, 192, 192, 0.12)'
     },
@@ -26,7 +51,7 @@ export default async function StakingPage() {
       metal: 'AUXPT',
       icon: '/metals/platinum.png',
       minStake: '100', 
-      apy: '4%', 
+      apy: `${leaseRates?.platinum?.["12m"] || 4.0}%`, 
       color: '#E5E4E2',
       bgColor: 'rgba(229, 228, 226, 0.12)'
     },
@@ -34,7 +59,7 @@ export default async function StakingPage() {
       metal: 'AUXPD',
       icon: '/metals/palladium.png',
       minStake: '1000', 
-      apy: '5%', 
+      apy: `${leaseRates?.palladium?.["12m"] || 3.8}%`, 
       color: '#B4A7D6',
       bgColor: 'rgba(180, 167, 214, 0.12)'
     },
