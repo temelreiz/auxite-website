@@ -15,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'meta' });
   
   const baseUrl = 'https://auxite.io';
+  const currentUrl = `${baseUrl}/${locale}`;
   
   return {
     metadataBase: new URL(baseUrl),
@@ -41,16 +42,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: 'website',
       locale: locale,
-      url: baseUrl,
+      url: currentUrl,
       siteName: 'Auxite',
       title: t('title'),
       description: t('description'),
       images: [
         {
-          url: '/og-image.png',
+          url: `${baseUrl}/api/og`,
           width: 1200,
           height: 630,
-          alt: 'Auxite - Tokenized Precious Metals',
+          alt: 'Auxite - The Digital Form of Tradition',
         },
       ],
     },
@@ -58,18 +59,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
-      images: ['/og-image.png'],
+      images: [`${baseUrl}/api/og`],
       creator: '@auxite',
     },
     alternates: {
-      canonical: baseUrl,
+      canonical: currentUrl,
       languages: {
-        'en': '/en',
-        'tr': '/tr',
-        'de': '/de',
-        'fr': '/fr',
-        'ar': '/ar',
-        'ru': '/ru',
+        'en': `${baseUrl}/en`,
+        'tr': `${baseUrl}/tr`,
+        'de': `${baseUrl}/de`,
+        'fr': `${baseUrl}/fr`,
+        'ar': `${baseUrl}/ar`,
+        'ru': `${baseUrl}/ru`,
+        'x-default': `${baseUrl}/en`,
       },
     },
     icons: {
@@ -77,7 +79,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       shortcut: '/favicon-16x16.png',
       apple: '/apple-touch-icon.png',
     },
-    manifest: '/site.webmanifest',
   };
 }
 

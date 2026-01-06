@@ -20,5 +20,7 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/lease-rates/route": "app/api/lease-rates/route.js",
-  "/api/sitemap/route": "app/api/sitemap/route.js"
+  "/api/og/route": "app-edge-has-no-entrypoint",
+  "/api/sitemap/route": "app/api/sitemap/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

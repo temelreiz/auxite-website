@@ -1,9 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
 # Sitemap
 Sitemap: https://auxite.io/sitemap.xml
 
-# Disallow admin/API routes
+# Disallow admin/api routes
 Disallow: /api/
+Disallow: /_next/

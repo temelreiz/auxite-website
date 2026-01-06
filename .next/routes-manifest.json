@@ -187,10 +187,22 @@
       "namedRegex": "^/api/lease\\-rates(?:/)?$"
     },
     {
+      "page": "/api/og",
+      "regex": "^/api/og(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/og(?:/)?$"
+    },
+    {
       "page": "/api/sitemap",
       "regex": "^/api/sitemap(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/sitemap(?:/)?$"
+    },
+    {
+      "page": "/sitemap.xml",
+      "regex": "^/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sitemap\\.xml(?:/)?$"
     }
   ],
   "dataRoutes": [],

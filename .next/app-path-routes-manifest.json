@@ -20,5 +20,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/lease-rates/route": "/api/lease-rates",
-  "/api/sitemap/route": "/api/sitemap"
+  "/api/og/route": "/api/og",
+  "/api/sitemap/route": "/api/sitemap",
+  "/sitemap.xml/route": "/sitemap.xml"
 }
