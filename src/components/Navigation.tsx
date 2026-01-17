@@ -24,8 +24,14 @@ export default function Navigation() {
   }, []);
 
   const handleLocaleChange = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, '');
-    router.push(`/${newLocale}${currentPath || '/'}`);
+    // Mevcut path'ten locale prefix'ini kaldır
+    const segments = pathname.split('/').filter(Boolean);
+    // İlk segment locale ise kaldır
+    if (routing.locales.includes(segments[0] as any)) {
+      segments.shift();
+    }
+    const newPath = segments.length > 0 ? `/${newLocale}/${segments.join('/')}` : `/${newLocale}`;
+    router.push(newPath);
   };
 
   const navLinks = [
