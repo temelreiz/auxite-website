@@ -141,12 +141,12 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
     { title: 'Redeem', desc: 'Physical delivery' },
   ];
 
-  // Structure diagram
+  // Structure diagram - Institutional Architecture
   const structureItems = [
-    { title: t.structure?.foundation || 'Auxite Foundation', desc: t.structure?.foundationDesc || 'Governance & Oversight' },
-    { title: t.structure?.operator || 'Aurum Ledger Ltd', desc: t.structure?.operatorDesc || 'Operator — Hong Kong' },
-    { title: t.structure?.vaults || 'Independent Vault Network', desc: t.structure?.vaultsDesc || 'Segregated Custody' },
-    { title: 'Allocated Metals', desc: 'Your Assets' },
+    { title: t.structure?.foundation || 'Auxite Foundation', desc: 'Bankruptcy-Remote Structure', badge: 'Fiduciary Oversight' },
+    { title: t.structure?.operator || 'Aurum Ledger Ltd', desc: 'Operator — Hong Kong', badge: 'Fiduciary Oversight' },
+    { title: t.structure?.vaults || 'Independent Vault Network', desc: 'Segregated Custody', badge: null },
+    { title: 'Allocated Client Assets', desc: 'Your Holdings', badge: null },
   ];
 
   return (
@@ -343,7 +343,7 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
 
       {/* ═══════════════════════════════════════════════════════════════════
           BLOCK 3 — STRUCTURE DIAGRAM (Game Changer - Counterparty Risk ↓)
-          Foundation → Operator → Vault → Metals
+          Foundation → Operator → Vault → Client Assets
       ═══════════════════════════════════════════════════════════════════ */}
       <section style={{ padding: '140px 0', background: 'var(--bg-secondary)' }}>
         <div className="mobile-padding" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
@@ -367,15 +367,15 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                 marginBottom: '16px',
                 letterSpacing: '-0.02em'
               }}>
-                {t.structureTitle || 'Institutional'} <span className="text-gold-gradient">{t.structureTitleHighlight || 'Architecture'}</span>
+                Legal & Structural <span className="text-gold-gradient">Architecture</span>
               </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '500px', margin: '0 auto' }}>
-                {t.structureSubtitle || 'Designed for structural integrity and risk separation.'}
+              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '540px', margin: '0 auto' }}>
+                Designed to ensure asset segregation and structural resilience.
               </p>
             </FadeInDiv>
           </AnimatedSection>
 
-          {/* Vertical Structure Diagram */}
+          {/* Vertical Structure Diagram - Equal weight boxes */}
           <AnimatedSection>
             <FadeInDiv delay={0.2}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
@@ -387,23 +387,39 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                       transition={{ delay: i * 0.15, duration: 0.6 }}
                       style={{
                         textAlign: 'center',
-                        padding: '28px 56px',
-                        background: i === 0
-                          ? 'linear-gradient(135deg, rgba(201,162,77,0.12) 0%, var(--bg-tertiary) 100%)'
-                          : 'var(--bg-tertiary)',
-                        border: i === 0
-                          ? '1px solid rgba(201,162,77,0.35)'
-                          : '1px solid var(--line)',
+                        padding: '32px 48px',
+                        background: 'var(--bg-tertiary)',
+                        border: '1px solid var(--line)',
                         borderRadius: '14px',
-                        minWidth: '340px',
-                        maxWidth: '400px'
+                        minWidth: '380px',
+                        maxWidth: '420px',
+                        position: 'relative'
                       }}
                     >
+                      {/* Badge for Fiduciary Oversight */}
+                      {item.badge && (
+                        <span style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '20px',
+                          background: 'rgba(201,162,77,0.15)',
+                          border: '1px solid rgba(201,162,77,0.3)',
+                          color: 'var(--aux-gold)',
+                          fontSize: '10px',
+                          fontWeight: 600,
+                          padding: '4px 10px',
+                          borderRadius: '20px',
+                          letterSpacing: '0.05em',
+                          textTransform: 'uppercase'
+                        }}>
+                          {item.badge}
+                        </span>
+                      )}
                       <p style={{
                         color: 'var(--text-primary)',
-                        fontSize: '17px',
+                        fontSize: '18px',
                         fontWeight: 600,
-                        margin: '0 0 4px 0'
+                        margin: '0 0 6px 0'
                       }}>{item.title}</p>
                       <p style={{
                         color: 'var(--text-muted)',
@@ -411,19 +427,75 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                         margin: 0
                       }}>{item.desc}</p>
                     </motion.div>
+                    {/* Enhanced Arrow with Glow */}
                     {i < structureItems.length - 1 && (
                       <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ delay: i * 0.15 + 0.1 }}
+                        style={{
+                          position: 'relative',
+                          margin: '8px 0'
+                        }}
                       >
-                        <svg style={{ width: '20px', height: '40px', color: 'var(--aux-gold)', opacity: 0.5, margin: '4px 0' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        {/* Glow effect */}
+                        <div style={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)',
+                          width: '40px',
+                          height: '40px',
+                          background: 'radial-gradient(circle, rgba(201,162,77,0.2) 0%, transparent 70%)',
+                          borderRadius: '50%',
+                          filter: 'blur(8px)'
+                        }} />
+                        <svg style={{
+                          width: '28px',
+                          height: '48px',
+                          position: 'relative',
+                          zIndex: 1
+                        }} fill="none" viewBox="0 0 24 48">
+                          <defs>
+                            <linearGradient id={`arrowGradient${i}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                              <stop offset="0%" stopColor="var(--aux-gold)" stopOpacity="0.3" />
+                              <stop offset="50%" stopColor="var(--aux-gold)" stopOpacity="0.8" />
+                              <stop offset="100%" stopColor="var(--aux-gold)" stopOpacity="0.3" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            d="M12 4 L12 36 M6 30 L12 38 L18 30"
+                            stroke={`url(#arrowGradient${i})`}
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </motion.div>
                     )}
                   </div>
                 ))}
+              </div>
+            </FadeInDiv>
+
+            {/* Critical Disclaimer - Whale Trust Signal */}
+            <FadeInDiv delay={0.8}>
+              <div style={{
+                marginTop: '48px',
+                padding: '20px 32px',
+                background: 'rgba(201,162,77,0.05)',
+                border: '1px solid rgba(201,162,77,0.15)',
+                borderRadius: '12px',
+                textAlign: 'center'
+              }}>
+                <p style={{
+                  color: 'var(--text-secondary)',
+                  fontSize: '14px',
+                  margin: 0,
+                  fontStyle: 'italic'
+                }}>
+                  Client assets are never held on the operator balance sheet.
+                </p>
               </div>
             </FadeInDiv>
           </AnimatedSection>
