@@ -14,9 +14,9 @@
         "server/app/api/og/route_client-reference-manifest.js",
         "server/edge/chunks/Desktop_auxite-website__next-internal_server_app_api_og_route_actions_eb7c5f41.js",
         "server/edge/chunks/[root-of-the-server]__82ce681d._.js",
-        "server/edge/chunks/942f5_next_dist_72538e1d._.js",
+        "server/edge/chunks/Desktop_0fd1e2b5._.js",
         "server/edge/chunks/942f5_next_dist_compiled_@vercel_og_e15dd4a3._.js",
-        "server/edge/chunks/4f373_next_dist_esm_build_templates_edge-wrapper_74ef532e.js"
+        "server/edge/chunks/4f373_next_dist_esm_build_templates_edge-wrapper_1c1ef7a4.js"
       ],
       "name": "app/api/og/route",
       "page": "/api/og/route",
@@ -43,11 +43,11 @@
         }
       ],
       "env": {
-        "__NEXT_BUILD_ID": "SyR5Z_ZO4xdy3KbdiWRul",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "TLfVXtXGz9GK8F8W7u8cZiomTgE45p9LpkZs9rsRamk=",
-        "__NEXT_PREVIEW_MODE_ID": "318c7c948548df840217d4e9721edc0e",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "43f06d322bf905419918a5d5601e7d110e3062be57a7e91537763d01b3c8b250",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "cba91427f8205c57a60fc538b8e729a0ac5383369d14b8210ca6f5214dd67da2"
+        "__NEXT_BUILD_ID": "GOhnrOa0ZJOfyxrknNQbR",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "acf54/TEc03pF9AyN9wi7zT/rxuNteQldqKwSjDcPgc=",
+        "__NEXT_PREVIEW_MODE_ID": "5e8bf5d4985641d3e4ac88a0dcacf320",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "198335c4cb6774a0379d7de2cba9d2625cf8ab923b2b2b2993b75b3fd1b8d7b0",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "448ed3883e9a8ef76f347850308ce52da26f3d4eb37c3e0144851d4fbebf36ad"
       }
     }
   }

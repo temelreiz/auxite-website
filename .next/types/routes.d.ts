@@ -5,7 +5,7 @@ type AppRoutes = "/[locale]" | "/[locale]/buy-sell" | "/[locale]/contact" | "/[l
 type AppRouteHandlerRoutes = "/api/lease-rates" | "/api/og" | "/api/sitemap"
 type PageRoutes = never
 type LayoutRoutes = "/" | "/[locale]"
-type RedirectRoutes = never
+type RedirectRoutes = "/" | "/wallet" | "/wallet/[[...path]]"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -33,6 +33,8 @@ interface ParamMap {
   "/api/lease-rates": {}
   "/api/og": {}
   "/api/sitemap": {}
+  "/wallet": {}
+  "/wallet/[[...path]]": { "path"?: string[]; }
 }
 
 

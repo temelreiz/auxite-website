@@ -2,11 +2,11 @@
 @import "tailwindcss";
 
 :root {
-  /* Institutional Dark Theme */
-  --bg-primary: #0B0E11;
-  --bg-secondary: #141821;
-  --bg-tertiary: #1B2130;
-  --bg-elevated: #232A3A;
+  /* Institutional Dark Theme - Wealth Grade */
+  --bg-primary: #080A0D;
+  --bg-secondary: #0F1318;
+  --bg-tertiary: #161B24;
+  --bg-elevated: #1E242F;
   
   /* Text */
   --text-primary: #F5F7FA;

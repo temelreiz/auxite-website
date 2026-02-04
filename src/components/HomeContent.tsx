@@ -263,7 +263,42 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 2 — STRUCTURAL TRUST (Institutional-Grade Infrastructure)
+          FORTRESS BLOCK — Structural Resilience Signal
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '60px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
+          <AnimatedSection style={{ textAlign: 'center' }}>
+            <FadeInDiv>
+              <p style={{
+                color: 'var(--text-secondary)',
+                fontSize: '15px',
+                margin: '0 0 24px 0',
+                fontWeight: 500
+              }}>
+                Built on Structural Resilience
+              </p>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '48px',
+                flexWrap: 'wrap'
+              }}>
+                {['Segregated Assets', 'Independent Custody', 'Legal Ring-Fencing'].map((item, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <svg style={{ width: '16px', height: '16px', color: 'var(--aux-gold)' }} fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span style={{ color: 'var(--text-muted)', fontSize: '14px' }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          BLOCK 2 — STRUCTURAL TRUST (Institutional Infrastructure)
           Whale trigger: Bankruptcy Remote
       ═══════════════════════════════════════════════════════════════════ */}
       <section style={{ padding: '120px 0', background: 'var(--bg-primary)' }}>
@@ -287,7 +322,7 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                 color: 'var(--text-primary)',
                 letterSpacing: '-0.02em'
               }}>
-                Institutional-Grade Infrastructure
+                Institutional Infrastructure
               </h2>
             </FadeInDiv>
           </AnimatedSection>
@@ -657,24 +692,26 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                     }}>
                       {metal.name}
                     </p>
-                    {/* Institutional badges */}
+                    {/* Institutional badges - 3 micro labels */}
                     <div style={{
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '6px',
+                      gap: '8px',
                       alignItems: 'center',
                       borderTop: '1px solid var(--line)',
                       paddingTop: '16px',
                       marginTop: '8px'
                     }}>
-                      <span style={{
-                        color: 'var(--text-muted)',
-                        fontSize: '11px',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.05em'
-                      }}>
-                        Fully Allocated
-                      </span>
+                      {['Fully Allocated', 'LBMA-Aligned', 'Redeemable'].map((badge, idx) => (
+                        <span key={idx} style={{
+                          color: 'var(--text-muted)',
+                          fontSize: '10px',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.08em'
+                        }}>
+                          {badge}
+                        </span>
+                      ))}
                     </div>
                   </motion.div>
                 </Link>
