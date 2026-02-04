@@ -212,25 +212,60 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div style={{ 
+        <div style={{
           borderTop: '1px solid var(--line)',
           paddingTop: '32px',
           display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '16px'
+          flexDirection: 'column',
+          gap: '20px'
         }}>
-          <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0 }}>
-            {t('copyright', { year })}
-          </p>
-          
-          <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <svg style={{ width: '14px', height: '14px', color: 'var(--state-success)' }} fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-            </svg>
-            {t('backed')}
-          </p>
+          {/* Operator Info - Institutional */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            gap: '24px',
+            flexWrap: 'wrap'
+          }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0 }}>
+              Operated by Aurum Ledger Ltd — Hong Kong
+            </p>
+            <a
+              href="https://auxiteglobal.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '4px'
+              }}
+            >
+              Corporate →
+            </a>
+          </div>
+
+          {/* Copyright & Backing */}
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '16px'
+          }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0 }}>
+              {t('copyright', { year })}
+            </p>
+
+            <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0, display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <svg style={{ width: '14px', height: '14px', color: 'var(--state-success)' }} fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              {t('backed')}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

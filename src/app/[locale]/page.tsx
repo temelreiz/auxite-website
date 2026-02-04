@@ -16,9 +16,9 @@ export default async function Home() {
   ];
 
   return (
-    <HomeContent 
+    <HomeContent
       t={{
-        // New Hero
+        // New Hero - Institutional
         heroSlogan1: t('heroSlogan1'),
         heroSloganHighlight: t('heroSloganHighlight'),
         heroSlogan2: t('heroSlogan2'),
@@ -26,6 +26,15 @@ export default async function Home() {
         heroSubline2: t('heroSubline2'),
         getStarted: t('getStarted'),
         viewTrustCenter: t('viewTrustCenter'),
+        // Trust Bar
+        trustBar: {
+          fullyAllocated: t('trustBar.fullyAllocated'),
+          independentCustody: t('trustBar.independentCustody'),
+          auditedFramework: t('trustBar.auditedFramework'),
+          redeemable: t('trustBar.redeemable'),
+          bankruptcyRemote: t('trustBar.bankruptcyRemote'),
+        },
+        longTermSignal: t('longTermSignal'),
         // Legacy
         badge: t('badge'),
         lbmaVaults: t('lbmaVaults'),
@@ -51,6 +60,18 @@ export default async function Home() {
         },
         howItWorks: t('howItWorks'),
         howItWorksHighlight: t('howItWorksHighlight'),
+        howItWorksDiagram: {
+          step1: t('howItWorksDiagram.step1'),
+          step1Desc: t('howItWorksDiagram.step1Desc'),
+          step2: t('howItWorksDiagram.step2'),
+          step2Desc: t('howItWorksDiagram.step2Desc'),
+          step3: t('howItWorksDiagram.step3'),
+          step3Desc: t('howItWorksDiagram.step3Desc'),
+          step4: t('howItWorksDiagram.step4'),
+          step4Desc: t('howItWorksDiagram.step4Desc'),
+          step5: t('howItWorksDiagram.step5'),
+          step5Desc: t('howItWorksDiagram.step5Desc'),
+        },
         steps: {
           buy: t('steps.buy'),
           buyDesc: t('steps.buyDesc'),
@@ -58,6 +79,20 @@ export default async function Home() {
           verifyDesc: t('steps.verifyDesc'),
           stake: t('steps.stake'),
           stakeDesc: t('steps.stakeDesc'),
+        },
+        // Structure Section
+        structureTitle: t('structureTitle'),
+        structureTitleHighlight: t('structureTitleHighlight'),
+        structureSubtitle: t('structureSubtitle'),
+        structure: {
+          foundation: t('structure.foundation'),
+          foundationDesc: t('structure.foundationDesc'),
+          operator: t('structure.operator'),
+          operatorDesc: t('structure.operatorDesc'),
+          metals: t('structure.metals'),
+          metalsDesc: t('structure.metalsDesc'),
+          vaults: t('structure.vaults'),
+          vaultsDesc: t('structure.vaultsDesc'),
         },
         ctaTitle: t('ctaTitle'),
         ctaTitleHighlight: t('ctaTitleHighlight'),
