@@ -150,36 +150,49 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
       {/* ═══════════════════════════════════════════════════════════════════
           BLOCK 1 — HERO (Institutional - Capital Protection Focus)
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="mobile-pt" style={{ minHeight: '90vh', paddingTop: '140px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
+      <section className="mobile-pt" style={{ minHeight: '80vh', paddingTop: '140px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
 
-        {/* Cinematic Vault Background */}
+        {/* Cinematic Vault Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/vault-poster.jpg"
+          className="hero-video"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center',
+            zIndex: 0,
+          }}
+        >
+          <source src="/vault-hero.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark overlay for text readability (35% opacity) */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(/vault-bg.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.15,
-          filter: 'blur(2px)',
+          background: 'linear-gradient(to bottom, rgba(11,14,17,0.35) 0%, rgba(11,14,17,0.65) 100%)',
+          pointerEvents: 'none',
+          zIndex: 1
         }} />
 
-        {/* Gold gradient overlay */}
+        {/* Gold gradient accent overlay */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 70% 30%, rgba(201,162,77,0.08) 0%, transparent 60%)',
-          pointerEvents: 'none'
+          background: 'radial-gradient(ellipse at 70% 30%, rgba(201,162,77,0.06) 0%, transparent 60%)',
+          pointerEvents: 'none',
+          zIndex: 2
         }} />
 
-        {/* Dark gradient for text readability */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'linear-gradient(to bottom, rgba(11,14,17,0.6) 0%, rgba(11,14,17,0.85) 100%)',
-          pointerEvents: 'none'
-        }} />
-
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
+        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
           <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '80px', alignItems: 'center' }}>
 
             {/* Hero Text Content */}

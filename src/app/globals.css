@@ -635,3 +635,29 @@ body {
   }
 }
 
+/* ═══════════════════════════════════════════════════════════
+   HERO VIDEO STYLES
+   ═══════════════════════════════════════════════════════════ */
+
+/* Hero Video Background */
+.hero-video {
+  opacity: 0.85;
+}
+
+/* Mobile: use poster image instead of video for performance */
+@media (max-width: 768px) {
+  .hero-video {
+    display: none;
+  }
+}
+
+/* Fallback for when video is hidden on mobile */
+@media (max-width: 768px) {
+  .mobile-pt {
+    background-image: url('/vault-poster.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
