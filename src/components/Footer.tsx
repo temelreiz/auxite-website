@@ -211,24 +211,38 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar - Institutional */}
         <div style={{
           borderTop: '1px solid var(--line)',
-          paddingTop: '32px',
+          paddingTop: '40px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '20px'
+          gap: '32px'
         }}>
-          {/* Operator Info - Institutional */}
+          {/* Operator Info - PROMINENT */}
           <div style={{
             display: 'flex',
-            justifyContent: 'center',
+            flexDirection: 'column',
             alignItems: 'center',
-            gap: '24px',
-            flexWrap: 'wrap'
+            gap: '16px',
+            padding: '32px 0',
+            borderBottom: '1px solid var(--line)'
           }}>
-            <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0 }}>
-              Operated by Aurum Ledger Ltd — Hong Kong
+            <p style={{
+              color: 'var(--text-primary)',
+              fontSize: '16px',
+              fontWeight: 500,
+              margin: 0,
+              letterSpacing: '-0.01em'
+            }}>
+              Operated by <span style={{ color: 'var(--aux-gold)' }}>Aurum Ledger Ltd</span>
+            </p>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '14px',
+              margin: 0
+            }}>
+              Hong Kong
             </p>
             <a
               href="https://auxiteglobal.com"
@@ -240,10 +254,18 @@ export default function Footer() {
                 textDecoration: 'none',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '4px'
+                gap: '6px',
+                padding: '10px 20px',
+                border: '1px solid rgba(201,162,77,0.3)',
+                borderRadius: '8px',
+                marginTop: '8px',
+                transition: 'all 0.2s ease'
               }}
             >
-              Corporate →
+              Corporate Information
+              <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
             </a>
           </div>
 

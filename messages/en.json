@@ -105,6 +105,11 @@
       "vaults": "Independent Vault Network",
       "vaultsDesc": "Segregated Custody"
     },
+    "metalsTitle": "Investment-Grade",
+    "metalsTitleHighlight": "Metals",
+    "metalsSubtitle": "LBMA-aligned sourcing. Fully allocated. Redeemable.",
+    "privateClientTitle": "Private Client Services",
+    "privateClientSubtitle": "For allocations above $100,000.",
     "ctaTitle": "Ready to",
     "ctaTitleHighlight": "Protect Capital",
     "ctaSubtitle": "Join institutional investors who trust Auxite for secure precious metal custody.",

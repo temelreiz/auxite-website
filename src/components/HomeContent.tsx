@@ -7,7 +7,7 @@ import { useRef } from 'react';
 
 interface HomeContentProps {
   t: {
-    // New Hero - Institutional
+    // Hero - Institutional
     heroSlogan1: string;
     heroSloganHighlight: string;
     heroSlogan2: string;
@@ -15,7 +15,7 @@ interface HomeContentProps {
     heroSubline2: string;
     getStarted: string;
     viewTrustCenter: string;
-    // Trust Bar
+    // Trust Section
     trustBar?: {
       fullyAllocated: string;
       independentCustody: string;
@@ -24,15 +24,18 @@ interface HomeContentProps {
       bankruptcyRemote: string;
     };
     longTermSignal?: string;
-    // Legacy
-    badge?: string;
-    lbmaVaults: string;
-    audited: string;
+    // Metals Section
+    metalsTitle?: string;
+    metalsTitleHighlight?: string;
+    metalsSubtitle?: string;
+    // Stats (post-launch)
     stats: { onChain: string; backing: string; trading: string; metals: string };
+    // Features
     whyAuxite: string;
     whyAuxiteHighlight: string;
     whySubtitle: string;
     features: { onChain: string; onChainDesc: string; physical: string; physicalDesc: string; stake: string; stakeDesc: string; transparent: string; transparentDesc: string };
+    // Capital Protection Lifecycle
     howItWorks: string;
     howItWorksHighlight: string;
     howItWorksDiagram?: {
@@ -53,11 +56,19 @@ interface HomeContentProps {
       metals: string; metalsDesc: string;
       vaults: string; vaultsDesc: string;
     };
+    // Private Client
+    privateClientTitle?: string;
+    privateClientSubtitle?: string;
+    // CTA
     ctaTitle: string;
     ctaTitleHighlight: string;
     ctaSubtitle: string;
     startTrading: string;
     readWhitepaper: string;
+    // Legacy
+    badge?: string;
+    lbmaVaults: string;
+    audited: string;
   };
   metals: { symbol: string; name: string; icon: string; href: string }[];
   isRTL?: boolean;
@@ -69,7 +80,7 @@ const fadeIn = {
 };
 
 const stagger = {
-  visible: { transition: { staggerChildren: 0.1 } }
+  visible: { transition: { staggerChildren: 0.15 } }
 };
 
 function AnimatedSection({ children, className, style }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) {
@@ -94,7 +105,7 @@ function FadeInDiv({ children, delay = 0, style, className }: { children: React.
   return (
     <motion.div
       variants={fadeIn}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
       style={style}
       className={className}
     >
@@ -104,33 +115,19 @@ function FadeInDiv({ children, delay = 0, style, className }: { children: React.
 }
 
 export default function HomeContent({ t, metals, isRTL = false }: HomeContentProps) {
-  const features = [
-    { icon: '🏛️', title: t.features.physical, description: t.features.physicalDesc },
-    { icon: '🔒', title: t.features.onChain, description: t.features.onChainDesc },
-    { icon: '📈', title: t.features.stake, description: t.features.stakeDesc },
-    { icon: '🔍', title: t.features.transparent, description: t.features.transparentDesc },
-  ];
-
   const textAlign = isRTL ? 'right' : 'left';
   const flexDirection = isRTL ? 'row-reverse' : 'row';
 
-  // Trust bar items
-  const trustBarItems = t.trustBar ? [
-    t.trustBar.fullyAllocated,
-    t.trustBar.independentCustody,
-    t.trustBar.auditedFramework,
-    t.trustBar.redeemable,
-    t.trustBar.bankruptcyRemote,
-  ] : [
-    'Fully Allocated',
-    'Independent Custody',
-    'Audited Framework',
-    'Redeemable',
-    'Bankruptcy Remote',
+  // Trust items - Institutional Grade Infrastructure
+  const trustItems = [
+    { label: t.trustBar?.fullyAllocated || 'Fully Allocated', icon: '◆' },
+    { label: t.trustBar?.independentCustody || 'Independent Custody', icon: '◆' },
+    { label: t.trustBar?.bankruptcyRemote || 'Bankruptcy Remote', icon: '◆' },
+    { label: t.trustBar?.auditedFramework || 'Audited Framework', icon: '◆' },
   ];
 
-  // How it works diagram steps
-  const diagramSteps = t.howItWorksDiagram ? [
+  // Capital Protection Lifecycle steps
+  const lifecycleSteps = t.howItWorksDiagram ? [
     { title: t.howItWorksDiagram.step1, desc: t.howItWorksDiagram.step1Desc },
     { title: t.howItWorksDiagram.step2, desc: t.howItWorksDiagram.step2Desc },
     { title: t.howItWorksDiagram.step3, desc: t.howItWorksDiagram.step3Desc },
@@ -138,19 +135,28 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
     { title: t.howItWorksDiagram.step5, desc: t.howItWorksDiagram.step5Desc },
   ] : [
     { title: 'Acquire', desc: 'Purchase allocated metals' },
-    { title: 'Allocated', desc: 'Metal secured in vault' },
-    { title: 'Stored', desc: 'Independent custody' },
-    { title: 'Accessible', desc: 'Digitally verifiable' },
-    { title: 'Redeemable', desc: 'Physical delivery available' },
+    { title: 'Allocate', desc: 'Secured to your vault' },
+    { title: 'Store', desc: 'Independent custody' },
+    { title: 'Verify', desc: 'On-chain attestation' },
+    { title: 'Redeem', desc: 'Physical delivery' },
+  ];
+
+  // Structure diagram
+  const structureItems = [
+    { title: t.structure?.foundation || 'Auxite Foundation', desc: t.structure?.foundationDesc || 'Governance & Oversight' },
+    { title: t.structure?.operator || 'Aurum Ledger Ltd', desc: t.structure?.operatorDesc || 'Operator — Hong Kong' },
+    { title: t.structure?.vaults || 'Independent Vault Network', desc: t.structure?.vaultsDesc || 'Segregated Custody' },
+    { title: 'Allocated Metals', desc: 'Your Assets' },
   ];
 
   return (
     <div style={{ background: 'var(--bg-primary)', minHeight: '100vh' }} dir={isRTL ? 'rtl' : 'ltr'}>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 1 — HERO (Institutional - Capital Protection Focus)
+          BLOCK 1 — HERO (Minimal - Video + Headline + CTA + Space)
+          Complexity ↓ = Trust ↑
       ═══════════════════════════════════════════════════════════════════ */}
-      <section className="mobile-pt" style={{ minHeight: '80vh', paddingTop: '140px', paddingBottom: '60px', position: 'relative', overflow: 'hidden' }}>
+      <section className="mobile-pt" style={{ minHeight: '85vh', paddingTop: '160px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
 
         {/* Cinematic Vault Video Background */}
         <video
@@ -174,187 +180,287 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
           <source src="/vault-hero.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark overlay for text readability (35% opacity) */}
+        {/* Dark overlay - institutional darkness */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to bottom, rgba(11,14,17,0.35) 0%, rgba(11,14,17,0.65) 100%)',
+          background: 'linear-gradient(to bottom, rgba(11,14,17,0.5) 0%, rgba(11,14,17,0.75) 100%)',
           pointerEvents: 'none',
           zIndex: 1
         }} />
 
-        {/* Gold gradient accent overlay */}
+        {/* Subtle gold accent */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 70% 30%, rgba(201,162,77,0.06) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 30% 40%, rgba(201,162,77,0.04) 0%, transparent 60%)',
           pointerEvents: 'none',
           zIndex: 2
         }} />
 
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10 }}>
-          <div className="hero-grid" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '80px', alignItems: 'center' }}>
+        {/* Hero Content - LEFT ALIGNED, MINIMAL */}
+        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10, height: '100%' }}>
+          <AnimatedSection style={{ textAlign, maxWidth: '720px', paddingTop: '60px' }}>
 
-            {/* Hero Text Content */}
-            <AnimatedSection style={{ textAlign, maxWidth: '680px' }}>
+            {/* H1 - Main Slogan */}
+            <FadeInDiv delay={0.1}>
+              <h1 className="hero-title" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '64px',
+                fontWeight: 600,
+                lineHeight: 1.02,
+                margin: '0 0 32px 0',
+                letterSpacing: '-0.025em',
+                color: 'var(--text-primary)'
+              }}>
+                {t.heroSlogan1} <span className="text-gold-gradient">{t.heroSloganHighlight}</span> {t.heroSlogan2}
+              </h1>
+            </FadeInDiv>
 
-              {/* H1 - Main Slogan - INSTITUTIONAL */}
-              <FadeInDiv delay={0.1}>
-                <h1 className="hero-title" style={{
-                  fontFamily: "'Inter', sans-serif",
-                  fontSize: '58px',
-                  fontWeight: 600,
-                  lineHeight: 1.05,
-                  margin: '0 0 28px 0',
-                  letterSpacing: '-0.02em',
-                  color: 'var(--text-primary)'
-                }}>
-                  {t.heroSlogan1} <span className="text-gold-gradient">{t.heroSloganHighlight}</span> {t.heroSlogan2}
-                </h1>
-              </FadeInDiv>
+            {/* Sub-headline */}
+            <FadeInDiv delay={0.25}>
+              <p className="hero-subtitle" style={{
+                fontSize: '19px',
+                color: 'var(--text-secondary)',
+                lineHeight: 1.7,
+                margin: '0 0 48px 0',
+                maxWidth: '480px',
+                fontWeight: 400
+              }}>
+                {t.heroSubline1}<br />
+                {t.heroSubline2}
+              </p>
+            </FadeInDiv>
 
-              {/* Sub-headline - Institutional messaging */}
-              <FadeInDiv delay={0.2}>
-                <p className="hero-subtitle" style={{
-                  fontSize: '20px',
-                  color: 'var(--text-secondary)',
-                  lineHeight: 1.7,
-                  margin: '0 0 36px 0',
-                  maxWidth: '520px'
-                }}>
-                  {t.heroSubline1}<br />
-                  {t.heroSubline2}
-                </p>
-              </FadeInDiv>
-
-              {/* CTA Buttons - Institutional language */}
-              <FadeInDiv delay={0.3}>
-                <div className="cta-buttons" style={{
-                  display: 'flex',
-                  flexDirection: flexDirection as 'row' | 'row-reverse',
-                  gap: '14px',
-                  marginBottom: '40px'
-                }}>
-                  <motion.a
-                    href="https://wallet.auxite.io"
-                    className="btn-primary"
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    whileTap={{ scale: 0.98 }}
-                    style={{ textDecoration: 'none', padding: '16px 32px', fontSize: '15px', fontWeight: 600 }}
-                  >
-                    {t.getStarted}
-                    <svg style={{ width: '16px', height: '16px', transform: isRTL ? 'rotate(180deg)' : 'none' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </motion.a>
-                  <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                    <Link href="/trust-center" className="btn-secondary" style={{ textDecoration: 'none', padding: '16px 28px', fontSize: '15px' }}>
-                      {t.viewTrustCenter}
-                    </Link>
-                  </motion.div>
-                </div>
-              </FadeInDiv>
-
-              {/* Trust Indicators - Subtle */}
-              <FadeInDiv delay={0.4}>
-                <div className="hide-mobile" style={{ display: 'flex', flexDirection: flexDirection as 'row' | 'row-reverse', gap: '28px', flexWrap: 'wrap' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg style={{ width: '16px', height: '16px', color: 'var(--state-success)' }} fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '13px' }}>{t.lbmaVaults}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg style={{ width: '16px', height: '16px', color: 'var(--state-success)' }} fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span style={{ color: 'var(--text-secondary)', fontSize: '13px' }}>{t.audited}</span>
-                  </div>
-                </div>
-              </FadeInDiv>
-            </AnimatedSection>
-
-            {/* Metal Cards - GOLD FIRST (Gateway Asset) */}
-            <motion.div
-              initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="grid-2"
-              style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px' }}
-            >
-              {metals.map((metal, i) => (
-                <motion.div
-                  key={metal.symbol}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
-                  whileHover={{ y: -6, scale: 1.02 }}
-                  style={i === 0 ? { gridColumn: 'span 2' } : {}} // Gold spans full width
+            {/* CTA Buttons - Institutional Language */}
+            <FadeInDiv delay={0.4}>
+              <div className="cta-buttons" style={{
+                display: 'flex',
+                flexDirection: flexDirection as 'row' | 'row-reverse',
+                gap: '16px',
+              }}>
+                <motion.a
+                  href="https://wallet.auxite.io"
+                  className="btn-primary"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  style={{ textDecoration: 'none', padding: '18px 36px', fontSize: '15px', fontWeight: 600 }}
                 >
-                  <Link href={metal.href} className="card" style={{
-                    background: i === 0 ? 'linear-gradient(135deg, rgba(201,162,77,0.1) 0%, var(--bg-secondary) 100%)' : 'var(--bg-secondary)',
-                    backdropFilter: 'blur(20px)',
-                    border: i === 0 ? '1px solid rgba(201,162,77,0.3)' : '1px solid var(--line)',
-                    padding: i === 0 ? '32px' : '24px',
-                    borderRadius: '16px',
-                    textDecoration: 'none',
-                    display: 'flex',
-                    flexDirection: i === 0 ? 'row' : 'column',
-                    alignItems: 'center',
-                    textAlign: 'center',
-                    gap: i === 0 ? '20px' : '0',
-                    justifyContent: i === 0 ? 'center' : 'flex-start',
-                  }}>
-                    <motion.div animate={{ y: [0, -5, 0] }} transition={{ duration: 3, repeat: Infinity, delay: i * 0.2 }}>
-                      <Image src={metal.icon} alt={metal.name} width={i === 0 ? 72 : 56} height={i === 0 ? 72 : 56} style={{ marginBottom: i === 0 ? 0 : '12px' }} />
-                    </motion.div>
-                    <div>
-                      <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: i === 0 ? '22px' : '18px', fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 2px 0' }}>{metal.symbol}</h3>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '13px', margin: 0 }}>{metal.name}</p>
-                      {i === 0 && (
-                        <p style={{ color: 'var(--aux-gold)', fontSize: '12px', marginTop: '8px', fontWeight: 500 }}>Gateway Asset</p>
-                      )}
-                    </div>
+                  {t.getStarted}
+                  <svg style={{ width: '16px', height: '16px', marginLeft: '8px', transform: isRTL ? 'rotate(180deg)' : 'none' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </motion.a>
+                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                  <Link href="/trust-center" className="btn-secondary" style={{ textDecoration: 'none', padding: '18px 32px', fontSize: '15px' }}>
+                    {t.viewTrustCenter}
                   </Link>
                 </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 2 — TRUST BAR (Conversion Machine - Silent but deadly)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '28px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
-          <div className="trust-bar-scroll" style={{ display: 'flex', justifyContent: 'center', gap: '48px', flexWrap: 'wrap' }}>
-            {trustBarItems.map((item, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                <svg style={{ width: '18px', height: '18px', color: 'var(--state-success)' }} fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
-                <span style={{ color: 'var(--text-secondary)', fontSize: '14px', fontWeight: 500 }}>{item}</span>
               </div>
-            ))}
-          </div>
+            </FadeInDiv>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 3 — HOW IT WORKS DIAGRAM (Whale Question: Metal gerçekten var mı?)
+          BLOCK 2 — STRUCTURAL TRUST (Institutional-Grade Infrastructure)
+          Whale trigger: Bankruptcy Remote
       ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '100px 0', background: 'var(--bg-primary)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '60px' }}>
+      <section style={{ padding: '120px 0', background: 'var(--bg-primary)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px' }}>
+          <AnimatedSection style={{ textAlign: 'center', marginBottom: '72px' }}>
             <FadeInDiv>
-              <h2 className="section-title" style={{ fontFamily: "'Inter', sans-serif", fontSize: '40px', fontWeight: 700, color: 'var(--text-primary)' }}>
-                {t.howItWorks} <span className="text-gold-gradient">{t.howItWorksHighlight}</span>
+              <p style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}>
+                Structural Trust
+              </p>
+              <h2 className="section-title" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '42px',
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                letterSpacing: '-0.02em'
+              }}>
+                Institutional-Grade Infrastructure
               </h2>
             </FadeInDiv>
           </AnimatedSection>
 
-          {/* Visual Flow Diagram */}
+          {/* Trust Grid - 4 pillars */}
+          <AnimatedSection className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
+            {trustItems.map((item, i) => (
+              <FadeInDiv key={item.label} delay={i * 0.1}>
+                <motion.div
+                  whileHover={{ borderColor: 'rgba(201,162,77,0.4)' }}
+                  style={{
+                    background: 'var(--bg-secondary)',
+                    border: '1px solid var(--line)',
+                    borderRadius: '16px',
+                    padding: '40px 24px',
+                    textAlign: 'center',
+                    transition: 'border-color 0.3s ease',
+                    height: '100%'
+                  }}
+                >
+                  <div style={{
+                    width: '48px',
+                    height: '48px',
+                    background: 'rgba(201,162,77,0.1)',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '0 auto 20px',
+                    color: 'var(--aux-gold)',
+                    fontSize: '20px'
+                  }}>
+                    <svg style={{ width: '24px', height: '24px' }} fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h3 style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '16px',
+                    fontWeight: 600,
+                    color: 'var(--text-primary)',
+                    margin: 0,
+                    lineHeight: 1.4
+                  }}>
+                    {item.label}
+                  </h3>
+                </motion.div>
+              </FadeInDiv>
+            ))}
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          BLOCK 3 — STRUCTURE DIAGRAM (Game Changer - Counterparty Risk ↓)
+          Foundation → Operator → Vault → Metals
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '140px 0', background: 'var(--bg-secondary)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
+          <AnimatedSection style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <FadeInDiv>
+              <p style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}>
+                Corporate Structure
+              </p>
+              <h2 className="section-title" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '42px',
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                marginBottom: '16px',
+                letterSpacing: '-0.02em'
+              }}>
+                {t.structureTitle || 'Institutional'} <span className="text-gold-gradient">{t.structureTitleHighlight || 'Architecture'}</span>
+              </h2>
+              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '500px', margin: '0 auto' }}>
+                {t.structureSubtitle || 'Designed for structural integrity and risk separation.'}
+              </p>
+            </FadeInDiv>
+          </AnimatedSection>
+
+          {/* Vertical Structure Diagram */}
+          <AnimatedSection>
+            <FadeInDiv delay={0.2}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
+                {structureItems.map((item, i) => (
+                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: i * 0.15, duration: 0.6 }}
+                      style={{
+                        textAlign: 'center',
+                        padding: '28px 56px',
+                        background: i === 0
+                          ? 'linear-gradient(135deg, rgba(201,162,77,0.12) 0%, var(--bg-tertiary) 100%)'
+                          : 'var(--bg-tertiary)',
+                        border: i === 0
+                          ? '1px solid rgba(201,162,77,0.35)'
+                          : '1px solid var(--line)',
+                        borderRadius: '14px',
+                        minWidth: '340px',
+                        maxWidth: '400px'
+                      }}
+                    >
+                      <p style={{
+                        color: 'var(--text-primary)',
+                        fontSize: '17px',
+                        fontWeight: 600,
+                        margin: '0 0 4px 0'
+                      }}>{item.title}</p>
+                      <p style={{
+                        color: 'var(--text-muted)',
+                        fontSize: '13px',
+                        margin: 0
+                      }}>{item.desc}</p>
+                    </motion.div>
+                    {i < structureItems.length - 1 && (
+                      <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: i * 0.15 + 0.1 }}
+                      >
+                        <svg style={{ width: '20px', height: '40px', color: 'var(--aux-gold)', opacity: 0.5, margin: '4px 0' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                      </motion.div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          BLOCK 4 — CAPITAL PROTECTION LIFECYCLE
+          Acquire → Allocate → Store → Verify → Redeem
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '140px 0', background: 'var(--bg-primary)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+          <AnimatedSection style={{ textAlign: 'center', marginBottom: '80px' }}>
+            <FadeInDiv>
+              <p style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}>
+                How It Works
+              </p>
+              <h2 className="section-title" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '42px',
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                letterSpacing: '-0.02em'
+              }}>
+                Capital Protection <span className="text-gold-gradient">Lifecycle</span>
+              </h2>
+            </FadeInDiv>
+          </AnimatedSection>
+
+          {/* Horizontal Flow */}
           <AnimatedSection>
             <FadeInDiv delay={0.2}>
               <div style={{
@@ -363,106 +469,38 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                 alignItems: 'center',
                 gap: '0',
                 flexWrap: 'wrap',
-                padding: '40px 0'
+                padding: '20px 0'
               }}>
-                {diagramSteps.map((step, i) => (
+                {lifecycleSteps.map((step, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
                     <motion.div
-                      initial={{ opacity: 0, scale: 0.8 }}
+                      initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.1 }}
+                      transition={{ delay: i * 0.12, duration: 0.5 }}
                       style={{
                         textAlign: 'center',
-                        padding: '24px 32px',
+                        padding: '32px 28px',
                         background: 'var(--bg-secondary)',
                         border: '1px solid var(--line)',
-                        borderRadius: '12px',
-                        minWidth: '140px'
+                        borderRadius: '14px',
+                        minWidth: '160px'
                       }}
                     >
                       <p style={{
                         color: 'var(--aux-gold)',
-                        fontSize: '16px',
+                        fontSize: '18px',
                         fontWeight: 600,
-                        margin: '0 0 4px 0'
+                        margin: '0 0 6px 0'
                       }}>{step.title}</p>
-                      <p style={{
-                        color: 'var(--text-muted)',
-                        fontSize: '12px',
-                        margin: 0
-                      }}>{step.desc}</p>
-                    </motion.div>
-                    {i < diagramSteps.length - 1 && (
-                      <svg style={{ width: '40px', height: '20px', color: 'var(--aux-gold)', opacity: 0.5, margin: '0 -8px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </FadeInDiv>
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 4 — STRUCTURAL TRUST (Institutional Architecture Diagram)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '100px 0', background: 'linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <FadeInDiv>
-              <h2 className="section-title" style={{ fontFamily: "'Inter', sans-serif", fontSize: '40px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '16px' }}>
-                {t.structureTitle || 'Institutional'} <span className="text-gold-gradient">{t.structureTitleHighlight || 'Architecture'}</span>
-              </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '17px' }}>{t.structureSubtitle || 'Designed for structural integrity and risk separation.'}</p>
-            </FadeInDiv>
-          </AnimatedSection>
-
-          {/* Structure Diagram */}
-          <AnimatedSection>
-            <FadeInDiv delay={0.2}>
-              <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                gap: '0'
-              }}>
-                {[
-                  { title: t.structure?.foundation || 'Auxite Foundation', desc: t.structure?.foundationDesc || 'Governance & Oversight' },
-                  { title: t.structure?.operator || 'Aurum Ledger Ltd', desc: t.structure?.operatorDesc || 'Operator — Hong Kong' },
-                  { title: t.structure?.metals || 'Precious Metals Entities', desc: t.structure?.metalsDesc || 'Asset Management' },
-                  { title: t.structure?.vaults || 'Independent Vault Network', desc: t.structure?.vaultsDesc || 'Segregated Custody' },
-                ].map((item, i) => (
-                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.15 }}
-                      style={{
-                        textAlign: 'center',
-                        padding: '20px 48px',
-                        background: i === 0 ? 'linear-gradient(135deg, rgba(201,162,77,0.15) 0%, var(--bg-secondary) 100%)' : 'var(--bg-secondary)',
-                        border: i === 0 ? '1px solid rgba(201,162,77,0.4)' : '1px solid var(--line)',
-                        borderRadius: '12px',
-                        minWidth: '320px'
-                      }}
-                    >
-                      <p style={{
-                        color: 'var(--text-primary)',
-                        fontSize: '16px',
-                        fontWeight: 600,
-                        margin: '0 0 2px 0'
-                      }}>{item.title}</p>
                       <p style={{
                         color: 'var(--text-muted)',
                         fontSize: '13px',
                         margin: 0
-                      }}>{item.desc}</p>
+                      }}>{step.desc}</p>
                     </motion.div>
-                    {i < 3 && (
-                      <svg style={{ width: '20px', height: '32px', color: 'var(--aux-gold)', opacity: 0.4, margin: '-4px 0' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    {i < lifecycleSteps.length - 1 && (
+                      <svg className="hide-mobile" style={{ width: '48px', height: '20px', color: 'var(--aux-gold)', opacity: 0.4, margin: '0 -12px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                       </svg>
                     )}
                   </div>
@@ -474,31 +512,100 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 5 — FEATURES (Why Auxite - Trust focused)
+          BLOCK 5 — INVESTMENT-GRADE METALS
+          Not fintech product cards - institutional assets
       ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '100px 0', background: 'var(--bg-primary)', position: 'relative' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '64px' }}>
+      <section style={{ padding: '140px 0', background: 'var(--bg-secondary)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px' }}>
+          <AnimatedSection style={{ textAlign: 'center', marginBottom: '72px' }}>
             <FadeInDiv>
-              <h2 className="section-title" style={{ fontFamily: "'Inter', sans-serif", fontSize: '40px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '16px' }}>
-                {t.whyAuxite} <span className="text-gold-gradient">{t.whyAuxiteHighlight}</span>?
+              <p style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}>
+                Available Assets
+              </p>
+              <h2 className="section-title" style={{
+                fontFamily: "'Inter', sans-serif",
+                fontSize: '42px',
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                marginBottom: '16px',
+                letterSpacing: '-0.02em'
+              }}>
+                {t.metalsTitle || 'Investment-Grade'} <span className="text-gold-gradient">{t.metalsTitleHighlight || 'Metals'}</span>
               </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '500px', margin: '0 auto' }}>{t.whySubtitle}</p>
+              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '450px', margin: '0 auto' }}>
+                {t.metalsSubtitle || 'LBMA-aligned sourcing. Fully allocated. Redeemable.'}
+              </p>
             </FadeInDiv>
           </AnimatedSection>
 
+          {/* Metal Cards - Institutional Style */}
           <AnimatedSection className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
-            {features.map((feature, i) => (
-              <FadeInDiv key={feature.title} delay={i * 0.1}>
-                <motion.div
-                  whileHover={{ y: -4, borderColor: 'rgba(201,162,77,0.3)' }}
-                  className="card"
-                  style={{ background: 'var(--bg-secondary)', border: '1px solid var(--line)', padding: '32px 24px', borderRadius: '16px', height: '100%', transition: 'border-color 0.2s ease' }}
-                >
-                  <div style={{ fontSize: '36px', marginBottom: '20px' }}>{feature.icon}</div>
-                  <h3 style={{ fontFamily: "'Inter', sans-serif", fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '10px' }}>{feature.title}</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.6, margin: 0 }}>{feature.description}</p>
-                </motion.div>
+            {metals.map((metal, i) => (
+              <FadeInDiv key={metal.symbol} delay={i * 0.1}>
+                <Link href={metal.href} style={{ textDecoration: 'none' }}>
+                  <motion.div
+                    whileHover={{ y: -8, borderColor: 'rgba(201,162,77,0.4)' }}
+                    style={{
+                      background: 'var(--bg-tertiary)',
+                      border: '1px solid var(--line)',
+                      borderRadius: '16px',
+                      padding: '40px 24px',
+                      textAlign: 'center',
+                      transition: 'border-color 0.3s ease',
+                      height: '100%'
+                    }}
+                  >
+                    <Image
+                      src={metal.icon}
+                      alt={metal.name}
+                      width={64}
+                      height={64}
+                      style={{ marginBottom: '20px' }}
+                    />
+                    <h3 style={{
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: '20px',
+                      fontWeight: 600,
+                      color: 'var(--text-primary)',
+                      margin: '0 0 4px 0'
+                    }}>
+                      {metal.symbol}
+                    </h3>
+                    <p style={{
+                      color: 'var(--text-muted)',
+                      fontSize: '14px',
+                      margin: '0 0 16px 0'
+                    }}>
+                      {metal.name}
+                    </p>
+                    {/* Institutional badges */}
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '6px',
+                      alignItems: 'center',
+                      borderTop: '1px solid var(--line)',
+                      paddingTop: '16px',
+                      marginTop: '8px'
+                    }}>
+                      <span style={{
+                        color: 'var(--text-muted)',
+                        fontSize: '11px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.05em'
+                      }}>
+                        Fully Allocated
+                      </span>
+                    </div>
+                  </motion.div>
+                </Link>
               </FadeInDiv>
             ))}
           </AnimatedSection>
@@ -506,15 +613,47 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 6 — LONG TERM SIGNAL (Whale Filter)
+          BLOCK 6 — PRIVATE CLIENT SERVICES
+          Instant Prestige Signal
       ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '60px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+      <section style={{ padding: '100px 0', background: 'var(--bg-primary)', borderTop: '1px solid var(--line)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <p style={{
+                color: 'var(--aux-gold)',
+                fontSize: '13px',
+                fontWeight: 600,
+                letterSpacing: '0.15em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}>
+                {t.privateClientTitle || 'Private Client Services'}
+              </p>
+              <p style={{
+                color: 'var(--text-secondary)',
+                fontSize: '18px',
+                margin: 0,
+                lineHeight: 1.7
+              }}>
+                {t.privateClientSubtitle || 'For allocations above $100,000.'}
+              </p>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════════════════════════════
+          BLOCK 7 — LONG TERM SIGNAL (Whale Filter)
+      ═══════════════════════════════════════════════════════════════════ */}
+      <section style={{ padding: '80px 0', background: 'var(--bg-secondary)', borderBottom: '1px solid var(--line)' }}>
+        <div className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <p style={{
             color: 'var(--text-muted)',
-            fontSize: '16px',
+            fontSize: '17px',
             fontStyle: 'italic',
-            margin: 0
+            margin: 0,
+            lineHeight: 1.8
           }}>
             {t.longTermSignal || 'Designed for long-term holders — not short-term speculation.'}
           </p>
@@ -522,20 +661,20 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
       </section>
 
       {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 7 — CTA Section (Institutional language)
+          BLOCK 8 — CTA Section (Institutional - No sales pressure)
       ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '120px 0', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ padding: '160px 0', position: 'relative', overflow: 'hidden', background: 'var(--bg-primary)' }}>
         <motion.div
-          animate={{ scale: [1, 1.1, 1], opacity: [0.15, 0.25, 0.15] }}
-          transition={{ duration: 8, repeat: Infinity }}
+          animate={{ scale: [1, 1.05, 1], opacity: [0.1, 0.15, 0.1] }}
+          transition={{ duration: 10, repeat: Infinity }}
           style={{
             position: 'absolute',
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '600px',
-            height: '600px',
-            background: 'radial-gradient(circle, rgba(201,162,77,0.2) 0%, transparent 70%)',
+            width: '700px',
+            height: '700px',
+            background: 'radial-gradient(circle, rgba(201,162,77,0.15) 0%, transparent 70%)',
             borderRadius: '50%',
             pointerEvents: 'none'
           }}
@@ -543,27 +682,40 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
 
         <AnimatedSection className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <FadeInDiv>
-            <h2 className="section-title" style={{ fontFamily: "'Inter', sans-serif", fontSize: '42px', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '20px' }}>
+            <h2 className="section-title" style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '44px',
+              fontWeight: 600,
+              color: 'var(--text-primary)',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em'
+            }}>
               {t.ctaTitle} <span className="text-gold-gradient">{t.ctaTitleHighlight}</span>?
             </h2>
           </FadeInDiv>
-          <FadeInDiv delay={0.1}>
-            <p style={{ color: 'var(--text-muted)', fontSize: '17px', marginBottom: '40px', lineHeight: 1.7 }}>{t.ctaSubtitle}</p>
+          <FadeInDiv delay={0.15}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '18px', marginBottom: '48px', lineHeight: 1.7 }}>
+              {t.ctaSubtitle}
+            </p>
           </FadeInDiv>
-          <FadeInDiv delay={0.2}>
-            <div className="cta-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '14px' }}>
+          <FadeInDiv delay={0.3}>
+            <div className="cta-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '16px' }}>
               <motion.a
                 href="https://wallet.auxite.io"
                 className="btn-primary"
-                whileHover={{ scale: 1.02, y: -2 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                style={{ textDecoration: 'none', padding: '18px 36px', fontSize: '15px', fontWeight: 600 }}
+                style={{ textDecoration: 'none', padding: '20px 40px', fontSize: '15px', fontWeight: 600 }}
               >
                 {t.startTrading}
-                <svg style={{ width: '18px', height: '18px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                <svg style={{ width: '18px', height: '18px', marginLeft: '8px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </motion.a>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Link href="/whitepaper" className="btn-secondary" style={{ textDecoration: 'none', padding: '18px 32px', fontSize: '15px' }}>{t.readWhitepaper}</Link>
+                <Link href="/whitepaper" className="btn-secondary" style={{ textDecoration: 'none', padding: '20px 36px', fontSize: '15px' }}>
+                  {t.readWhitepaper}
+                </Link>
               </motion.div>
             </div>
           </FadeInDiv>
