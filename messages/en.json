@@ -24,97 +24,87 @@
     "limits": "Real transactions with temporary limits"
   },
   "home": {
-    "badge": "Institutional Grade • Physically Allocated",
-    "title": "Own Real",
-    "titleHighlight": "Metals",
-    "titleEnd": "On-Chain",
-    "subtitle": "Fully allocated precious metals. Independently stored. Designed for long-term investors.",
-    "heroSlogan1": "Engineered for",
-    "heroSloganHighlight": "Capital",
-    "heroSlogan2": "Preservation",
-    "heroSubline1": "Fully allocated precious metals.",
-    "heroSubline2": "Independently stored. Designed for long-term investors.",
-    "getStarted": "Access Platform",
-    "viewTrustCenter": "Explore Trust Center",
-    "trustCenter": "Trust Center",
-    "lbmaVaults": "Independent Custody",
-    "audited": "Audited Framework",
-    "trustBar": {
-      "fullyAllocated": "Fully Allocated",
-      "independentCustody": "Independent Custody",
-      "auditedFramework": "Audited Framework",
-      "redeemable": "Redeemable",
-      "bankruptcyRemote": "Bankruptcy Remote"
-    },
-    "longTermSignal": "Designed for long-term holders — not short-term speculation.",
     "goldName": "Gold",
     "silverName": "Silver",
     "platinumName": "Platinum",
     "palladiumName": "Palladium",
-    "stats": {
-      "onChain": "On-Chain Transparency",
-      "backing": "Physical Backing",
-      "trading": "Trading Available",
-      "metals": "Precious Metals"
+    "hero": {
+      "headline": "Institutional Access to Fully Allocated Precious Metals",
+      "line1": "Secure ownership.",
+      "line2": "Independent custody.",
+      "line3": "Institutional execution.",
+      "ctaPrimary": "Enter Platform",
+      "ctaSecondary": "Speak to a Specialist"
     },
-    "whyAuxite": "Why",
-    "whyAuxiteHighlight": "Auxite",
-    "whySubtitle": "The most transparent way to own precious metals.",
-    "features": {
-      "onChain": "Fully On-Chain",
-      "onChainDesc": "Every transaction recorded on blockchain. No hidden ledgers.",
-      "physical": "Physically Allocated",
-      "physicalDesc": "Each token = 1 gram real metal in LBMA-approved vaults.",
-      "stake": "Yield Access",
-      "stakeDesc": "Deploy allocated metals into institutional yield strategies.",
-      "transparent": "Transparent Reserves",
-      "transparentDesc": "Real-time proof of reserves. Verify anytime."
+    "trustBadges": {
+      "fullyAllocated": "Fully Allocated",
+      "segregated": "Segregated",
+      "bankruptcyRemote": "Bankruptcy Remote",
+      "independentlyCustodied": "Independently Custodied"
     },
-    "howItWorks": "How It",
-    "howItWorksHighlight": "Works",
-    "howItWorksDiagram": {
-      "step1": "Acquire",
-      "step1Desc": "Purchase allocated metals",
-      "step2": "Allocated",
-      "step2Desc": "Metal secured in vault",
-      "step3": "Stored",
-      "step3Desc": "Independent custody",
-      "step4": "Accessible",
-      "step4Desc": "Digitally verifiable",
-      "step5": "Redeemable",
-      "step5Desc": "Physical delivery available"
+    "whatIsAuxite": {
+      "headline": "A Modern Infrastructure for Precious Metals Ownership",
+      "text": "Auxite provides institutional investors with direct access to fully allocated physical precious metals, secured within independent custody structures and executed through global liquidity partners."
     },
-    "steps": {
-      "buy": "Acquire Metals",
-      "buyDesc": "Purchase allocated metals. 1 token = 1 gram physical metal.",
-      "verify": "Verify Holdings",
-      "verifyDesc": "Check real-time proof of reserves in Trust Center.",
-      "stake": "Access Yield",
-      "stakeDesc": "Deploy allocated metals into institutional yield programs. Counterparties vetted."
+    "howItWorks": {
+      "headline": "How the Platform Works",
+      "fund": "Fund",
+      "fundDesc": "Move capital via bank wire or approved digital rails.",
+      "allocate": "Allocate",
+      "allocateDesc": "Acquire fully allocated metal at institutional execution prices.",
+      "store": "Store",
+      "storeDesc": "Assets secured within independent, bankruptcy-remote custody structures.",
+      "redeem": "Redeem",
+      "redeemDesc": "Take physical delivery or liquidate seamlessly."
     },
-    "structureTitle": "Institutional",
-    "structureTitleHighlight": "Architecture",
-    "structureSubtitle": "Designed for structural integrity and risk separation.",
-    "structure": {
-      "foundation": "Auxite Foundation",
-      "foundationDesc": "Governance & Oversight",
-      "operator": "Aurum Ledger Ltd",
-      "operatorDesc": "Operator — Hong Kong",
-      "metals": "Precious Metals Entities",
-      "metalsDesc": "Asset Management",
-      "vaults": "Independent Vault Network",
-      "vaultsDesc": "Segregated Custody"
+    "metals": {
+      "headline": "Available Metals",
+      "subtitle": "Institutional-grade access to globally recognized monetary metals.",
+      "lbma": "LBMA / LPPM Sourced",
+      "allocated": "Allocated & Segregated",
+      "execution": "Institutional Execution"
     },
-    "metalsTitle": "Investment-Grade",
-    "metalsTitleHighlight": "Metals",
-    "metalsSubtitle": "LBMA-aligned sourcing. Fully allocated. Redeemable.",
-    "privateClientTitle": "Private Client Desk",
-    "privateClientSubtitle": "Available for allocations above $100,000.",
-    "ctaTitle": "Ready to",
-    "ctaTitleHighlight": "Protect Capital",
-    "ctaSubtitle": "Join institutional investors who trust Auxite for secure precious metal custody.",
-    "startTrading": "Access Platform",
-    "readWhitepaper": "Read Whitepaper"
+    "custody": {
+      "headline": "Independent Custody. Structural Protection.",
+      "bullet1": "Client assets are never commingled.",
+      "bullet2": "Off-balance sheet custody structures.",
+      "bullet3": "Legal segregation of all holdings.",
+      "bullet4": "Multi-jurisdiction vaulting network.",
+      "cta": "Learn About Our Custody Framework"
+    },
+    "execution": {
+      "headline": "Institutional Liquidity & Execution",
+      "text": "Auxite sources liquidity through global bullion markets and OTC counterparties, enabling efficient pricing across varying ticket sizes."
+    },
+    "yield": {
+      "headline": "Optional Yield Programs on Allocated Metals",
+      "text": "Clients may elect to deploy eligible holdings into structured institutional programs designed to enhance portfolio efficiency."
+    },
+    "whoWeServe": {
+      "headline": "Built for Institutional Capital",
+      "familyOffices": "Family Offices",
+      "familyOfficesDesc": "Multi-generational wealth preservation through physical precious metals.",
+      "assetManagers": "Asset Managers",
+      "assetManagersDesc": "Diversified portfolio allocation with institutional-grade custody.",
+      "corporates": "Corporates",
+      "corporatesDesc": "Corporate treasury solutions with fully allocated metal reserves.",
+      "professionalInvestors": "Professional Investors",
+      "professionalInvestorsDesc": "Direct market access with institutional execution and settlement."
+    },
+    "trustPreview": {
+      "headline": "Trust & Transparency",
+      "audit": "Audit Reports",
+      "reserves": "Reserve Verification",
+      "custodyItem": "Custody Framework",
+      "legal": "Legal Structure",
+      "cta": "Explore Trust Center"
+    },
+    "cta": {
+      "headline": "Own Precious Metals the Institutional Way.",
+      "ctaPrimary": "Open Vault",
+      "ctaSecondary": "Contact Institutional Desk",
+      "disclaimer": "Auxite is not a trading venue. It is a custody-first infrastructure for precious metals ownership."
+    }
   },
   "metals": {
     "badge": "1 Token = 1 Gram Physical Metal",

@@ -24,59 +24,87 @@
     "limits": "Geçici limitlerle gerçek işlemler"
   },
   "home": {
-    "heroSlogan1": "Geleneğin",
-    "heroSloganHighlight": "Dijital",
-    "heroSlogan2": "Formu",
-    "heroSubline1": "Fiziksel Olarak Tahsis Edilmiş Kıymetli Madenler.",
-    "heroSubline2": "Tamamen Zincir Üstünde.",
-    "getStarted": "Başla",
-    "viewTrustCenter": "Güven Merkezi",
-    "badge": "On-Chain • Fiziksel Destekli",
-    "title": "Gerçek",
-    "titleHighlight": "Metal",
-    "titleEnd": "Sahibi Ol",
-    "subtitle": "Fiziksel olarak tahsis edilmiş altın, gümüş, platin ve paladyumu alın, satın ve getiri programlarına dahil edin.",
-    "trustCenter": "Güven Merkezi",
-    "lbmaVaults": "LBMA Kasaları",
-    "audited": "Denetlenmiş",
     "goldName": "Altın",
     "silverName": "Gümüş",
     "platinumName": "Platin",
     "palladiumName": "Paladyum",
-    "stats": {
-      "onChain": "On-Chain Şeffaflık",
-      "backing": "Fiziksel Destek",
-      "trading": "İşlem Yapılabilir",
-      "metals": "Değerli Metal"
+    "hero": {
+      "headline": "Tamamen Tahsis Edilmiş Kıymetli Madenlere Kurumsal Erişim",
+      "line1": "Güvenli sahiplik.",
+      "line2": "Bağımsız saklama.",
+      "line3": "Kurumsal yürütme.",
+      "ctaPrimary": "Platforma Giriş",
+      "ctaSecondary": "Uzmanla Görüşün"
     },
-    "whyAuxite": "Neden",
-    "whyAuxiteHighlight": "Auxite",
-    "whySubtitle": "Değerli metal sahipliğinin en şeffaf yolu.",
-    "features": {
-      "onChain": "Tamamen On-Chain",
-      "onChainDesc": "Her işlem blockchain'de kayıtlı. Gizli defter yok.",
-      "physical": "Fiziksel Ayrım",
-      "physicalDesc": "Her token = LBMA kasalarında 1 gram gerçek metal.",
-      "stake": "Getiri Erişimi",
-      "stakeDesc": "Tahsis edilmiş metalleri kurumsal getiri stratejilerine dahil edin.",
-      "transparent": "Şeffaf Rezervler",
-      "transparentDesc": "Gerçek zamanlı rezerv kanıtı. İstediğin zaman doğrula."
+    "trustBadges": {
+      "fullyAllocated": "Tamamen Tahsis",
+      "segregated": "Ayrılmış",
+      "bankruptcyRemote": "İflas Korumalı",
+      "independentlyCustodied": "Bağımsız Saklama"
     },
-    "howItWorks": "Nasıl",
-    "howItWorksHighlight": "Çalışır",
-    "steps": {
-      "buy": "Token Al",
-      "buyDesc": "Kripto ile tokenize metal satın al. 1 token = 1 gram.",
-      "verify": "Varlıkları Doğrula",
-      "verifyDesc": "Güven Merkezi'nde gerçek zamanlı rezerv kanıtını kontrol et.",
-      "stake": "Getiri Erişimi",
-      "stakeDesc": "Tahsis edilmiş metalleri kurumsal getiri programlarına dahil edin. Karşı taraflar denetlenmiştir."
+    "whatIsAuxite": {
+      "headline": "Kıymetli Maden Sahipliği İçin Modern Bir Altyapı",
+      "text": "Auxite, kurumsal yatırımcılara tamamen tahsis edilmiş fiziksel kıymetli madenlere doğrudan erişim sağlar — bağımsız saklama yapıları içinde güvence altına alınır ve küresel likidite ortakları aracılığıyla yürütülür."
     },
-    "ctaTitle": "Gerçek Metal",
-    "ctaTitleHighlight": "Sahibi Olmaya",
-    "ctaSubtitle": "Şeffaf değerli metal sahipliği için Auxite'a güvenen binlerce kullanıcıya katıl.",
-    "startTrading": "İşlem Yap",
-    "readWhitepaper": "Whitepaper Oku"
+    "howItWorks": {
+      "headline": "Platform Nasıl Çalışır",
+      "fund": "Fonlama",
+      "fundDesc": "Banka havalesi veya onaylı dijital kanallar ile sermaye aktarın.",
+      "allocate": "Tahsis",
+      "allocateDesc": "Kurumsal yürütme fiyatlarıyla tamamen tahsis edilmiş metal edinin.",
+      "store": "Saklama",
+      "storeDesc": "Varlıklar bağımsız, iflas korumalı saklama yapıları içinde güvence altında.",
+      "redeem": "İade",
+      "redeemDesc": "Fiziksel teslimat alın veya sorunsuzca likide edin."
+    },
+    "metals": {
+      "headline": "Mevcut Metaller",
+      "subtitle": "Küresel olarak tanınan parasal metallere kurumsal düzeyde erişim.",
+      "lbma": "LBMA / LPPM Kaynaklı",
+      "allocated": "Tahsis Edilmiş ve Ayrılmış",
+      "execution": "Kurumsal Yürütme"
+    },
+    "custody": {
+      "headline": "Bağımsız Saklama. Yapısal Koruma.",
+      "bullet1": "Müşteri varlıkları asla karıştırılmaz.",
+      "bullet2": "Bilanço dışı saklama yapıları.",
+      "bullet3": "Tüm varlıkların yasal ayrımı.",
+      "bullet4": "Çoklu yargı alanı kasa ağı.",
+      "cta": "Saklama Çerçevemizi İnceleyin"
+    },
+    "execution": {
+      "headline": "Kurumsal Likidite ve Yürütme",
+      "text": "Auxite, küresel külçe piyasaları ve OTC karşı taraflar aracılığıyla likidite temin eder — çeşitli işlem büyüklüklerinde verimli fiyatlandırma sağlar."
+    },
+    "yield": {
+      "headline": "Tahsis Edilmiş Metallerde Opsiyonel Getiri Programları",
+      "text": "Müşteriler, portföy verimliliğini artırmak üzere tasarlanmış yapılandırılmış kurumsal programlara uygun varlıklarını yönlendirmeyi seçebilir."
+    },
+    "whoWeServe": {
+      "headline": "Kurumsal Sermaye İçin İnşa Edildi",
+      "familyOffices": "Aile Ofisleri",
+      "familyOfficesDesc": "Fiziksel kıymetli madenler aracılığıyla nesiller arası servet koruma.",
+      "assetManagers": "Varlık Yöneticileri",
+      "assetManagersDesc": "Kurumsal düzeyde saklama ile çeşitlendirilmiş portföy tahsisi.",
+      "corporates": "Kurumsal Şirketler",
+      "corporatesDesc": "Tamamen tahsis edilmiş metal rezervleri ile kurumsal hazine çözümleri.",
+      "professionalInvestors": "Profesyonel Yatırımcılar",
+      "professionalInvestorsDesc": "Kurumsal yürütme ve takas ile doğrudan piyasa erişimi."
+    },
+    "trustPreview": {
+      "headline": "Güven ve Şeffaflık",
+      "audit": "Denetim Raporları",
+      "reserves": "Rezerv Doğrulama",
+      "custodyItem": "Saklama Çerçevesi",
+      "legal": "Yasal Yapı",
+      "cta": "Güven Merkezini İnceleyin"
+    },
+    "cta": {
+      "headline": "Kıymetli Madenlere Kurumsal Düzeyde Sahip Olun.",
+      "ctaPrimary": "Kasayı Açın",
+      "ctaSecondary": "Kurumsal Masayla İletişime Geçin",
+      "disclaimer": "Auxite bir ticaret mekanı değildir. Kıymetli maden sahipliği için saklama öncelikli bir altyapıdır."
+    }
   },
   "metals": {
     "badge": "1 Token = 1 Gram Fiziksel Metal",

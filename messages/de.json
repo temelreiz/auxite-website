@@ -24,59 +24,87 @@
     "limits": "Echte Transaktionen mit temporären Limits"
   },
   "home": {
-    "heroSlogan1": "Die",
-    "heroSloganHighlight": "digitale",
-    "heroSlogan2": "Form der Tradition",
-    "heroSubline1": "Physisch allokierte Edelmetalle.",
-    "heroSubline2": "Vollständig on-chain.",
-    "getStarted": "Jetzt starten",
-    "viewTrustCenter": "Transparenzzentrum",
-    "badge": "On-Chain • Physisch gedeckt",
-    "title": "Echte",
-    "titleHighlight": "Metalle",
-    "titleEnd": "besitzen",
-    "subtitle": "Kaufen, verkaufen und staken Sie physisch allokiertes Gold, Silber, Platin und Palladium — vollständig on-chain.",
-    "trustCenter": "Transparenzzentrum",
-    "lbmaVaults": "LBMA-Tresore",
-    "audited": "Geprüft",
     "goldName": "Gold",
     "silverName": "Silber",
     "platinumName": "Platin",
     "palladiumName": "Palladium",
-    "stats": {
-      "onChain": "On-Chain Transparenz",
-      "backing": "Physische Deckung",
-      "trading": "Handel verfügbar",
-      "metals": "Edelmetalle"
+    "hero": {
+      "headline": "Institutioneller Zugang zu vollständig allokierten Edelmetallen",
+      "line1": "Sichere Eigentümerschaft.",
+      "line2": "Unabhängige Verwahrung.",
+      "line3": "Institutionelle Ausführung.",
+      "ctaPrimary": "Plattform betreten",
+      "ctaSecondary": "Mit einem Spezialisten sprechen"
     },
-    "whyAuxite": "Warum",
-    "whyAuxiteHighlight": "Auxite",
-    "whySubtitle": "Der transparenteste Weg, Edelmetalle zu besitzen.",
-    "features": {
-      "onChain": "Vollständig On-Chain",
-      "onChainDesc": "Jede Transaktion auf der Blockchain aufgezeichnet. Keine versteckten Bücher.",
-      "physical": "Physisch Allokiert",
-      "physicalDesc": "Jeder Token = 1 Gramm echtes Metall in LBMA-Tresoren.",
-      "stake": "Rendite-Zugang",
-      "stakeDesc": "Allokierte Metalle in institutionelle Renditestrategien einsetzen.",
-      "transparent": "Transparente Reserven",
-      "transparentDesc": "Echtzeit-Reservennachweis. Jederzeit überprüfbar."
+    "trustBadges": {
+      "fullyAllocated": "Vollständig allokiert",
+      "segregated": "Segregiert",
+      "bankruptcyRemote": "Insolvenzgeschützt",
+      "independentlyCustodied": "Unabhängig verwahrt"
     },
-    "howItWorks": "So",
-    "howItWorksHighlight": "funktioniert's",
-    "steps": {
-      "buy": "Token kaufen",
-      "buyDesc": "Kaufen Sie tokenisierte Metalle mit Krypto. 1 Token = 1 Gramm.",
-      "verify": "Bestände verifizieren",
-      "verifyDesc": "Überprüfen Sie Echtzeit-Reserven im Transparenzzentrum.",
-      "stake": "Rendite-Zugang",
-      "stakeDesc": "Allokierte Metalle in institutionelle Renditeprogramme einsetzen. Kontrahenten geprüft."
+    "whatIsAuxite": {
+      "headline": "Eine moderne Infrastruktur für Edelmetallbesitz",
+      "text": "Auxite bietet institutionellen Investoren direkten Zugang zu vollständig allokierten physischen Edelmetallen — gesichert in unabhängigen Verwahrungsstrukturen und ausgeführt über globale Liquiditätspartner."
     },
-    "ctaTitle": "Bereit, echtes",
-    "ctaTitleHighlight": "Metall zu besitzen",
-    "ctaSubtitle": "Schließen Sie sich Tausenden von Nutzern an, die Auxite für transparenten Edelmetallbesitz vertrauen.",
-    "startTrading": "Handel starten",
-    "readWhitepaper": "Whitepaper lesen"
+    "howItWorks": {
+      "headline": "So funktioniert die Plattform",
+      "fund": "Einzahlen",
+      "fundDesc": "Kapital per Banküberweisung oder genehmigten digitalen Kanälen bewegen.",
+      "allocate": "Allokieren",
+      "allocateDesc": "Vollständig allokiertes Metall zu institutionellen Ausführungspreisen erwerben.",
+      "store": "Verwahren",
+      "storeDesc": "Vermögenswerte in unabhängigen, insolvenzgeschützten Verwahrungsstrukturen gesichert.",
+      "redeem": "Einlösen",
+      "redeemDesc": "Physische Lieferung entgegennehmen oder nahtlos liquidieren."
+    },
+    "metals": {
+      "headline": "Verfügbare Metalle",
+      "subtitle": "Institutioneller Zugang zu weltweit anerkannten monetären Metallen.",
+      "lbma": "LBMA / LPPM Sourced",
+      "allocated": "Allokiert & Segregiert",
+      "execution": "Institutionelle Ausführung"
+    },
+    "custody": {
+      "headline": "Unabhängige Verwahrung. Struktureller Schutz.",
+      "bullet1": "Kundenvermögen wird niemals vermischt.",
+      "bullet2": "Außerbilanzielle Verwahrungsstrukturen.",
+      "bullet3": "Rechtliche Trennung aller Bestände.",
+      "bullet4": "Multi-Jurisdiktions-Tresornetzwerk.",
+      "cta": "Mehr über unseren Verwahrungsrahmen erfahren"
+    },
+    "execution": {
+      "headline": "Institutionelle Liquidität & Ausführung",
+      "text": "Auxite bezieht Liquidität über globale Bullion-Märkte und OTC-Kontrahenten und ermöglicht effiziente Preisgestaltung über verschiedene Auftragsgrößen."
+    },
+    "yield": {
+      "headline": "Optionale Renditeprogramme auf allokierte Metalle",
+      "text": "Kunden können berechtigte Bestände in strukturierte institutionelle Programme einbringen, die zur Steigerung der Portfolioeffizienz konzipiert sind."
+    },
+    "whoWeServe": {
+      "headline": "Gebaut für institutionelles Kapital",
+      "familyOffices": "Family Offices",
+      "familyOfficesDesc": "Generationenübergreifender Vermögenserhalt durch physische Edelmetalle.",
+      "assetManagers": "Vermögensverwalter",
+      "assetManagersDesc": "Diversifizierte Portfolioallokation mit institutioneller Verwahrung.",
+      "corporates": "Unternehmen",
+      "corporatesDesc": "Unternehmens-Treasury-Lösungen mit vollständig allokierten Metallreserven.",
+      "professionalInvestors": "Professionelle Investoren",
+      "professionalInvestorsDesc": "Direkter Marktzugang mit institutioneller Ausführung und Abwicklung."
+    },
+    "trustPreview": {
+      "headline": "Vertrauen & Transparenz",
+      "audit": "Prüfungsberichte",
+      "reserves": "Reservenverifizierung",
+      "custodyItem": "Verwahrungsrahmen",
+      "legal": "Rechtsstruktur",
+      "cta": "Transparenzzentrum erkunden"
+    },
+    "cta": {
+      "headline": "Besitzen Sie Edelmetalle auf institutionelle Art.",
+      "ctaPrimary": "Tresor öffnen",
+      "ctaSecondary": "Institutionellen Desk kontaktieren",
+      "disclaimer": "Auxite ist keine Handelsplattform. Es ist eine verwahrungsorientierte Infrastruktur für Edelmetallbesitz."
+    }
   },
   "metals": {
     "badge": "1 Token = 1 Gramm physisches Metall",

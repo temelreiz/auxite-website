@@ -7,68 +7,83 @@ import { useRef } from 'react';
 
 interface HomeContentProps {
   t: {
-    // Hero - Institutional
-    heroSlogan1: string;
-    heroSloganHighlight: string;
-    heroSlogan2: string;
-    heroSubline1: string;
-    heroSubline2: string;
-    getStarted: string;
-    viewTrustCenter: string;
-    // Trust Section
-    trustBar?: {
+    hero: {
+      headline: string;
+      line1: string;
+      line2: string;
+      line3: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+    };
+    trustBadges: {
       fullyAllocated: string;
-      independentCustody: string;
-      auditedFramework: string;
-      redeemable: string;
+      segregated: string;
       bankruptcyRemote: string;
+      independentlyCustodied: string;
     };
-    longTermSignal?: string;
-    // Metals Section
-    metalsTitle?: string;
-    metalsTitleHighlight?: string;
-    metalsSubtitle?: string;
-    // Stats (post-launch)
-    stats: { onChain: string; backing: string; trading: string; metals: string };
-    // Features
-    whyAuxite: string;
-    whyAuxiteHighlight: string;
-    whySubtitle: string;
-    features: { onChain: string; onChainDesc: string; physical: string; physicalDesc: string; stake: string; stakeDesc: string; transparent: string; transparentDesc: string };
-    // Capital Protection Lifecycle
-    howItWorks: string;
-    howItWorksHighlight: string;
-    howItWorksDiagram?: {
-      step1: string; step1Desc: string;
-      step2: string; step2Desc: string;
-      step3: string; step3Desc: string;
-      step4: string; step4Desc: string;
-      step5: string; step5Desc: string;
+    whatIsAuxite: {
+      headline: string;
+      text: string;
     };
-    steps: { buy: string; buyDesc: string; verify: string; verifyDesc: string; stake: string; stakeDesc: string };
-    // Structure Section
-    structureTitle?: string;
-    structureTitleHighlight?: string;
-    structureSubtitle?: string;
-    structure?: {
-      foundation: string; foundationDesc: string;
-      operator: string; operatorDesc: string;
-      metals: string; metalsDesc: string;
-      vaults: string; vaultsDesc: string;
+    howItWorks: {
+      headline: string;
+      fund: string;
+      fundDesc: string;
+      allocate: string;
+      allocateDesc: string;
+      store: string;
+      storeDesc: string;
+      redeem: string;
+      redeemDesc: string;
     };
-    // Private Client
-    privateClientTitle?: string;
-    privateClientSubtitle?: string;
-    // CTA
-    ctaTitle: string;
-    ctaTitleHighlight: string;
-    ctaSubtitle: string;
-    startTrading: string;
-    readWhitepaper: string;
-    // Legacy
-    badge?: string;
-    lbmaVaults: string;
-    audited: string;
+    metals: {
+      headline: string;
+      subtitle: string;
+      lbma: string;
+      allocated: string;
+      execution: string;
+    };
+    custody: {
+      headline: string;
+      bullet1: string;
+      bullet2: string;
+      bullet3: string;
+      bullet4: string;
+      cta: string;
+    };
+    execution: {
+      headline: string;
+      text: string;
+    };
+    yield: {
+      headline: string;
+      text: string;
+    };
+    whoWeServe: {
+      headline: string;
+      familyOffices: string;
+      familyOfficesDesc: string;
+      assetManagers: string;
+      assetManagersDesc: string;
+      corporates: string;
+      corporatesDesc: string;
+      professionalInvestors: string;
+      professionalInvestorsDesc: string;
+    };
+    trustPreview: {
+      headline: string;
+      audit: string;
+      reserves: string;
+      custodyItem: string;
+      legal: string;
+      cta: string;
+    };
+    cta: {
+      headline: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+      disclaimer: string;
+    };
   };
   metals: { symbol: string; name: string; icon: string; href: string }[];
   isRTL?: boolean;
@@ -114,722 +129,735 @@ function FadeInDiv({ children, delay = 0, style, className }: { children: React.
   );
 }
 
+// Gold label used across sections
+function SectionLabel({ text }: { text: string }) {
+  return (
+    <div style={{
+      fontSize: 13,
+      fontWeight: 600,
+      letterSpacing: '0.15em',
+      textTransform: 'uppercase' as const,
+      color: 'var(--aux-gold)',
+      marginBottom: 16,
+    }}>
+      {text}
+    </div>
+  );
+}
+
 export default function HomeContent({ t, metals, isRTL = false }: HomeContentProps) {
-  const textAlign = isRTL ? 'right' : 'left';
-  const flexDirection = isRTL ? 'row-reverse' : 'row';
+  const textAlign = isRTL ? 'right' as const : 'left' as const;
+  const flexDir = isRTL ? 'row-reverse' as const : 'row' as const;
 
-  // Trust items - Institutional Grade Infrastructure
+  const trustBadges = [
+    t.trustBadges.fullyAllocated,
+    t.trustBadges.segregated,
+    t.trustBadges.bankruptcyRemote,
+    t.trustBadges.independentlyCustodied,
+  ];
+
+  const howItWorksSteps = [
+    { num: '01', title: t.howItWorks.fund, desc: t.howItWorks.fundDesc },
+    { num: '02', title: t.howItWorks.allocate, desc: t.howItWorks.allocateDesc },
+    { num: '03', title: t.howItWorks.store, desc: t.howItWorks.storeDesc },
+    { num: '04', title: t.howItWorks.redeem, desc: t.howItWorks.redeemDesc },
+  ];
+
+  const custodyBullets = [
+    t.custody.bullet1,
+    t.custody.bullet2,
+    t.custody.bullet3,
+    t.custody.bullet4,
+  ];
+
+  const clientTypes = [
+    {
+      title: t.whoWeServe.familyOffices,
+      desc: t.whoWeServe.familyOfficesDesc,
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+        </svg>
+      ),
+    },
+    {
+      title: t.whoWeServe.assetManagers,
+      desc: t.whoWeServe.assetManagersDesc,
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M18 20V10M12 20V4M6 20v-6" />
+        </svg>
+      ),
+    },
+    {
+      title: t.whoWeServe.corporates,
+      desc: t.whoWeServe.corporatesDesc,
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" /><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+        </svg>
+      ),
+    },
+    {
+      title: t.whoWeServe.professionalInvestors,
+      desc: t.whoWeServe.professionalInvestorsDesc,
+      icon: (
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+      ),
+    },
+  ];
+
   const trustItems = [
-    { label: t.trustBar?.fullyAllocated || 'Fully Allocated', icon: '◆' },
-    { label: t.trustBar?.independentCustody || 'Independent Custody', icon: '◆' },
-    { label: t.trustBar?.bankruptcyRemote || 'Bankruptcy Remote', icon: '◆' },
-    { label: t.trustBar?.auditedFramework || 'Audited Framework', icon: '◆' },
-  ];
-
-  // Capital Protection Lifecycle steps
-  const lifecycleSteps = t.howItWorksDiagram ? [
-    { title: t.howItWorksDiagram.step1, desc: t.howItWorksDiagram.step1Desc },
-    { title: t.howItWorksDiagram.step2, desc: t.howItWorksDiagram.step2Desc },
-    { title: t.howItWorksDiagram.step3, desc: t.howItWorksDiagram.step3Desc },
-    { title: t.howItWorksDiagram.step4, desc: t.howItWorksDiagram.step4Desc },
-    { title: t.howItWorksDiagram.step5, desc: t.howItWorksDiagram.step5Desc },
-  ] : [
-    { title: 'Acquire', desc: 'Purchase allocated metals' },
-    { title: 'Allocate', desc: 'Secured to your vault' },
-    { title: 'Store', desc: 'Independent custody' },
-    { title: 'Verify', desc: 'On-chain attestation' },
-    { title: 'Redeem', desc: 'Physical delivery' },
-  ];
-
-  // Structure diagram - Institutional Architecture
-  const structureItems = [
-    { title: t.structure?.foundation || 'Auxite Foundation', desc: 'Bankruptcy-Remote Structure', badge: 'Fiduciary Oversight' },
-    { title: t.structure?.operator || 'Aurum Ledger Ltd', desc: 'Operator — Hong Kong', badge: 'Fiduciary Oversight' },
-    { title: t.structure?.vaults || 'Independent Vault Network', desc: 'Segregated Custody', badge: null },
-    { title: 'Allocated Client Assets', desc: 'Your Holdings', badge: null },
+    {
+      label: t.trustPreview.audit,
+      icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
+          <rect x="9" y="3" width="6" height="4" rx="1" /><path d="M9 14l2 2 4-4" />
+        </svg>
+      ),
+    },
+    {
+      label: t.trustPreview.reserves,
+      icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" />
+        </svg>
+      ),
+    },
+    {
+      label: t.trustPreview.custodyItem,
+      icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        </svg>
+      ),
+    },
+    {
+      label: t.trustPreview.legal,
+      icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 3l9 4.5v4.5c0 5.25-3.83 10.15-9 11.25C6.83 22.15 3 17.25 3 12V7.5L12 3z" />
+        </svg>
+      ),
+    },
   ];
 
   return (
-    <div style={{ background: 'var(--bg-primary)', minHeight: '100vh' }} dir={isRTL ? 'rtl' : 'ltr'}>
+    <div dir={isRTL ? 'rtl' : 'ltr'}>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 1 — HERO (Minimal - Video + Headline + CTA + Space)
-          Complexity ↓ = Trust ↑
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section className="mobile-pt" style={{ minHeight: '85vh', paddingTop: '160px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
-
-        {/* Cinematic Vault Video Background */}
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 1 — HERO (Trust First)
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ position: 'relative', minHeight: '90vh', display: 'flex', alignItems: 'center', overflow: 'hidden', background: 'var(--bg-primary)' }}>
+        {/* Video Background */}
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
+          autoPlay muted loop playsInline
           poster="/vault-poster.jpg"
-          className="hero-video"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            objectPosition: 'center',
-            zIndex: 0,
-          }}
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.35 }}
         >
           <source src="/vault-hero.mp4" type="video/mp4" />
         </video>
 
-        {/* Dark overlay - institutional darkness */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'linear-gradient(to bottom, rgba(11,14,17,0.5) 0%, rgba(11,14,17,0.75) 100%)',
-          pointerEvents: 'none',
-          zIndex: 1
-        }} />
+        {/* Overlays */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(8,10,13,0.6) 0%, rgba(8,10,13,0.85) 100%)' }} />
+        <div className="hero-grid-overlay" style={{ position: 'absolute', inset: 0 }} />
+        <div className="vignette" style={{ position: 'absolute', inset: 0 }} />
 
-        {/* Subtle gold accent */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'radial-gradient(ellipse at 30% 40%, rgba(201,162,77,0.04) 0%, transparent 60%)',
-          pointerEvents: 'none',
-          zIndex: 2
-        }} />
-
-        {/* Hero Content - LEFT ALIGNED, MINIMAL */}
-        <div className="mobile-padding" style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 10, height: '100%' }}>
-          <AnimatedSection style={{ textAlign, maxWidth: '720px', paddingTop: '60px' }}>
-
-            {/* H1 - Main Slogan */}
+        {/* Content */}
+        <div style={{ position: 'relative', zIndex: 2, width: '100%', maxWidth: 1200, margin: '0 auto', padding: '160px 40px 100px' }}>
+          <AnimatedSection>
             <FadeInDiv delay={0.1}>
               <h1 className="hero-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '64px',
+                fontSize: 52,
                 fontWeight: 600,
-                lineHeight: 1.02,
-                margin: '0 0 32px 0',
-                letterSpacing: '-0.025em',
-                color: 'var(--text-primary)'
+                lineHeight: 1.15,
+                color: 'var(--text-primary)',
+                maxWidth: 720,
+                letterSpacing: '-0.02em',
+                textAlign,
+                margin: 0,
               }}>
-                {t.heroSlogan1} <span className="text-gold-gradient">{t.heroSloganHighlight}</span> {t.heroSlogan2}
+                {t.hero.headline}
               </h1>
             </FadeInDiv>
 
-            {/* Sub-headline */}
             <FadeInDiv delay={0.25}>
-              <p className="hero-subtitle" style={{
-                fontSize: '19px',
-                color: 'var(--text-secondary)',
-                lineHeight: 1.7,
-                margin: '0 0 48px 0',
-                maxWidth: '480px',
-                fontWeight: 400
-              }}>
-                {t.heroSubline1}<br />
-                {t.heroSubline2}
-              </p>
+              <div style={{ maxWidth: 600, marginTop: 28, textAlign }}>
+                <p style={{ fontSize: 19, color: 'var(--text-secondary)', lineHeight: 1.7, margin: '0 0 4px 0' }}>{t.hero.line1}</p>
+                <p style={{ fontSize: 19, color: 'var(--text-secondary)', lineHeight: 1.7, margin: '0 0 4px 0' }}>{t.hero.line2}</p>
+                <p style={{ fontSize: 19, color: 'var(--text-secondary)', lineHeight: 1.7, margin: 0 }}>{t.hero.line3}</p>
+              </div>
             </FadeInDiv>
 
-            {/* CTA Buttons - Institutional Language */}
+            {/* Trust Badges Bar */}
             <FadeInDiv delay={0.4}>
-              <div className="cta-buttons" style={{
+              <div className="hide-mobile" style={{
                 display: 'flex',
-                flexDirection: flexDirection as 'row' | 'row-reverse',
-                gap: '16px',
+                flexDirection: flexDir,
+                alignItems: 'center',
+                gap: 0,
+                marginTop: 36,
+                flexWrap: 'wrap',
               }}>
+                {trustBadges.map((badge, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+                    {i > 0 && (
+                      <span style={{ margin: '0 16px', color: 'var(--line)', fontSize: 14 }}>|</span>
+                    )}
+                    <span style={{
+                      fontSize: 12,
+                      fontWeight: 600,
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      color: 'var(--aux-gold)',
+                    }}>
+                      <span style={{ marginRight: isRTL ? 0 : 6, marginLeft: isRTL ? 6 : 0, fontSize: 8, opacity: 0.7 }}>&#9670;</span>
+                      {badge}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </FadeInDiv>
+
+            {/* CTAs */}
+            <FadeInDiv delay={0.55}>
+              <div className="cta-buttons" style={{ display: 'flex', flexDirection: flexDir, gap: 16, marginTop: 44, flexWrap: 'wrap' }}>
                 <motion.a
                   href="https://wallet.auxite.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-primary"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  style={{ textDecoration: 'none', padding: '18px 36px', fontSize: '15px', fontWeight: 600 }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 32px', fontSize: 15, fontWeight: 600, textDecoration: 'none' }}
                 >
-                  {t.getStarted}
-                  <svg style={{ width: '16px', height: '16px', marginLeft: '8px', transform: isRTL ? 'rotate(180deg)' : 'none' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
+                  {t.hero.ctaPrimary}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </motion.a>
-                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                  <Link href="/trust-center" className="btn-secondary" style={{ textDecoration: 'none', padding: '18px 32px', fontSize: '15px' }}>
-                    {t.viewTrustCenter}
-                  </Link>
-                </motion.div>
+                <Link href="/contact">
+                  <motion.span
+                    className="btn-secondary"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 32px', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}
+                  >
+                    {t.hero.ctaSecondary}
+                  </motion.span>
+                </Link>
               </div>
             </FadeInDiv>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          FORTRESS BLOCK — Structural Resilience Signal
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '60px 0', background: 'var(--bg-secondary)', borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center' }}>
-            <FadeInDiv>
-              <p style={{
-                color: 'var(--text-secondary)',
-                fontSize: '15px',
-                margin: '0 0 24px 0',
-                fontWeight: 500
-              }}>
-                Built on Structural Resilience
-              </p>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                gap: '48px',
-                flexWrap: 'wrap'
-              }}>
-                {['Segregated Assets', 'Independent Custody', 'Legal Ring-Fencing'].map((item, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <svg style={{ width: '16px', height: '16px', color: 'var(--aux-gold)' }} fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span style={{ color: 'var(--text-muted)', fontSize: '14px' }}>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </FadeInDiv>
-          </AnimatedSection>
-        </div>
-      </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 2 — STRUCTURAL TRUST (Institutional Infrastructure)
-          Whale trigger: Bankruptcy Remote
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '120px 0', background: 'var(--bg-primary)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '72px' }}>
-            <FadeInDiv>
-              <p style={{
-                color: 'var(--aux-gold)',
-                fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
-              }}>
-                Structural Trust
-              </p>
-              <h2 className="section-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '42px',
-                fontWeight: 600,
-                color: 'var(--text-primary)',
-                letterSpacing: '-0.02em'
-              }}>
-                Institutional Infrastructure
-              </h2>
-            </FadeInDiv>
-          </AnimatedSection>
-
-          {/* Trust Grid - 4 pillars */}
-          <AnimatedSection className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
-            {trustItems.map((item, i) => (
-              <FadeInDiv key={item.label} delay={i * 0.1}>
-                <motion.div
-                  whileHover={{ borderColor: 'rgba(201,162,77,0.4)' }}
-                  style={{
-                    background: 'var(--bg-secondary)',
-                    border: '1px solid var(--line)',
-                    borderRadius: '16px',
-                    padding: '40px 24px',
-                    textAlign: 'center',
-                    transition: 'border-color 0.3s ease',
-                    height: '100%'
-                  }}
-                >
-                  <div style={{
-                    width: '48px',
-                    height: '48px',
-                    background: 'rgba(201,162,77,0.1)',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    margin: '0 auto 20px',
-                    color: 'var(--aux-gold)',
-                    fontSize: '20px'
-                  }}>
-                    <svg style={{ width: '24px', height: '24px' }} fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <h3 style={{
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '16px',
-                    fontWeight: 600,
-                    color: 'var(--text-primary)',
-                    margin: 0,
-                    lineHeight: 1.4
-                  }}>
-                    {item.label}
-                  </h3>
-                </motion.div>
-              </FadeInDiv>
-            ))}
-          </AnimatedSection>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 3 — STRUCTURE DIAGRAM (Game Changer - Counterparty Risk ↓)
-          Foundation → Operator → Vault → Client Assets
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '140px 0', background: 'var(--bg-secondary)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <FadeInDiv>
-              <p style={{
-                color: 'var(--aux-gold)',
-                fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
-              }}>
-                Corporate Structure
-              </p>
-              <h2 className="section-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '42px',
-                fontWeight: 600,
-                color: 'var(--text-primary)',
-                marginBottom: '16px',
-                letterSpacing: '-0.02em'
-              }}>
-                Legal & Structural <span className="text-gold-gradient">Architecture</span>
-              </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '540px', margin: '0 auto' }}>
-                Designed to ensure asset segregation and structural resilience.
-              </p>
-            </FadeInDiv>
-          </AnimatedSection>
-
-          {/* Vertical Structure Diagram - Equal weight boxes */}
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 2 — WHAT IS AUXITE
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-secondary)', padding: '120px 40px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
           <AnimatedSection>
+            <FadeInDiv>
+              <SectionLabel text="ABOUT" />
+            </FadeInDiv>
+            <FadeInDiv delay={0.1}>
+              <h2 className="section-title" style={{
+                fontSize: 38,
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                lineHeight: 1.25,
+                letterSpacing: '-0.02em',
+                margin: '0 0 24px 0',
+              }}>
+                {t.whatIsAuxite.headline}
+              </h2>
+            </FadeInDiv>
             <FadeInDiv delay={0.2}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
-                {structureItems.map((item, i) => (
-                  <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: i * 0.15, duration: 0.6 }}
-                      style={{
-                        textAlign: 'center',
-                        padding: '32px 48px',
-                        background: 'var(--bg-tertiary)',
-                        border: '1px solid var(--line)',
-                        borderRadius: '14px',
-                        minWidth: '380px',
-                        maxWidth: '420px',
-                        position: 'relative'
-                      }}
-                    >
-                      {/* Badge for Fiduciary Oversight */}
-                      {item.badge && (
-                        <span style={{
-                          position: 'absolute',
-                          top: '-10px',
-                          right: '20px',
-                          background: 'rgba(201,162,77,0.15)',
-                          border: '1px solid rgba(201,162,77,0.3)',
-                          color: 'var(--aux-gold)',
-                          fontSize: '10px',
-                          fontWeight: 600,
-                          padding: '4px 10px',
-                          borderRadius: '20px',
-                          letterSpacing: '0.05em',
-                          textTransform: 'uppercase'
-                        }}>
-                          {item.badge}
-                        </span>
-                      )}
-                      <p style={{
-                        color: 'var(--text-primary)',
-                        fontSize: '18px',
-                        fontWeight: 600,
-                        margin: '0 0 6px 0'
-                      }}>{item.title}</p>
-                      <p style={{
-                        color: 'var(--text-muted)',
-                        fontSize: '13px',
-                        margin: 0
-                      }}>{item.desc}</p>
-                    </motion.div>
-                    {/* Enhanced Arrow with Glow */}
-                    {i < structureItems.length - 1 && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: i * 0.15 + 0.1 }}
-                        style={{
-                          position: 'relative',
-                          margin: '8px 0'
-                        }}
-                      >
-                        {/* Glow effect */}
-                        <div style={{
-                          position: 'absolute',
-                          top: '50%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%)',
-                          width: '40px',
-                          height: '40px',
-                          background: 'radial-gradient(circle, rgba(201,162,77,0.2) 0%, transparent 70%)',
-                          borderRadius: '50%',
-                          filter: 'blur(8px)'
-                        }} />
-                        <svg style={{
-                          width: '28px',
-                          height: '48px',
-                          position: 'relative',
-                          zIndex: 1
-                        }} fill="none" viewBox="0 0 24 48">
-                          <defs>
-                            <linearGradient id={`arrowGradient${i}`} x1="0%" y1="0%" x2="0%" y2="100%">
-                              <stop offset="0%" stopColor="var(--aux-gold)" stopOpacity="0.3" />
-                              <stop offset="50%" stopColor="var(--aux-gold)" stopOpacity="0.8" />
-                              <stop offset="100%" stopColor="var(--aux-gold)" stopOpacity="0.3" />
-                            </linearGradient>
-                          </defs>
-                          <path
-                            d="M12 4 L12 36 M6 30 L12 38 L18 30"
-                            stroke={`url(#arrowGradient${i})`}
-                            strokeWidth="2.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </motion.div>
-                    )}
-                  </div>
-                ))}
+              <p style={{
+                fontSize: 18,
+                color: 'var(--text-secondary)',
+                lineHeight: 1.7,
+                maxWidth: 640,
+                margin: '0 auto',
+              }}>
+                {t.whatIsAuxite.text}
+              </p>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 3 — HOW THE PLATFORM WORKS
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-primary)', padding: '140px 40px' }} className="mobile-padding">
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <div style={{ textAlign: 'center', marginBottom: 56 }}>
+                <SectionLabel text="PROCESS" />
+                <h2 className="section-title" style={{
+                  fontSize: 38,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                }}>
+                  {t.howItWorks.headline}
+                </h2>
               </div>
             </FadeInDiv>
 
-            {/* Critical Disclaimer - Whale Trust Signal */}
-            <FadeInDiv delay={0.8}>
-              <div style={{
-                marginTop: '48px',
-                padding: '20px 32px',
-                background: 'rgba(201,162,77,0.05)',
-                border: '1px solid rgba(201,162,77,0.15)',
-                borderRadius: '12px',
-                textAlign: 'center'
-              }}>
-                <p style={{
-                  color: 'var(--text-secondary)',
-                  fontSize: '14px',
-                  margin: 0,
-                  fontStyle: 'italic'
+            <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+              {howItWorksSteps.map((step, i) => (
+                <FadeInDiv key={i} delay={i * 0.1}>
+                  <motion.div
+                    whileHover={{ borderColor: 'rgba(201,162,77,0.4)', y: -4 }}
+                    transition={{ duration: 0.3 }}
+                    style={{
+                      background: 'var(--bg-secondary)',
+                      border: '1px solid var(--line)',
+                      borderRadius: 16,
+                      padding: 28,
+                      height: '100%',
+                      textAlign,
+                    }}
+                  >
+                    <div style={{ fontSize: 13, fontWeight: 700, color: 'var(--aux-gold)', letterSpacing: '0.05em', marginBottom: 16, fontFamily: 'var(--font-mono, monospace)' }}>
+                      {step.num}
+                    </div>
+                    <h3 style={{ fontSize: 18, fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 10px 0' }}>
+                      {step.title}
+                    </h3>
+                    <p style={{ fontSize: 14, color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
+                      {step.desc}
+                    </p>
+                  </motion.div>
+                </FadeInDiv>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 4 — AVAILABLE METALS
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-secondary)', padding: '140px 40px' }} className="mobile-padding">
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <div style={{ textAlign: 'center', marginBottom: 56 }}>
+                <SectionLabel text="METALS" />
+                <h2 className="section-title" style={{
+                  fontSize: 38,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  margin: '0 0 12px 0',
                 }}>
-                  Client assets are never held on the operator balance sheet.
+                  {t.metals.headline}
+                </h2>
+                <p style={{ fontSize: 17, color: 'var(--text-secondary)', margin: 0 }}>
+                  {t.metals.subtitle}
                 </p>
               </div>
             </FadeInDiv>
+
+            <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+              {metals.map((metal, i) => (
+                <FadeInDiv key={metal.symbol} delay={i * 0.1}>
+                  <Link href={metal.href} style={{ textDecoration: 'none' }}>
+                    <motion.div
+                      whileHover={{ y: -8, borderColor: 'rgba(201,162,77,0.5)' }}
+                      transition={{ duration: 0.3 }}
+                      style={{
+                        background: 'var(--bg-primary)',
+                        border: '1px solid var(--line)',
+                        borderRadius: 16,
+                        padding: 28,
+                        textAlign: 'center',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <div style={{ width: 56, height: 56, margin: '0 auto 16px', borderRadius: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-tertiary)', border: '1px solid var(--line-soft)' }}>
+                        <Image src={metal.icon} alt={metal.name} width={32} height={32} />
+                      </div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--aux-gold)', letterSpacing: '0.05em', marginBottom: 4, fontFamily: 'var(--font-mono, monospace)' }}>
+                        {metal.symbol}
+                      </div>
+                      <div style={{ fontSize: 16, fontWeight: 500, color: 'var(--text-primary)', marginBottom: 16 }}>
+                        {metal.name}
+                      </div>
+                      {/* Micro-badges */}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                        {[t.metals.lbma, t.metals.allocated, t.metals.execution].map((badge, bi) => (
+                          <div key={bi} style={{
+                            fontSize: 11,
+                            color: 'var(--text-muted)',
+                            letterSpacing: '0.04em',
+                            padding: '4px 0',
+                            borderTop: bi === 0 ? '1px solid var(--line-soft)' : 'none',
+                            paddingTop: bi === 0 ? 12 : 0,
+                          }}>
+                            <span style={{ color: 'var(--aux-gold)', marginRight: isRTL ? 0 : 6, marginLeft: isRTL ? 6 : 0, fontSize: 8 }}>&#9670;</span>
+                            {badge}
+                          </div>
+                        ))}
+                      </div>
+                    </motion.div>
+                  </Link>
+                </FadeInDiv>
+              ))}
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 4 — CAPITAL PROTECTION LIFECYCLE
-          Acquire → Allocate → Store → Verify → Redeem
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '140px 0', background: 'var(--bg-primary)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '80px' }}>
-            <FadeInDiv>
-              <p style={{
-                color: 'var(--aux-gold)',
-                fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
-              }}>
-                How It Works
-              </p>
-              <h2 className="section-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '42px',
-                fontWeight: 600,
-                color: 'var(--text-primary)',
-                letterSpacing: '-0.02em'
-              }}>
-                Capital Protection <span className="text-gold-gradient">Lifecycle</span>
-              </h2>
-            </FadeInDiv>
-          </AnimatedSection>
 
-          {/* Horizontal Flow */}
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 5 — CUSTODY
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-primary)', padding: '140px 40px' }} className="mobile-padding">
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <AnimatedSection>
-            <FadeInDiv delay={0.2}>
-              <div style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: '0',
-                flexWrap: 'wrap',
-                padding: '20px 0'
-              }}>
-                {lifecycleSteps.map((step, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: i * 0.12, duration: 0.5 }}
-                      style={{
-                        textAlign: 'center',
-                        padding: '32px 28px',
-                        background: 'var(--bg-secondary)',
-                        border: '1px solid var(--line)',
-                        borderRadius: '14px',
-                        minWidth: '160px'
-                      }}
-                    >
-                      <p style={{
-                        color: 'var(--aux-gold)',
-                        fontSize: '18px',
-                        fontWeight: 600,
-                        margin: '0 0 6px 0'
-                      }}>{step.title}</p>
-                      <p style={{
-                        color: 'var(--text-muted)',
-                        fontSize: '13px',
-                        margin: 0
-                      }}>{step.desc}</p>
-                    </motion.div>
-                    {i < lifecycleSteps.length - 1 && (
-                      <svg className="hide-mobile" style={{ width: '48px', height: '20px', color: 'var(--aux-gold)', opacity: 0.4, margin: '0 -12px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    )}
+            <FadeInDiv>
+              <div style={{ textAlign: 'center', marginBottom: 48 }}>
+                <SectionLabel text="CUSTODY" />
+                <h2 className="section-title" style={{
+                  fontSize: 38,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                }}>
+                  {t.custody.headline}
+                </h2>
+              </div>
+            </FadeInDiv>
+
+            <div style={{ maxWidth: 600, margin: '0 auto' }}>
+              {custodyBullets.map((bullet, i) => (
+                <FadeInDiv key={i} delay={i * 0.1}>
+                  <div style={{
+                    display: 'flex',
+                    flexDirection: flexDir,
+                    alignItems: 'flex-start',
+                    gap: 14,
+                    padding: '14px 0',
+                    borderBottom: i < custodyBullets.length - 1 ? '1px solid var(--line-soft)' : 'none',
+                  }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aux-gold)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: 2 }}>
+                      <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                    <span style={{ fontSize: 16, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                      {bullet}
+                    </span>
                   </div>
-                ))}
+                </FadeInDiv>
+              ))}
+            </div>
+
+            <FadeInDiv delay={0.5}>
+              <div style={{ textAlign: 'center', marginTop: 44 }}>
+                <Link href="/trust-center" style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: 8,
+                  color: 'var(--aux-gold)',
+                  fontSize: 15,
+                  fontWeight: 600,
+                  textDecoration: 'none',
+                  letterSpacing: '0.02em',
+                }}>
+                  {t.custody.cta}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </Link>
               </div>
             </FadeInDiv>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 5 — INVESTMENT-GRADE METALS
-          Not fintech product cards - institutional assets
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '140px 0', background: 'var(--bg-secondary)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px' }}>
-          <AnimatedSection style={{ textAlign: 'center', marginBottom: '72px' }}>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 6 — EXECUTION
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-secondary)', padding: '100px 40px', borderTop: '1px solid var(--line-soft)', borderBottom: '1px solid var(--line-soft)' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
+          <AnimatedSection>
             <FadeInDiv>
-              <p style={{
-                color: 'var(--aux-gold)',
-                fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
-              }}>
-                Available Assets
-              </p>
+              <SectionLabel text="EXECUTION" />
+            </FadeInDiv>
+            <FadeInDiv delay={0.1}>
               <h2 className="section-title" style={{
-                fontFamily: "'Inter', sans-serif",
-                fontSize: '42px',
+                fontSize: 38,
                 fontWeight: 600,
                 color: 'var(--text-primary)',
-                marginBottom: '16px',
-                letterSpacing: '-0.02em'
+                lineHeight: 1.25,
+                letterSpacing: '-0.02em',
+                margin: '0 0 24px 0',
               }}>
-                {t.metalsTitle || 'Investment-Grade'} <span className="text-gold-gradient">{t.metalsTitleHighlight || 'Metals'}</span>
+                {t.execution.headline}
               </h2>
-              <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '450px', margin: '0 auto' }}>
-                {t.metalsSubtitle || 'LBMA-aligned sourcing. Fully allocated. Redeemable.'}
+            </FadeInDiv>
+            <FadeInDiv delay={0.2}>
+              <p style={{
+                fontSize: 18,
+                color: 'var(--text-secondary)',
+                lineHeight: 1.7,
+                maxWidth: 640,
+                margin: '0 auto',
+              }}>
+                {t.execution.text}
               </p>
             </FadeInDiv>
           </AnimatedSection>
+        </div>
+      </section>
 
-          {/* Metal Cards - Institutional Style */}
-          <AnimatedSection className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
-            {metals.map((metal, i) => (
-              <FadeInDiv key={metal.symbol} delay={i * 0.1}>
-                <Link href={metal.href} style={{ textDecoration: 'none' }}>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 7 — YIELD (Optional Enhancement)
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-primary)', padding: '100px 40px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto', textAlign: 'center' }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <SectionLabel text="YIELD" />
+            </FadeInDiv>
+            <FadeInDiv delay={0.1}>
+              <h2 className="section-title" style={{
+                fontSize: 38,
+                fontWeight: 600,
+                color: 'var(--text-primary)',
+                lineHeight: 1.25,
+                letterSpacing: '-0.02em',
+                margin: '0 0 24px 0',
+              }}>
+                {t.yield.headline}
+              </h2>
+            </FadeInDiv>
+            <FadeInDiv delay={0.2}>
+              <p style={{
+                fontSize: 18,
+                color: 'var(--text-secondary)',
+                lineHeight: 1.7,
+                maxWidth: 640,
+                margin: '0 auto',
+              }}>
+                {t.yield.text}
+              </p>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 8 — WHO WE SERVE
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-secondary)', padding: '140px 40px' }} className="mobile-padding">
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <div style={{ textAlign: 'center', marginBottom: 56 }}>
+                <SectionLabel text="CLIENTS" />
+                <h2 className="section-title" style={{
+                  fontSize: 38,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                }}>
+                  {t.whoWeServe.headline}
+                </h2>
+              </div>
+            </FadeInDiv>
+
+            <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 20 }}>
+              {clientTypes.map((client, i) => (
+                <FadeInDiv key={i} delay={i * 0.1}>
                   <motion.div
-                    whileHover={{ y: -8, borderColor: 'rgba(201,162,77,0.4)' }}
+                    whileHover={{ borderColor: 'rgba(201,162,77,0.4)', y: -4 }}
+                    transition={{ duration: 0.3 }}
                     style={{
                       background: 'var(--bg-tertiary)',
                       border: '1px solid var(--line)',
-                      borderRadius: '16px',
-                      padding: '40px 24px',
+                      borderRadius: 16,
+                      padding: 28,
+                      height: '100%',
                       textAlign: 'center',
-                      transition: 'border-color 0.3s ease',
-                      height: '100%'
                     }}
                   >
-                    <Image
-                      src={metal.icon}
-                      alt={metal.name}
-                      width={64}
-                      height={64}
-                      style={{ marginBottom: '20px' }}
-                    />
-                    <h3 style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontSize: '20px',
-                      fontWeight: 600,
-                      color: 'var(--text-primary)',
-                      margin: '0 0 4px 0'
-                    }}>
-                      {metal.symbol}
-                    </h3>
-                    <p style={{
-                      color: 'var(--text-muted)',
-                      fontSize: '14px',
-                      margin: '0 0 16px 0'
-                    }}>
-                      {metal.name}
-                    </p>
-                    {/* Institutional badges - 3 micro labels */}
-                    <div style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '8px',
-                      alignItems: 'center',
-                      borderTop: '1px solid var(--line)',
-                      paddingTop: '16px',
-                      marginTop: '8px'
-                    }}>
-                      {['Fully Allocated', 'LBMA-Aligned', 'Redeemable'].map((badge, idx) => (
-                        <span key={idx} style={{
-                          color: 'var(--text-muted)',
-                          fontSize: '10px',
-                          textTransform: 'uppercase',
-                          letterSpacing: '0.08em'
-                        }}>
-                          {badge}
-                        </span>
-                      ))}
+                    <div style={{ color: 'var(--aux-gold)', marginBottom: 16, display: 'flex', justifyContent: 'center' }}>
+                      {client.icon}
                     </div>
+                    <h3 style={{ fontSize: 17, fontWeight: 600, color: 'var(--text-primary)', margin: '0 0 10px 0' }}>
+                      {client.title}
+                    </h3>
+                    <p style={{ fontSize: 14, color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
+                      {client.desc}
+                    </p>
                   </motion.div>
-                </Link>
-              </FadeInDiv>
-            ))}
+                </FadeInDiv>
+              ))}
+            </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 6 — PRIVATE CLIENT SERVICES
-          Instant Prestige Signal
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '100px 0', background: 'var(--bg-primary)', borderTop: '1px solid var(--line)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 9 — TRUST CENTER PREVIEW
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-primary)', padding: '100px 40px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <AnimatedSection>
             <FadeInDiv>
-              <p style={{
-                color: 'var(--aux-gold)',
-                fontSize: '13px',
+              <div style={{ textAlign: 'center', marginBottom: 40 }}>
+                <SectionLabel text="TRUST" />
+                <h2 className="section-title" style={{
+                  fontSize: 38,
+                  fontWeight: 600,
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.25,
+                  letterSpacing: '-0.02em',
+                  margin: 0,
+                }}>
+                  {t.trustPreview.headline}
+                </h2>
+              </div>
+            </FadeInDiv>
+
+            <FadeInDiv delay={0.15}>
+              <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, marginBottom: 40 }}>
+                {trustItems.map((item, i) => (
+                  <div key={i} style={{
+                    background: 'var(--bg-secondary)',
+                    border: '1px solid var(--line)',
+                    borderRadius: 12,
+                    padding: '20px 16px',
+                    textAlign: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: 10,
+                  }}>
+                    <div style={{ color: 'var(--aux-gold)' }}>{item.icon}</div>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)', letterSpacing: '0.02em' }}>
+                      {item.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </FadeInDiv>
+
+            <FadeInDiv delay={0.3}>
+              <div style={{ textAlign: 'center' }}>
+                <Link href="/trust-center">
+                  <motion.span
+                    className="btn-secondary"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 32px', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}
+                  >
+                    {t.trustPreview.cta}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                  </motion.span>
+                </Link>
+              </div>
+            </FadeInDiv>
+          </AnimatedSection>
+        </div>
+      </section>
+
+
+      {/* ═══════════════════════════════════════════════════════════════
+          SECTION 10 — FINAL CTA
+      ═══════════════════════════════════════════════════════════════ */}
+      <section style={{ background: 'var(--bg-primary)', padding: '160px 40px', position: 'relative', overflow: 'hidden' }}>
+        {/* Subtle gold radial glow */}
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 600,
+          height: 600,
+          borderRadius: '50%',
+          background: 'radial-gradient(circle, rgba(201,162,77,0.06) 0%, transparent 70%)',
+          pointerEvents: 'none',
+        }} />
+
+        <div style={{ maxWidth: 700, margin: '0 auto', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+          <AnimatedSection>
+            <FadeInDiv>
+              <h2 style={{
+                fontSize: 42,
                 fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
+                color: 'var(--text-primary)',
+                lineHeight: 1.25,
+                letterSpacing: '-0.02em',
+                margin: '0 0 40px 0',
               }}>
-                {t.privateClientTitle || 'Private Client Services'}
-              </p>
+                {t.cta.headline}
+              </h2>
+            </FadeInDiv>
+
+            <FadeInDiv delay={0.15}>
+              <div className="cta-buttons" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
+                <motion.a
+                  href="https://wallet.auxite.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 32px', fontSize: 15, fontWeight: 600, textDecoration: 'none' }}
+                >
+                  {t.cta.ctaPrimary}
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </motion.a>
+                <Link href="/contact">
+                  <motion.span
+                    className="btn-secondary"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '14px 32px', fontSize: 15, fontWeight: 600, cursor: 'pointer' }}
+                  >
+                    {t.cta.ctaSecondary}
+                  </motion.span>
+                </Link>
+              </div>
+            </FadeInDiv>
+
+            <FadeInDiv delay={0.3}>
               <p style={{
-                color: 'var(--text-secondary)',
-                fontSize: '18px',
-                margin: 0,
-                lineHeight: 1.7
+                fontSize: 14,
+                color: 'var(--text-muted)',
+                fontStyle: 'italic',
+                lineHeight: 1.7,
+                maxWidth: 520,
+                margin: '0 auto',
+                opacity: 0.8,
               }}>
-                {t.privateClientSubtitle || 'For allocations above $100,000.'}
+                {t.cta.disclaimer}
               </p>
             </FadeInDiv>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 7 — LONG TERM SIGNAL (Whale Filter)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '80px 0', background: 'var(--bg-secondary)', borderBottom: '1px solid var(--line)' }}>
-        <div className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-          <p style={{
-            color: 'var(--text-muted)',
-            fontSize: '17px',
-            fontStyle: 'italic',
-            margin: 0,
-            lineHeight: 1.8
-          }}>
-            {t.longTermSignal || 'Designed for long-term holders — not short-term speculation.'}
-          </p>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════════════
-          BLOCK 8 — CTA Section (Institutional - No sales pressure)
-      ═══════════════════════════════════════════════════════════════════ */}
-      <section style={{ padding: '160px 0', position: 'relative', overflow: 'hidden', background: 'var(--bg-primary)' }}>
-        <motion.div
-          animate={{ scale: [1, 1.05, 1], opacity: [0.1, 0.15, 0.1] }}
-          transition={{ duration: 10, repeat: Infinity }}
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: '700px',
-            height: '700px',
-            background: 'radial-gradient(circle, rgba(201,162,77,0.15) 0%, transparent 70%)',
-            borderRadius: '50%',
-            pointerEvents: 'none'
-          }}
-        />
-
-        <AnimatedSection className="mobile-padding" style={{ maxWidth: '700px', margin: '0 auto', padding: '0 24px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
-          <FadeInDiv>
-            <h2 className="section-title" style={{
-              fontFamily: "'Inter', sans-serif",
-              fontSize: '44px',
-              fontWeight: 600,
-              color: 'var(--text-primary)',
-              marginBottom: '20px',
-              letterSpacing: '-0.02em'
-            }}>
-              {t.ctaTitle} <span className="text-gold-gradient">{t.ctaTitleHighlight}</span>?
-            </h2>
-          </FadeInDiv>
-          <FadeInDiv delay={0.15}>
-            <p style={{ color: 'var(--text-muted)', fontSize: '18px', marginBottom: '48px', lineHeight: 1.7 }}>
-              {t.ctaSubtitle}
-            </p>
-          </FadeInDiv>
-          <FadeInDiv delay={0.3}>
-            <div className="cta-buttons" style={{ display: 'flex', justifyContent: 'center', gap: '16px' }}>
-              <motion.a
-                href="https://wallet.auxite.io"
-                className="btn-primary"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                style={{ textDecoration: 'none', padding: '20px 40px', fontSize: '15px', fontWeight: 600 }}
-              >
-                {t.startTrading}
-                <svg style={{ width: '18px', height: '18px', marginLeft: '8px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </motion.a>
-              <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                <Link href="/whitepaper" className="btn-secondary" style={{ textDecoration: 'none', padding: '20px 36px', fontSize: '15px' }}>
-                  {t.readWhitepaper}
-                </Link>
-              </motion.div>
-            </div>
-          </FadeInDiv>
-        </AnimatedSection>
-      </section>
     </div>
   );
 }
