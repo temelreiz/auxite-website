@@ -10,10 +10,10 @@ const metalData: Record<string, {
   color: string;
   unit: string;
 }> = {
-  auxg: { symbol: 'AUXG', name: 'Gold', icon: '/metals/gold.png', color: 'var(--metal-gold)', unit: 'oz' },
-  auxs: { symbol: 'AUXS', name: 'Silver', icon: '/metals/silver.png', color: 'var(--metal-silver)', unit: 'oz' },
-  auxpt: { symbol: 'AUXPT', name: 'Platinum', icon: '/metals/platinum.png', color: 'var(--metal-platinum)', unit: 'oz' },
-  auxpd: { symbol: 'AUXPD', name: 'Palladium', icon: '/metals/palladium.png', color: 'var(--metal-palladium)', unit: 'oz' },
+  auxg: { symbol: 'AUXG', name: 'Gold', icon: '/auxg_icon.png', color: 'var(--metal-gold)', unit: 'oz' },
+  auxs: { symbol: 'AUXS', name: 'Silver', icon: '/auxs_icon.png', color: 'var(--metal-silver)', unit: 'oz' },
+  auxpt: { symbol: 'AUXPT', name: 'Platinum', icon: '/auxpt_icon.png', color: 'var(--metal-platinum)', unit: 'oz' },
+  auxpd: { symbol: 'AUXPD', name: 'Palladium', icon: '/auxpd_icon.png', color: 'var(--metal-palladium)', unit: 'oz' },
 };
 
 export default async function MetalDetailPage({ params }: { params: Promise<{ metal: string }> }) {

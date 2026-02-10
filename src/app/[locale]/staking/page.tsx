@@ -33,35 +33,35 @@ export default async function StakingPage() {
   const tiers = [
     { 
       metal: 'AUXG',
-      icon: '/metals/gold.png',
-      minStake: '1', 
-      apy: `${leaseRates?.gold?.["12m"] || 3.5}%`, 
-      color: '#D4AF37',
-      bgColor: 'rgba(212, 175, 55, 0.12)'
+      icon: '/auxg_icon.png',
+      minStake: '1',
+      apy: `${leaseRates?.gold?.["12m"] || 3.5}%`,
+      color: '#C6A46C',
+      bgColor: 'rgba(198, 164, 108, 0.12)'
     },
-    { 
+    {
       metal: 'AUXS',
-      icon: '/metals/silver.png',
-      minStake: '10', 
-      apy: `${leaseRates?.silver?.["12m"] || 3.0}%`, 
-      color: '#C0C0C0',
-      bgColor: 'rgba(192, 192, 192, 0.12)'
+      icon: '/auxs_icon.png',
+      minStake: '10',
+      apy: `${leaseRates?.silver?.["12m"] || 3.0}%`,
+      color: '#B7C0C8',
+      bgColor: 'rgba(183, 192, 200, 0.12)'
     },
-    { 
+    {
       metal: 'AUXPT',
-      icon: '/metals/platinum.png',
-      minStake: '100', 
-      apy: `${leaseRates?.platinum?.["12m"] || 4.0}%`, 
-      color: '#E5E4E2',
-      bgColor: 'rgba(229, 228, 226, 0.12)'
+      icon: '/auxpt_icon.png',
+      minStake: '100',
+      apy: `${leaseRates?.platinum?.["12m"] || 4.0}%`,
+      color: '#8FA3B0',
+      bgColor: 'rgba(143, 163, 176, 0.12)'
     },
-    { 
+    {
       metal: 'AUXPD',
-      icon: '/metals/palladium.png',
-      minStake: '1000', 
-      apy: `${leaseRates?.palladium?.["12m"] || 3.8}%`, 
-      color: '#B4A7D6',
-      bgColor: 'rgba(180, 167, 214, 0.12)'
+      icon: '/auxpd_icon.png',
+      minStake: '1000',
+      apy: `${leaseRates?.palladium?.["12m"] || 3.8}%`,
+      color: '#7E8A93',
+      bgColor: 'rgba(126, 138, 147, 0.12)'
     },
   ];
 
@@ -194,10 +194,10 @@ export default async function StakingPage() {
               flexWrap: 'wrap'
             }}>
               {[
-                { symbol: 'AUXG', nameKey: 'gold', color: '#D4AF37', icon: '/metals/gold.png' },
-                { symbol: 'AUXS', nameKey: 'silver', color: '#C0C0C0', icon: '/metals/silver.png' },
-                { symbol: 'AUXPT', nameKey: 'platinum', color: '#E5E4E2', icon: '/metals/platinum.png' },
-                { symbol: 'AUXPD', nameKey: 'palladium', color: '#B4A7D6', icon: '/metals/palladium.png' }
+                { symbol: 'AUXG', nameKey: 'gold', color: '#C6A46C', icon: '/auxg_icon.png' },
+                { symbol: 'AUXS', nameKey: 'silver', color: '#B7C0C8', icon: '/auxs_icon.png' },
+                { symbol: 'AUXPT', nameKey: 'platinum', color: '#8FA3B0', icon: '/auxpt_icon.png' },
+                { symbol: 'AUXPD', nameKey: 'palladium', color: '#7E8A93', icon: '/auxpd_icon.png' }
               ].map((metal) => (
                 <div 
                   key={metal.symbol}

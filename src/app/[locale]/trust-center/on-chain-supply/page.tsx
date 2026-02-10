@@ -59,7 +59,7 @@ export default async function OnChainSupplyPage() {
       unit: 'oz',
       color: 'var(--metal-gold)',
       contract: contracts.AUXG,
-      icon: '/metals/gold.png'
+      icon: '/auxg_icon.png'
     },
     { 
       symbol: 'AUXS', 
@@ -70,7 +70,7 @@ export default async function OnChainSupplyPage() {
       unit: 'oz',
       color: 'var(--metal-silver)',
       contract: contracts.AUXS,
-      icon: '/metals/silver.png'
+      icon: '/auxs_icon.png'
     },
     { 
       symbol: 'AUXPT', 
@@ -81,7 +81,7 @@ export default async function OnChainSupplyPage() {
       unit: 'oz',
       color: 'var(--metal-platinum)',
       contract: contracts.AUXPT,
-      icon: '/metals/platinum.png'
+      icon: '/auxpt_icon.png'
     },
     { 
       symbol: 'AUXPD', 
@@ -92,7 +92,7 @@ export default async function OnChainSupplyPage() {
       unit: 'oz',
       color: 'var(--metal-palladium)',
       contract: contracts.AUXPD,
-      icon: '/metals/palladium.png'
+      icon: '/auxpd_icon.png'
     },
   ];
 

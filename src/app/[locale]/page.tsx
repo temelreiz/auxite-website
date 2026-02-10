@@ -9,10 +9,10 @@ export default async function Home() {
   const isRTL = locale === 'ar';
 
   const metals = [
-    { symbol: 'AUXG', name: t('goldName'), icon: '/metals/gold.png', href: '/metals/auxg' },
-    { symbol: 'AUXS', name: t('silverName'), icon: '/metals/silver.png', href: '/metals/auxs' },
-    { symbol: 'AUXPT', name: t('platinumName'), icon: '/metals/platinum.png', href: '/metals/auxpt' },
-    { symbol: 'AUXPD', name: t('palladiumName'), icon: '/metals/palladium.png', href: '/metals/auxpd' },
+    { symbol: 'AUXG', name: t('goldName'), icon: '/auxg_icon.png', href: '/metals/auxg' },
+    { symbol: 'AUXS', name: t('silverName'), icon: '/auxs_icon.png', href: '/metals/auxs' },
+    { symbol: 'AUXPT', name: t('platinumName'), icon: '/auxpt_icon.png', href: '/metals/auxpt' },
+    { symbol: 'AUXPD', name: t('palladiumName'), icon: '/auxpd_icon.png', href: '/metals/auxpd' },
   ];
 
   return (

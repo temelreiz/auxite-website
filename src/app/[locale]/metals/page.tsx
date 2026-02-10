@@ -9,31 +9,31 @@ export default async function MetalsPage() {
     { 
       symbol: 'AUXG', 
       name: t('gold'), 
-      icon: '/metals/gold.png',
+      icon: '/auxg_icon.png',
       href: '/metals/auxg',
       color: 'var(--metal-gold)',
       description: t('goldDesc')
     },
-    { 
-      symbol: 'AUXS', 
-      name: t('silver'), 
-      icon: '/metals/silver.png',
+    {
+      symbol: 'AUXS',
+      name: t('silver'),
+      icon: '/auxs_icon.png',
       href: '/metals/auxs',
       color: 'var(--metal-silver)',
       description: t('silverDesc')
     },
-    { 
-      symbol: 'AUXPT', 
-      name: t('platinum'), 
-      icon: '/metals/platinum.png',
+    {
+      symbol: 'AUXPT',
+      name: t('platinum'),
+      icon: '/auxpt_icon.png',
       href: '/metals/auxpt',
       color: 'var(--metal-platinum)',
       description: t('platinumDesc')
     },
-    { 
-      symbol: 'AUXPD', 
-      name: t('palladium'), 
-      icon: '/metals/palladium.png',
+    {
+      symbol: 'AUXPD',
+      name: t('palladium'),
+      icon: '/auxpd_icon.png',
       href: '/metals/auxpd',
       color: 'var(--metal-palladium)',
       description: t('palladiumDesc')
