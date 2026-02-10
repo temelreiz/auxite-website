@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Auxite – On-Chain Tokenized Precious Metals",
-  description: "Buy, sell, stake, and verify physically allocated gold, silver, platinum, and palladium — fully on-chain.",
+  description: "Buy, sell, and deploy physically allocated gold, silver, platinum, and palladium into institutional yield programs — fully on-chain.",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

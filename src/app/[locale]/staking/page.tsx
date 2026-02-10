@@ -8,9 +8,9 @@ async function getLeaseRates() {
     const res = await fetch('https://wallet.auxite.io/api/lease-rates', {
       next: { revalidate: 300 }, // 5 dakikada bir yenile
     });
-    
+
     if (!res.ok) throw new Error('API error');
-    
+
     const data = await res.json();
     return data.rates;
   } catch (error) {
@@ -29,47 +29,47 @@ export default async function StakingPage() {
   const t = await getTranslations('staking');
   const leaseRates = await getLeaseRates();
 
-  // 12 aylık APY'leri kullan (en yüksek)
+  // 12 aylık yield'leri kullan (en yüksek)
   const tiers = [
-    { 
+    {
       metal: 'AUXG',
       icon: '/auxg_icon.png',
-      minStake: '1',
-      apy: `${leaseRates?.gold?.["12m"] || 3.5}%`,
-      color: '#C6A46C',
-      bgColor: 'rgba(198, 164, 108, 0.12)'
+      minAllocation: '1',
+      projectedYield: `${leaseRates?.gold?.["12m"] || 3.5}%`,
+      color: '#C6A15B',
+      bgColor: 'rgba(198, 161, 91, 0.12)'
     },
     {
       metal: 'AUXS',
       icon: '/auxs_icon.png',
-      minStake: '10',
-      apy: `${leaseRates?.silver?.["12m"] || 3.0}%`,
-      color: '#B7C0C8',
-      bgColor: 'rgba(183, 192, 200, 0.12)'
+      minAllocation: '10',
+      projectedYield: `${leaseRates?.silver?.["12m"] || 3.0}%`,
+      color: '#A6B0BF',
+      bgColor: 'rgba(166, 176, 191, 0.12)'
     },
     {
       metal: 'AUXPT',
       icon: '/auxpt_icon.png',
-      minStake: '100',
-      apy: `${leaseRates?.platinum?.["12m"] || 4.0}%`,
-      color: '#8FA3B0',
-      bgColor: 'rgba(143, 163, 176, 0.12)'
+      minAllocation: '100',
+      projectedYield: `${leaseRates?.platinum?.["12m"] || 4.0}%`,
+      color: '#8FA3B8',
+      bgColor: 'rgba(143, 163, 184, 0.12)'
     },
     {
       metal: 'AUXPD',
       icon: '/auxpd_icon.png',
-      minStake: '1000',
-      apy: `${leaseRates?.palladium?.["12m"] || 3.8}%`,
-      color: '#7E8A93',
-      bgColor: 'rgba(126, 138, 147, 0.12)'
+      minAllocation: '1000',
+      projectedYield: `${leaseRates?.palladium?.["12m"] || 3.8}%`,
+      color: '#6E7C8A',
+      bgColor: 'rgba(110, 124, 138, 0.12)'
     },
   ];
 
-  const benefits = [
-    { icon: '📈', title: t('benefit1Title'), desc: t('benefit1Desc') },
-    { icon: '🔒', title: t('benefit2Title'), desc: t('benefit2Desc') },
-    { icon: '💎', title: t('benefit3Title'), desc: t('benefit3Desc') },
-    { icon: '🎁', title: t('benefit4Title'), desc: t('benefit4Desc') },
+  const protections = [
+    { icon: '🏦', title: t('benefit1Title'), desc: t('benefit1Desc') },
+    { icon: '🔐', title: t('benefit2Title'), desc: t('benefit2Desc') },
+    { icon: '🛡️', title: t('benefit3Title'), desc: t('benefit3Desc') },
+    { icon: '📊', title: t('benefit4Title'), desc: t('benefit4Desc') },
   ];
 
   return (
@@ -79,9 +79,9 @@ export default async function StakingPage() {
         <div className="hero-grid-overlay"></div>
         <div className="metal-glint" style={{ top: '10%', right: '-10%' }}></div>
         <div className="vignette"></div>
-        
+
         <div className="mobile-padding" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
-          
+
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <div className="badge badge-gold" style={{ marginBottom: '24px' }}>
@@ -90,30 +90,34 @@ export default async function StakingPage() {
               </svg>
               {t('badge')}
             </div>
-            
-            <h1 style={{ 
-              fontFamily: "'Inter', sans-serif", 
-              fontSize: '48px', 
-              fontWeight: 700, 
+
+            <h1 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '48px',
+              fontWeight: 700,
               color: 'var(--text-primary)',
               marginBottom: '16px',
               lineHeight: 1.1
             }}>
               {t('title')} <span className="text-gold-gradient">{t('titleHighlight')}</span>
             </h1>
-            
-            <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '600px', margin: '0 auto', lineHeight: 1.7 }}>
+
+            <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '640px', margin: '0 auto 12px', lineHeight: 1.7 }}>
               {t('subtitle')}
+            </p>
+
+            <p style={{ color: 'var(--text-muted)', fontSize: '14px', maxWidth: '640px', margin: '0 auto', lineHeight: 1.7, opacity: 0.8 }}>
+              {t('subtitleDetail')}
             </p>
           </div>
 
           {/* Tier Cards */}
           <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px', marginBottom: '48px' }}>
-            {tiers.map((tier, i) => (
-              <div 
+            {tiers.map((tier) => (
+              <div
                 key={tier.metal}
                 className="card"
-                style={{ 
+                style={{
                   padding: '24px',
                   textAlign: 'center',
                   position: 'relative',
@@ -121,7 +125,7 @@ export default async function StakingPage() {
                 }}
               >
                 {/* Tier highlight */}
-                <div style={{ 
+                <div style={{
                   position: 'absolute',
                   top: 0,
                   left: 0,
@@ -129,12 +133,12 @@ export default async function StakingPage() {
                   height: '3px',
                   background: tier.color
                 }}></div>
-                
+
                 {/* Metal Icon */}
-                <div style={{ 
-                  width: '64px', 
-                  height: '64px', 
-                  borderRadius: '16px', 
+                <div style={{
+                  width: '64px',
+                  height: '64px',
+                  borderRadius: '16px',
                   background: tier.bgColor,
                   border: `1px solid ${tier.color}40`,
                   display: 'flex',
@@ -143,67 +147,67 @@ export default async function StakingPage() {
                   margin: '0 auto 16px',
                   position: 'relative'
                 }}>
-                  <Image 
-                    src={tier.icon} 
+                  <Image
+                    src={tier.icon}
                     alt={tier.metal}
                     width={44}
                     height={44}
                     style={{ objectFit: 'contain' }}
                   />
                 </div>
-                
+
                 {/* Metal Symbol */}
-                <h3 style={{ 
+                <h3 style={{
                   fontFamily: "'Inter', sans-serif",
-                  fontSize: '20px', 
-                  fontWeight: 700, 
-                  color: tier.color, 
-                  marginBottom: '8px' 
+                  fontSize: '20px',
+                  fontWeight: 700,
+                  color: tier.color,
+                  marginBottom: '8px'
                 }}>
                   {tier.metal}
                 </h3>
-                
-                <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-                  Min: {tier.minStake} {tier.metal}
+
+                <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '16px' }}>
+                  {t('minAllocation')}: {tier.minAllocation} {tier.metal}
                 </p>
-                
+
                 <div className="font-mono text-gold-gradient" style={{ fontSize: '28px', fontWeight: 700 }}>
-                  {tier.apy}
+                  {tier.projectedYield}
                 </div>
-                <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0 }}>APY</p>
+                <p style={{ fontSize: '12px', color: 'var(--text-muted)', margin: 0 }}>{t('projectedYield')}</p>
               </div>
             ))}
           </div>
 
-          {/* All Metals Staking Info */}
+          {/* All Metals Info */}
           <div className="card" style={{ padding: '24px', marginBottom: '32px' }}>
-            <h3 style={{ 
+            <h3 style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '16px', 
-              fontWeight: 600, 
-              color: 'var(--text-primary)', 
+              fontSize: '16px',
+              fontWeight: 600,
+              color: 'var(--text-primary)',
               marginBottom: '16px',
               textAlign: 'center'
             }}>
               {t('supportedMetals')}
             </h3>
-            <div style={{ 
-              display: 'flex', 
-              justifyContent: 'center', 
+            <div style={{
+              display: 'flex',
+              justifyContent: 'center',
               gap: '24px',
               flexWrap: 'wrap'
             }}>
               {[
-                { symbol: 'AUXG', nameKey: 'gold', color: '#C6A46C', icon: '/auxg_icon.png' },
-                { symbol: 'AUXS', nameKey: 'silver', color: '#B7C0C8', icon: '/auxs_icon.png' },
-                { symbol: 'AUXPT', nameKey: 'platinum', color: '#8FA3B0', icon: '/auxpt_icon.png' },
-                { symbol: 'AUXPD', nameKey: 'palladium', color: '#7E8A93', icon: '/auxpd_icon.png' }
+                { symbol: 'AUXG', nameKey: 'gold', color: '#C6A15B', icon: '/auxg_icon.png' },
+                { symbol: 'AUXS', nameKey: 'silver', color: '#A6B0BF', icon: '/auxs_icon.png' },
+                { symbol: 'AUXPT', nameKey: 'platinum', color: '#8FA3B8', icon: '/auxpt_icon.png' },
+                { symbol: 'AUXPD', nameKey: 'palladium', color: '#6E7C8A', icon: '/auxpd_icon.png' }
               ].map((metal) => (
-                <div 
+                <div
                   key={metal.symbol}
-                  style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
                     gap: '12px',
                     padding: '12px 18px',
                     background: 'var(--bg-tertiary)',
@@ -220,8 +224,8 @@ export default async function StakingPage() {
                     alignItems: 'center',
                     justifyContent: 'center'
                   }}>
-                    <Image 
-                      src={metal.icon} 
+                    <Image
+                      src={metal.icon}
                       alt={metal.symbol}
                       width={28}
                       height={28}
@@ -229,17 +233,17 @@ export default async function StakingPage() {
                     />
                   </div>
                   <div>
-                    <p style={{ 
-                      fontSize: '14px', 
-                      fontWeight: 600, 
+                    <p style={{
+                      fontSize: '14px',
+                      fontWeight: 600,
                       color: metal.color,
                       margin: 0,
                       fontFamily: "'Inter', sans-serif"
                     }}>
                       {metal.symbol}
                     </p>
-                    <p style={{ 
-                      fontSize: '11px', 
+                    <p style={{
+                      fontSize: '11px',
                       color: 'var(--text-muted)',
                       margin: 0
                     }}>
@@ -251,33 +255,79 @@ export default async function StakingPage() {
             </div>
           </div>
 
-          {/* Benefits */}
+          {/* Institutional Protections */}
           <div className="card" style={{ padding: '32px', marginBottom: '32px' }}>
-            <h2 style={{ 
+            <h2 style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '20px', 
-              fontWeight: 600, 
-              color: 'var(--text-primary)', 
+              fontSize: '20px',
+              fontWeight: 600,
+              color: 'var(--text-primary)',
               marginBottom: '24px',
               textAlign: 'center'
             }}>
               {t('benefitsTitle')}
             </h2>
-            
+
             <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px' }}>
-              {benefits.map((benefit) => (
-                <div key={benefit.title} style={{ textAlign: 'center' }}>
-                  <div style={{ fontSize: '32px', marginBottom: '12px' }}>{benefit.icon}</div>
-                  <h3 style={{ 
-                    fontSize: '14px', 
-                    fontWeight: 600, 
-                    color: 'var(--text-primary)', 
-                    marginBottom: '6px' 
+              {protections.map((item) => (
+                <div key={item.title} style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: '32px', marginBottom: '12px' }}>{item.icon}</div>
+                  <h3 style={{
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    color: 'var(--text-primary)',
+                    marginBottom: '6px'
                   }}>
-                    {benefit.title}
+                    {item.title}
                   </h3>
                   <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.5 }}>
-                    {benefit.desc}
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* How Yield Programs Work */}
+          <div className="card" style={{ padding: '32px', marginBottom: '32px' }}>
+            <h2 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '20px',
+              fontWeight: 600,
+              color: 'var(--text-primary)',
+              marginBottom: '24px',
+              textAlign: 'center'
+            }}>
+              {t('howTitle')}
+            </h2>
+
+            <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
+              {[
+                { num: '01', title: t('steps.allocate'), desc: t('steps.allocateDesc') },
+                { num: '02', title: t('steps.deploy'), desc: t('steps.deployDesc') },
+                { num: '03', title: t('steps.yield'), desc: t('steps.yieldDesc') },
+                { num: '04', title: t('steps.remain'), desc: t('steps.remainDesc') },
+              ].map((step) => (
+                <div key={step.num} style={{ textAlign: 'center' }}>
+                  <div style={{
+                    fontSize: '24px',
+                    fontWeight: 700,
+                    color: 'var(--aux-gold)',
+                    marginBottom: '8px',
+                    fontFamily: "'Inter', sans-serif"
+                  }}>
+                    {step.num}
+                  </div>
+                  <h3 style={{
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    color: 'var(--text-primary)',
+                    marginBottom: '6px'
+                  }}>
+                    {step.title}
+                  </h3>
+                  <p style={{ fontSize: '13px', color: 'var(--text-muted)', margin: 0, lineHeight: 1.5 }}>
+                    {step.desc}
                   </p>
                 </div>
               ))}
@@ -299,9 +349,32 @@ export default async function StakingPage() {
             </div>
           </div>
 
+          {/* Regulatory Disclaimer */}
+          <div style={{
+            textAlign: 'center',
+            padding: '24px',
+            marginBottom: '32px',
+            background: 'var(--bg-secondary)',
+            borderRadius: '12px',
+            border: '1px solid var(--line)'
+          }}>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '12px',
+              margin: 0,
+              lineHeight: 1.7,
+              maxWidth: '700px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              fontStyle: 'italic'
+            }}>
+              {t('disclaimer')}
+            </p>
+          </div>
+
           {/* CTA */}
-          <div style={{ textAlign: 'center' }}>
-            <a 
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <a
               href="https://wallet.auxite.io"
               className="btn-primary"
               style={{ textDecoration: 'none' }}
@@ -311,6 +384,40 @@ export default async function StakingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
+          </div>
+
+          {/* Operator Info */}
+          <div style={{
+            textAlign: 'center',
+            padding: '32px',
+            borderTop: '1px solid var(--line)',
+          }}>
+            <p style={{
+              color: 'var(--text-primary)',
+              fontSize: '16px',
+              fontWeight: 500,
+              margin: '0 0 8px 0',
+            }}>
+              Operated by <span style={{ color: 'var(--aux-gold)' }}>Aurum Ledger Ltd</span>
+            </p>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '14px',
+              margin: '0 0 12px 0',
+            }}>
+              Hong Kong
+            </p>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '11px',
+              margin: 0,
+              lineHeight: 1.6,
+              maxWidth: '500px',
+              marginLeft: 'auto',
+              marginRight: 'auto'
+            }}>
+              {t('regulatoryNote')}
+            </p>
           </div>
 
         </div>
