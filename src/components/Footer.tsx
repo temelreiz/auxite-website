@@ -26,8 +26,9 @@ export default function Footer() {
 
   const trustLinks = [
     { href: '/trust-center', label: tNav('trustCenter') },
-    { href: '/trust-center/on-chain-supply', label: t('onChainSupply') },
-    { href: '/vaults', label: tNav('vaults') },
+    { href: '/trust-center/custody', label: t('custodyArchitecture') },
+    { href: '/trust-center/reserves', label: t('reserveVerification') },
+    { href: '/trust-center/faq', label: t('institutionalFaq') },
   ];
 
   const legalLinks = [
