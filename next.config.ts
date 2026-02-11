@@ -21,6 +21,16 @@ const nextConfig: NextConfig = {
         destination: 'https://wallet.auxite.io/:path*',
         permanent: true,
       },
+      {
+        source: '/stake',
+        destination: '/en/yield',
+        permanent: true,
+      },
+      {
+        source: '/:locale/stake',
+        destination: '/:locale/yield',
+        permanent: true,
+      },
     ];
   },
   async headers() {

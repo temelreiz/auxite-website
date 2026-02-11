@@ -6,33 +6,30 @@ export default async function WhitepaperPage() {
 
   const tableOfContents = [
     { num: '01', key: 'executiveSummary' },
-    { num: '02', key: 'introduction' },
-    { num: '03', key: 'solution' },
-    { num: '04', key: 'tokenArchitecture' },
-    { num: '05', key: 'physicalBacking' },
-    { num: '06', key: 'vaultNetwork' },
-    { num: '07', key: 'smartContracts' },
-    { num: '08', key: 'tierSystem' },
-    { num: '09', key: 'stakingRewards' },
-    { num: '10', key: 'governance' },
-    { num: '11', key: 'roadmap' },
-    { num: '12', key: 'team' },
-    { num: '13', key: 'legal' },
-    { num: '14', key: 'risks' },
-    { num: '15', key: 'conclusion' },
-    { num: '16', key: 'references' },
+    { num: '02', key: 'structuralInefficiencies' },
+    { num: '03', key: 'auxiteModel' },
+    { num: '04', key: 'allocationFramework' },
+    { num: '05', key: 'custodyArchitecture' },
+    { num: '06', key: 'liquidityExecution' },
+    { num: '07', key: 'riskFramework' },
+    { num: '08', key: 'yieldPrograms' },
+    { num: '09', key: 'legalStructure' },
+    { num: '10', key: 'technologyVerification' },
+    { num: '11', key: 'auxmSettlement' },
+    { num: '12', key: 'clientProfile' },
+    { num: '13', key: 'governanceTransparency' },
+    { num: '14', key: 'conclusion' },
   ];
 
   return (
     <div style={{ background: 'var(--bg-primary)', minHeight: '100vh' }}>
-      <section className="mobile-pt" style={{ paddingTop: '140px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
+      <section className="mobile-pt" style={{ paddingTop: '160px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
         {/* Background Elements */}
         <div className="hero-grid-overlay"></div>
-        <div className="metal-glint" style={{ top: '10%', right: '-10%' }}></div>
         <div className="vignette"></div>
-        
+
         <div className="mobile-padding" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
-          
+
           {/* Header */}
           <div style={{ textAlign: 'center', marginBottom: '64px' }}>
             <div className="badge badge-gold" style={{ marginBottom: '24px' }}>
@@ -41,19 +38,20 @@ export default async function WhitepaperPage() {
               </svg>
               {t('badge')}
             </div>
-            
-            <h1 style={{ 
-              fontFamily: "'Inter', sans-serif", 
-              fontSize: '48px', 
-              fontWeight: 700, 
+
+            <h1 style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: '48px',
+              fontWeight: 700,
               color: 'var(--text-primary)',
-              marginBottom: '16px',
+              marginBottom: '20px',
+              letterSpacing: '-0.02em',
               lineHeight: 1.1
             }}>
               {t('title')} <span className="text-gold-gradient">{t('titleHighlight')}</span>
             </h1>
-            
-            <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '600px', margin: '0 auto', lineHeight: 1.7 }}>
+
+            <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '640px', margin: '0 auto', lineHeight: 1.7 }}>
               {t('subtitle')}
             </p>
           </div>
@@ -61,9 +59,9 @@ export default async function WhitepaperPage() {
           {/* Download Card */}
           <div className="card" style={{ padding: '48px', textAlign: 'center', marginBottom: '32px' }}>
             {/* PDF Icon */}
-            <div style={{ 
-              width: '80px', 
-              height: '100px', 
+            <div style={{
+              width: '80px',
+              height: '100px',
               background: 'var(--aux-gold)',
               borderRadius: '8px',
               margin: '0 auto 24px',
@@ -73,13 +71,13 @@ export default async function WhitepaperPage() {
               position: 'relative'
             }}>
               <span style={{ color: 'var(--bg-primary)', fontWeight: 700, fontSize: '14px' }}>PDF</span>
-              <div style={{ 
-                position: 'absolute', 
-                top: '-8px', 
-                right: '-8px', 
-                background: 'var(--state-success)', 
-                borderRadius: '50%', 
-                width: '24px', 
+              <div style={{
+                position: 'absolute',
+                top: '-8px',
+                right: '-8px',
+                background: 'var(--state-success)',
+                borderRadius: '50%',
+                width: '24px',
                 height: '24px',
                 display: 'flex',
                 alignItems: 'center',
@@ -91,7 +89,7 @@ export default async function WhitepaperPage() {
               </div>
             </div>
 
-            <h2 style={{ 
+            <h2 style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '24px',
               fontWeight: 600,
@@ -100,13 +98,13 @@ export default async function WhitepaperPage() {
             }}>
               {t('documentTitle')}
             </h2>
-            
+
             <p style={{ color: 'var(--text-muted)', fontSize: '14px', marginBottom: '32px' }}>
-              18 {t('pages')} • PDF • 2.1 MB
+              6 {t('pages')} • PDF • 71 KB
             </p>
 
-            <a 
-              href="/documents/Auxite_Whitepaper_v1.0.pdf"
+            <a
+              href="/documents/Auxite_Whitepaper_V2.0.pdf"
               target="_blank"
               className="btn-primary"
               style={{ textDecoration: 'none' }}
@@ -120,7 +118,7 @@ export default async function WhitepaperPage() {
 
           {/* Table of Contents */}
           <div className="card" style={{ padding: '32px' }}>
-            <h3 style={{ 
+            <h3 style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '18px',
               fontWeight: 600,
@@ -132,19 +130,19 @@ export default async function WhitepaperPage() {
 
             <div style={{ display: 'grid', gap: '8px' }}>
               {tableOfContents.map((item) => (
-                <div 
+                <div
                   key={item.num}
-                  style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
                     gap: '16px',
                     padding: '12px 16px',
                     borderRadius: '8px',
                     background: 'var(--bg-tertiary)'
                   }}
                 >
-                  <span className="font-mono" style={{ 
-                    color: 'var(--aux-gold)', 
+                  <span className="font-mono" style={{
+                    color: 'var(--aux-gold)',
                     fontWeight: 600,
                     fontSize: '13px',
                     opacity: 0.7
@@ -157,23 +155,51 @@ export default async function WhitepaperPage() {
                 </div>
               ))}
             </div>
+
+            {/* Legal Disclaimer */}
+            <div style={{
+              marginTop: '16px',
+              padding: '12px 16px',
+              borderRadius: '8px',
+              background: 'var(--bg-tertiary)',
+              borderLeft: '3px solid var(--aux-gold)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '16px'
+            }}>
+              <svg style={{ width: '16px', height: '16px', color: 'var(--aux-gold)', flexShrink: 0 }} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+              </svg>
+              <span style={{ color: 'var(--text-muted)', fontSize: '14px', fontStyle: 'italic' }}>
+                {t('disclaimer')}
+              </span>
+            </div>
           </div>
 
           {/* CTA */}
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <p style={{ color: 'var(--text-muted)', fontSize: '15px', marginBottom: '20px' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '15px', marginBottom: '24px' }}>
               {t('cta')}
             </p>
-            <Link 
-              href="/"
-              className="btn-tertiary"
-              style={{ fontSize: '15px' }}
-            >
-              {t('getStarted')}
-              <svg style={{ width: '16px', height: '16px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <a
+                href="https://wallet.auxite.io"
+                className="btn-primary"
+                style={{ textDecoration: 'none' }}
+              >
+                {t('ctaPrimary')}
+                <svg style={{ width: '16px', height: '16px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <Link
+                href="/contact"
+                className="btn-secondary"
+                style={{ textDecoration: 'none' }}
+              >
+                {t('ctaSecondary')}
+              </Link>
+            </div>
           </div>
 
         </div>

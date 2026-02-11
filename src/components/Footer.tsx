@@ -21,7 +21,7 @@ export default function Footer() {
     { href: '/how-it-works', label: tNav('howItWorks') },
     { href: '/whitepaper', label: tNav('whitepaper') },
     { href: '/faq', label: tNav('faq') },
-    { href: '/staking', label: tNav('staking') },
+    { href: '/yield', label: tNav('staking') },
   ];
 
   const trustLinks = [

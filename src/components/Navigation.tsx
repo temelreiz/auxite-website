@@ -37,7 +37,7 @@ export default function Navigation() {
   const navLinks = [
     { href: '/metals', label: t('metals') },
     { href: '/how-it-works', label: t('howItWorks') },
-    { href: '/staking', label: t('staking') },
+    { href: '/yield', label: t('staking') },
     { href: '/trust-center', label: t('trustCenter') },
     { href: '/whitepaper', label: 'Whitepaper' },
   ];
