@@ -152,7 +152,7 @@ export default async function MetalsPage() {
           {/* CTA */}
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
             <a 
-              href="https://wallet.auxite.io"
+              href="https://vault.auxite.io"
               className="btn-primary"
               style={{ textDecoration: 'none' }}
             >

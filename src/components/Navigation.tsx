@@ -123,7 +123,7 @@ export default function Navigation() {
 
               {/* CTA Button */}
               <a
-                href="https://wallet.auxite.io"
+                href="https://vault.auxite.io"
                 className="hide-mobile"
                 style={{
                   display: 'inline-flex',
@@ -224,7 +224,7 @@ export default function Navigation() {
 
           {/* Mobile CTA */}
           <a
-            href="https://wallet.auxite.io"
+            href="https://vault.auxite.io"
             style={{
               display: 'flex',
               alignItems: 'center',

@@ -76,7 +76,7 @@ export default async function MetalDetailPage({ params }: { params: Promise<{ me
               </div>
               
               <a 
-                href="https://wallet.auxite.io"
+                href="https://vault.auxite.io"
                 className="btn-primary"
                 style={{ textDecoration: 'none' }}
               >

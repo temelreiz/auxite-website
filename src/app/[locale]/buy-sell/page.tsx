@@ -61,7 +61,7 @@ export default async function BuySellPage() {
             </p>
 
             <a 
-              href="https://wallet.auxite.io"
+              href="https://vault.auxite.io"
               className="btn-primary"
               style={{ textDecoration: 'none' }}
             >

@@ -13,12 +13,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/wallet',
-        destination: 'https://wallet.auxite.io',
+        destination: 'https://vault.auxite.io',
         permanent: true,
       },
       {
         source: '/wallet/:path*',
-        destination: 'https://wallet.auxite.io/:path*',
+        destination: 'https://vault.auxite.io/:path*',
+        permanent: true,
+      },
+      {
+        source: '/vault',
+        destination: 'https://vault.auxite.io',
+        permanent: true,
+      },
+      {
+        source: '/vault/:path*',
+        destination: 'https://vault.auxite.io/:path*',
         permanent: true,
       },
       {

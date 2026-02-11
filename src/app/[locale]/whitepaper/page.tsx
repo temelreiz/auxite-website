@@ -183,7 +183,7 @@ export default async function WhitepaperPage() {
             </p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <a
-                href="https://wallet.auxite.io"
+                href="https://vault.auxite.io"
                 className="btn-primary"
                 style={{ textDecoration: 'none' }}
               >

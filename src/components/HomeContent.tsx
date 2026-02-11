@@ -326,7 +326,7 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
             <FadeInDiv delay={0.55}>
               <div className="cta-buttons" style={{ display: 'flex', flexDirection: flexDir, gap: 16, marginTop: 44, flexWrap: 'wrap' }}>
                 <motion.a
-                  href="https://wallet.auxite.io"
+                  href="https://vault.auxite.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
@@ -817,7 +817,7 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
             <FadeInDiv delay={0.15}>
               <div className="cta-buttons" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 48 }}>
                 <motion.a
-                  href="https://wallet.auxite.io"
+                  href="https://vault.auxite.io"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary"
