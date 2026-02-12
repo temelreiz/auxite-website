@@ -13,9 +13,6 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   metadataBase: new URL('https://auxite.io'),
-  verification: {
-    google: 'GOOGLE_VERIFICATION_CODE_HERE',
-  },
 };
 
 // JSON-LD Structured Data — Organization + WebSite + Product
