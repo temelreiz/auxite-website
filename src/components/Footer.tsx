@@ -246,6 +246,22 @@ export default function Footer() {
               Hong Kong
             </p>
             <a
+              href="mailto:contact@auxite.io"
+              style={{
+                color: 'var(--aux-gold)',
+                fontSize: '14px',
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px'
+              }}
+            >
+              <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              contact@auxite.io
+            </a>
+            <a
               href="https://auxiteglobal.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -268,6 +284,30 @@ export default function Footer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
+          </div>
+
+          {/* Security Notice */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            padding: '16px 24px',
+            background: 'rgba(47,111,98,0.08)',
+            border: '1px solid rgba(47,111,98,0.15)',
+            borderRadius: '8px'
+          }}>
+            <svg style={{ width: '16px', height: '16px', color: '#2F6F62', flexShrink: 0 }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '13px',
+              margin: 0,
+              lineHeight: 1.5
+            }}>
+              Auxite never requests private keys, recovery phrases, or unsolicited downloads.
+            </p>
           </div>
 
           {/* Copyright & Backing */}
