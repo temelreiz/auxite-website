@@ -1,8 +1,7 @@
-.DS_Store
-*.DS_Store
-
-# Mac files
-.DS_Store
-**/.DS_Store
+node_modules/
+.next/
+out/
 .vercel
 .env*.local
+.DS_Store
+**/.DS_Store
