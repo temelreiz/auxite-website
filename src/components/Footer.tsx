@@ -246,7 +246,7 @@ export default function Footer() {
               Hong Kong
             </p>
             <a
-              href="mailto:contact@auxite.io"
+              href="mailto:contact@aurumledger.com"
               style={{
                 color: 'var(--aux-gold)',
                 fontSize: '14px',
@@ -259,8 +259,17 @@ export default function Footer() {
               <svg style={{ width: '14px', height: '14px' }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              contact@auxite.io
+              contact@aurumledger.com
             </a>
+            <p style={{
+              color: 'var(--text-muted)',
+              fontSize: '13px',
+              margin: 0,
+              marginTop: '8px',
+              fontStyle: 'italic'
+            }}>
+              Auxite is a product and brand of Aurum Ledger Limited.
+            </p>
             <a
               href="https://auxiteglobal.com"
               target="_blank"

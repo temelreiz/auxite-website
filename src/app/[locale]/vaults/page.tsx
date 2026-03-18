@@ -32,14 +32,14 @@ export default async function VaultsPage() {
       metals: ['AUXG', 'AUXPT'],
       status: 'active'
     },
-    { 
-      city: 'Dubai', 
-      country: 'UAE', 
+    {
+      city: 'Dubai',
+      country: 'UAE',
       flag: '🇦🇪',
       operator: 'Brink\'s Dubai',
       certification: 'DMCC Approved',
       metals: ['AUXG'],
-      status: 'coming'
+      status: 'on-hold'
     },
   ];
 
@@ -143,6 +143,21 @@ export default async function VaultsPage() {
                       <span className="badge badge-success">
                         <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'currentColor' }}></span>
                         Active
+                      </span>
+                    ) : vault.status === 'on-hold' ? (
+                      <span style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        fontSize: '11px',
+                        padding: '4px 10px',
+                        background: 'rgba(245,158,11,0.15)',
+                        color: '#f59e0b',
+                        border: '1px solid rgba(245,158,11,0.3)',
+                        borderRadius: '6px',
+                        fontWeight: 600
+                      }}>
+                        ⏸ On Hold
                       </span>
                     ) : (
                       <span className="badge badge-info">Coming Soon</span>
