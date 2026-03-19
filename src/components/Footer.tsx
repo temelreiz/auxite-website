@@ -367,7 +367,7 @@ export default function Footer() {
               </a>
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/company/auxite"
+                href="https://www.linkedin.com/company/auxiteofficial"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
