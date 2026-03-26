@@ -32,7 +32,7 @@ const jsonLd = {
       },
       description: 'Auxite is a digital precious metals platform offering tokenized, physically allocated gold, silver, platinum, and palladium with institutional custody and on-chain settlement.',
       sameAs: [
-        'https://x.com/auxite',
+        'https://x.com/AuxiteGlobal',
       ],
       contactPoint: {
         '@type': 'ContactPoint',
@@ -128,6 +128,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Meta Pixel */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '938812332212962');
+              fbq('track', 'PageView');
+            `,
+          }}
+        />
+        <noscript>
+          <img height="1" width="1" style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=938812332212962&ev=PageView&noscript=1"
+          />
+        </noscript>
       </head>
       <body style={{ fontFamily: "'Inter', sans-serif", margin: 0, padding: 0, background: '#0B1121', color: '#E8E8E8' }}>
         {/* Google Tag Manager (noscript) */}
