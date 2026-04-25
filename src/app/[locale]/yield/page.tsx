@@ -1,6 +1,13 @@
 import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
+import { pageMetadata } from '@/i18n/metadata';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata('staking', locale);
+}
 
 // Lease rates API'den veri çek
 async function getLeaseRates() {

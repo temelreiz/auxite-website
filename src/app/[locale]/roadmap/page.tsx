@@ -1,4 +1,11 @@
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/i18n/metadata';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata('roadmap', locale);
+}
 
 export default async function RoadmapPage() {
   const t = await getTranslations('roadmap');

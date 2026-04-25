@@ -1,5 +1,12 @@
 import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
+import { pageMetadata } from '@/i18n/metadata';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  return pageMetadata('risk', locale);
+}
 
 export default async function RiskPage() {
   const t = await getTranslations('risk');
