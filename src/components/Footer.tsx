@@ -321,7 +321,7 @@ export default function Footer() {
             }}>
               {/* X (Twitter) */}
               <a
-                href="https://x.com/AuxiteOfficial"
+                href="https://x.com/AuxiteGlobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{

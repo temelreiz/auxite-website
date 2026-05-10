@@ -85,6 +85,68 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// JSON-LD Structured Data — Organization + WebSite + SiteNavigationElement
+//
+// Brand-entity model: this site is the Auxite *platform* (the product),
+// operated by Aurum Ledger Limited. The corporate site is auxiteglobal.com.
+// Declaring `parentOrganization` keeps the two domains as separate but
+// related entities — Google ranks auxite.io for "auxite" (the product /
+// platform brand) and auxiteglobal.com for "aurum ledger" / "auxite global".
+function buildJsonLd(locale: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Organization',
+        '@id': 'https://auxite.io/#organization',
+        name: 'Auxite',
+        alternateName: ['Auxite Vault', 'Auxite Platform'],
+        url: 'https://auxite.io',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://auxite.io/auxite-wallet-logo.png',
+          width: 512,
+          height: 512,
+        },
+        description: 'Auxite is a digital-asset custody platform for tokenized precious metals (AUXG gold, AUXS silver, AUXPT platinum, AUXPD palladium). Buy, sell, and deploy physically allocated metals into institutional yield programs — fully on-chain with real-time proof of reserves.',
+        parentOrganization: {
+          '@type': 'Organization',
+          '@id': 'https://auxiteglobal.com/#organization',
+          name: 'Aurum Ledger Limited',
+          alternateName: ['Auxite Global'],
+          url: 'https://auxiteglobal.com',
+        },
+        sameAs: [
+          'https://x.com/AuxiteGlobal',
+          'https://auxiteglobal.com',
+        ],
+        contactPoint: {
+          '@type': 'ContactPoint',
+          contactType: 'customer support',
+          url: 'https://auxite.io/contact',
+        },
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://auxite.io/#website',
+        url: 'https://auxite.io',
+        name: 'Auxite',
+        description: 'The Digital Form of Tradition — tokenized precious metals on-chain.',
+        publisher: { '@id': 'https://auxite.io/#organization' },
+        inLanguage: locale,
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://auxite.io/' + locale + '/metals?q={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+    ],
+  };
+}
+
 export default async function LocaleLayout({
   children,
   params
@@ -93,16 +155,21 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   const messages = await getMessages();
   const isRTL = rtlLocales.includes(locale);
+  const jsonLd = buildJsonLd(locale);
 
   return (
     <div dir={isRTL ? 'rtl' : 'ltr'}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <NextIntlClientProvider messages={messages}>
         <Navigation />
         <main>{children}</main>
