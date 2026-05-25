@@ -89,9 +89,15 @@ export function generateStaticParams() {
 //
 // Brand-entity model: this site is the Auxite *platform* (the product),
 // operated by Aurum Ledger Limited. The corporate site is auxiteglobal.com.
-// Declaring `parentOrganization` keeps the two domains as separate but
-// related entities — Google ranks auxite.io for "auxite" (the product /
-// platform brand) and auxiteglobal.com for "aurum ledger" / "auxite global".
+// `parentOrganization` expresses the corporate hierarchy as two SEPARATE but
+// related entities — this is the correct, honest relationship and does NOT
+// cede the "auxite" brand term.
+//
+// IMPORTANT: do NOT list auxiteglobal.com in `sameAs`. schema.org `sameAs`
+// means "the SAME entity", so it would tell Google the Auxite org and
+// auxiteglobal.com are one entity → Google consolidates them and ranks the
+// more authoritative domain (auxiteglobal.com) for "auxite", which is exactly
+// the bug we're fixing. sameAs holds only Auxite's own profiles (social, etc.).
 function buildJsonLd(locale: string) {
   return {
     '@context': 'https://schema.org',
@@ -118,7 +124,6 @@ function buildJsonLd(locale: string) {
         },
         sameAs: [
           'https://x.com/AuxiteGlobal',
-          'https://auxiteglobal.com',
         ],
         contactPoint: {
           '@type': 'ContactPoint',
