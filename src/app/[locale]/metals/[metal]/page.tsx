@@ -3,17 +3,18 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-const metalData: Record<string, { 
-  symbol: string; 
-  name: string; 
-  icon: string; 
+const metalData: Record<string, {
+  symbol: string;
+  name: string;
+  icon: string;
   color: string;
   unit: string;
+  network: string;
 }> = {
-  auxg: { symbol: 'AUXG', name: 'Gold', icon: '/auxg_icon.png', color: 'var(--metal-gold)', unit: 'oz' },
-  auxs: { symbol: 'AUXS', name: 'Silver', icon: '/auxs_icon.png', color: 'var(--metal-silver)', unit: 'oz' },
-  auxpt: { symbol: 'AUXPT', name: 'Platinum', icon: '/auxpt_icon.png', color: 'var(--metal-platinum)', unit: 'oz' },
-  auxpd: { symbol: 'AUXPD', name: 'Palladium', icon: '/auxpd_icon.png', color: 'var(--metal-palladium)', unit: 'oz' },
+  auxg: { symbol: 'AUXG', name: 'Gold', icon: '/auxg_icon.png', color: 'var(--metal-gold)', unit: 'oz', network: 'Base' },
+  auxs: { symbol: 'AUXS', name: 'Silver', icon: '/auxs_icon.png', color: 'var(--metal-silver)', unit: 'oz', network: 'Base' },
+  auxpt: { symbol: 'AUXPT', name: 'Platinum', icon: '/auxpt_icon.png', color: 'var(--metal-platinum)', unit: 'oz', network: 'Base' },
+  auxpd: { symbol: 'AUXPD', name: 'Palladium', icon: '/auxpd_icon.png', color: 'var(--metal-palladium)', unit: 'oz', network: 'Base' },
 };
 
 export default async function MetalDetailPage({ params }: { params: Promise<{ metal: string }> }) {
@@ -100,7 +101,7 @@ export default async function MetalDetailPage({ params }: { params: Promise<{ me
             </div>
             <div className="card" style={{ padding: '24px', textAlign: 'center' }}>
               <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginBottom: '8px' }}>{t('network')}</p>
-              <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>Polygon</p>
+              <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>{data.network}</p>
             </div>
           </div>
 
