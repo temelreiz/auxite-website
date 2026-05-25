@@ -1,5 +1,32 @@
 import { getTranslations, getLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
 import HomeContent from '@/components/HomeContent';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const baseUrl = 'https://auxite.io';
+  // Self-canonical per locale (title/description/OG inherited from the locale
+  // layout). The languages map is repeated here because page-level `alternates`
+  // replaces the layout's rather than merging field-by-field.
+  return {
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        en: `${baseUrl}/en`,
+        tr: `${baseUrl}/tr`,
+        de: `${baseUrl}/de`,
+        fr: `${baseUrl}/fr`,
+        ar: `${baseUrl}/ar`,
+        ru: `${baseUrl}/ru`,
+        'x-default': `${baseUrl}/en`,
+      },
+    },
+  };
+}
 
 export default async function Home() {
   const t = await getTranslations('home');
