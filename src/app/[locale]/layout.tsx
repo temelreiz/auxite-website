@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing, rtlLocales } from '@/i18n/routing';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SupportChat from '@/components/SupportChat';
 import type { Metadata } from 'next';
 
 type Props = {
@@ -179,6 +180,7 @@ export default async function LocaleLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <SupportChat />
       </NextIntlClientProvider>
     </div>
   );
