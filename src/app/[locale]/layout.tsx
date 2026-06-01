@@ -125,6 +125,9 @@ function buildJsonLd(locale: string) {
         },
         sameAs: [
           'https://x.com/AuxiteGlobal',
+          'https://www.linkedin.com/company/112384921',
+          'https://www.instagram.com/auxiteofficial/',
+          'https://www.youtube.com/@AuxiteOfficial',
         ],
         contactPoint: {
           '@type': 'ContactPoint',
