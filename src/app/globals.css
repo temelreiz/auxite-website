@@ -661,3 +661,139 @@ body {
   }
 }
 
+
+/* ═════════════════════════════════════════════════════════════════════════ */
+/*  BLOG CONTENT — markdown rendered to HTML via marked. Typography styled    */
+/*  here rather than in the page component so a future RTF/MDX editor that    */
+/*  lands the same .blog-content tree gets consistent rendering for free.    */
+/* ═════════════════════════════════════════════════════════════════════════ */
+
+.blog-content {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+.blog-content h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.blog-content h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.blog-content p {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.blog-content a {
+  color: var(--gold-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.blog-content a:hover { opacity: 0.85; }
+
+.blog-content strong { color: var(--text-primary); font-weight: 600; }
+
+.blog-content ul,
+.blog-content ol {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.blog-content li {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.blog-content code {
+  font-family: 'JetBrains Mono', 'Menlo', monospace;
+  font-size: 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 2px 6px;
+  color: var(--text-primary);
+}
+
+.blog-content pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.blog-content pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+  display: block;
+  overflow-x: auto;
+}
+
+.blog-content thead { background: var(--bg-secondary); }
+
+.blog-content th,
+.blog-content td {
+  padding: 10px 14px;
+  border: 1px solid var(--border-subtle);
+  text-align: left;
+  color: var(--text-secondary);
+  vertical-align: top;
+}
+
+.blog-content th {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.blog-content blockquote {
+  border-left: 3px solid var(--gold-primary);
+  padding-left: 16px;
+  margin: 24px 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.blog-content hr {
+  border: 0;
+  border-top: 1px solid var(--border-subtle);
+  margin: 40px 0;
+}
+
+/* RTL adjustments — the AR post is rendered with dir="rtl"; flip lists. */
+[dir="rtl"] .blog-content ul,
+[dir="rtl"] .blog-content ol {
+  padding-left: 0;
+  padding-right: 24px;
+}
+[dir="rtl"] .blog-content blockquote {
+  border-left: 0;
+  border-right: 3px solid var(--gold-primary);
+  padding-left: 0;
+  padding-right: 16px;
+}

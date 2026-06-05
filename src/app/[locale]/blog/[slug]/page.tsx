@@ -1,10 +1,15 @@
 // Blog post detail. Static-generated for every (slug, locale) pair that
 // has an MDX file. JSON-LD Article schema + hreflang alternates so Google
 // understands the multilingual structure.
+//
+// Body rendering: we use `marked` (server-side) to convert the MDX body
+// to HTML. The blog only uses standard markdown (headings, paragraphs,
+// lists, tables, links) — no JSX components — so we don't need the
+// MDX compiler at all, and avoid next-mdx-remote/rsc which is archived
+// and ships broken on Next 16.
 
 import { notFound } from 'next/navigation';
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import remarkGfm from 'remark-gfm';
+import { marked } from 'marked';
 import { Link } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
@@ -14,6 +19,10 @@ import {
   BLOG_LOCALES,
   type BlogLocale,
 } from '@/lib/blog';
+
+// GFM gives us tables (the post has a comparison table) + strikethrough
+// + autolinks. `breaks: false` keeps standard paragraph behavior.
+marked.setOptions({ gfm: true, breaks: false });
 
 const BASE_URL = 'https://auxite.io';
 
@@ -218,10 +227,15 @@ export default async function BlogPostPage({
             </div>
           )}
 
-          {/* MDX content */}
-          <div className="blog-content">
-            <MDXRemote source={post.body} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
-          </div>
+          {/* Body — rendered server-side from markdown to HTML. We trust
+              our own content (it goes through the admin publish endpoint
+              with auth, and lives in our repo), so dangerouslySetInnerHTML
+              here is safe; do not extend this to user-submitted content
+              without sanitizing. */}
+          <div
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: marked.parse(post.body, { async: false }) as string }}
+          />
 
           {/* CTA footer */}
           <footer style={{
