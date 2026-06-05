@@ -54,95 +54,155 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$
 
 __turbopack_context__.s([
     "default",
-    ()=>Home
+    ()=>Home,
+    "generateMetadata",
+    ()=>generateMetadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getTranslations$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/server/react-server/getTranslations.js [app-rsc] (ecmascript) <export default as getTranslations>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getLocale$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getLocale$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/server/react-server/getLocale.js [app-rsc] (ecmascript) <export default as getLocale>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$HomeContent$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/src/components/HomeContent.tsx [app-rsc] (ecmascript)");
 ;
 ;
 ;
+async function generateMetadata({ params }) {
+    const { locale } = await params;
+    const baseUrl = 'https://auxite.io';
+    // Self-canonical per locale (title/description/OG inherited from the locale
+    // layout). The languages map is repeated here because page-level `alternates`
+    // replaces the layout's rather than merging field-by-field.
+    return {
+        alternates: {
+            canonical: `${baseUrl}/${locale}`,
+            languages: {
+                en: `${baseUrl}/en`,
+                tr: `${baseUrl}/tr`,
+                de: `${baseUrl}/de`,
+                fr: `${baseUrl}/fr`,
+                ar: `${baseUrl}/ar`,
+                ru: `${baseUrl}/ru`,
+                'x-default': `${baseUrl}/en`
+            }
+        }
+    };
+}
 async function Home() {
     const t = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getTranslations$3e$__["getTranslations"])('home');
-    const tMetals = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getTranslations$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getTranslations$3e$__["getTranslations"])('metals');
+    const locale = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getLocale$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getLocale$3e$__["getLocale"])();
+    // RTL languages
+    const isRTL = locale === 'ar';
     const metals = [
         {
             symbol: 'AUXG',
-            name: tMetals('gold'),
-            icon: '/metals/gold.png',
+            name: t('goldName'),
+            icon: '/auxg_icon.png',
             href: '/metals/auxg'
         },
         {
             symbol: 'AUXS',
-            name: tMetals('silver'),
-            icon: '/metals/silver.png',
+            name: t('silverName'),
+            icon: '/auxs_icon.png',
             href: '/metals/auxs'
         },
         {
             symbol: 'AUXPT',
-            name: tMetals('platinum'),
-            icon: '/metals/platinum.png',
+            name: t('platinumName'),
+            icon: '/auxpt_icon.png',
             href: '/metals/auxpt'
         },
         {
             symbol: 'AUXPD',
-            name: tMetals('palladium'),
-            icon: '/metals/palladium.png',
+            name: t('palladiumName'),
+            icon: '/auxpd_icon.png',
             href: '/metals/auxpd'
         }
     ];
-    const translations = {
-        badge: t('badge'),
-        title: t('title'),
-        titleHighlight: t('titleHighlight'),
-        titleEnd: t('titleEnd'),
-        subtitle: t('subtitle'),
-        getStarted: t('getStarted'),
-        trustCenter: t('trustCenter'),
-        lbmaVaults: t('lbmaVaults'),
-        audited: t('audited'),
-        stats: {
-            onChain: t('stats.onChain'),
-            backing: t('stats.backing'),
-            trading: t('stats.trading'),
-            metals: t('stats.metals')
-        },
-        whyAuxite: t('whyAuxite'),
-        whyAuxiteHighlight: t('whyAuxiteHighlight'),
-        whySubtitle: t('whySubtitle'),
-        features: {
-            onChain: t('features.onChain'),
-            onChainDesc: t('features.onChainDesc'),
-            physical: t('features.physical'),
-            physicalDesc: t('features.physicalDesc'),
-            stake: t('features.stake'),
-            stakeDesc: t('features.stakeDesc'),
-            transparent: t('features.transparent'),
-            transparentDesc: t('features.transparentDesc')
-        },
-        howItWorks: t('howItWorks'),
-        howItWorksHighlight: t('howItWorksHighlight'),
-        steps: {
-            buy: t('steps.buy'),
-            buyDesc: t('steps.buyDesc'),
-            verify: t('steps.verify'),
-            verifyDesc: t('steps.verifyDesc'),
-            stake: t('steps.stake'),
-            stakeDesc: t('steps.stakeDesc')
-        },
-        ctaTitle: t('ctaTitle'),
-        ctaTitleHighlight: t('ctaTitleHighlight'),
-        ctaSubtitle: t('ctaSubtitle'),
-        startTrading: t('startTrading'),
-        readWhitepaper: t('readWhitepaper')
-    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$HomeContent$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-        t: translations,
-        metals: metals
+        t: {
+            hero: {
+                headline: t('hero.headline'),
+                line1: t('hero.line1'),
+                line2: t('hero.line2'),
+                line3: t('hero.line3'),
+                ctaPrimary: t('hero.ctaPrimary'),
+                ctaSecondary: t('hero.ctaSecondary')
+            },
+            trustBadges: {
+                fullyAllocated: t('trustBadges.fullyAllocated'),
+                segregated: t('trustBadges.segregated'),
+                bankruptcyRemote: t('trustBadges.bankruptcyRemote'),
+                independentlyCustodied: t('trustBadges.independentlyCustodied')
+            },
+            whatIsAuxite: {
+                headline: t('whatIsAuxite.headline'),
+                text: t('whatIsAuxite.text')
+            },
+            howItWorks: {
+                headline: t('howItWorks.headline'),
+                fund: t('howItWorks.fund'),
+                fundDesc: t('howItWorks.fundDesc'),
+                allocate: t('howItWorks.allocate'),
+                allocateDesc: t('howItWorks.allocateDesc'),
+                store: t('howItWorks.store'),
+                storeDesc: t('howItWorks.storeDesc'),
+                redeem: t('howItWorks.redeem'),
+                redeemDesc: t('howItWorks.redeemDesc')
+            },
+            metals: {
+                headline: t('metals.headline'),
+                subtitle: t('metals.subtitle'),
+                lbma: t('metals.lbma'),
+                allocated: t('metals.allocated'),
+                execution: t('metals.execution')
+            },
+            custody: {
+                headline: t('custody.headline'),
+                bullet1: t('custody.bullet1'),
+                bullet2: t('custody.bullet2'),
+                bullet3: t('custody.bullet3'),
+                bullet4: t('custody.bullet4'),
+                cta: t('custody.cta')
+            },
+            execution: {
+                headline: t('execution.headline'),
+                text: t('execution.text')
+            },
+            yield: {
+                headline: t('yield.headline'),
+                text: t('yield.text')
+            },
+            whoWeServe: {
+                headline: t('whoWeServe.headline'),
+                familyOffices: t('whoWeServe.familyOffices'),
+                familyOfficesDesc: t('whoWeServe.familyOfficesDesc'),
+                assetManagers: t('whoWeServe.assetManagers'),
+                assetManagersDesc: t('whoWeServe.assetManagersDesc'),
+                corporates: t('whoWeServe.corporates'),
+                corporatesDesc: t('whoWeServe.corporatesDesc'),
+                professionalInvestors: t('whoWeServe.professionalInvestors'),
+                professionalInvestorsDesc: t('whoWeServe.professionalInvestorsDesc')
+            },
+            trustPreview: {
+                headline: t('trustPreview.headline'),
+                audit: t('trustPreview.audit'),
+                reserves: t('trustPreview.reserves'),
+                custodyItem: t('trustPreview.custodyItem'),
+                legal: t('trustPreview.legal'),
+                cta: t('trustPreview.cta')
+            },
+            cta: {
+                headline: t('cta.headline'),
+                ctaPrimary: t('cta.ctaPrimary'),
+                ctaSecondary: t('cta.ctaSecondary'),
+                disclaimer: t('cta.disclaimer')
+            }
+        },
+        metals: metals,
+        isRTL: isRTL
     }, void 0, false, {
         fileName: "[project]/Desktop/auxite-website/src/app/[locale]/page.tsx",
-        lineNumber: 61,
-        columnNumber: 10
+        lineNumber: 46,
+        columnNumber: 5
     }, this);
 }
 }),

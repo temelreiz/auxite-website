@@ -237,60 +237,50 @@
     "titleHighlight": "Auxite Works",
     "subtitle": "A structured process designed for secure institutional ownership of physical metals.",
     "heroLine": "From execution to custody — every step is built to protect client assets.",
-
     "step1Title": "Client Onboarding",
     "step1Desc": "Clients complete identity verification and suitability checks to access institutional-grade infrastructure.",
     "step1Detail1": "Structured verification process",
     "step1Detail2": "Suitability assessment",
     "step1Detail3": "Institutional account setup",
-
     "step2Title": "Capital Funding",
     "step2Desc": "Capital is transferred via secure banking rails or approved digital settlement methods.",
     "step2Detail1": "Secure banking rails",
     "step2Detail2": "Approved digital settlement",
     "step2Detail3": "Institutional-grade processing",
-
     "step3Title": "Institutional Execution",
     "step3Desc": "Orders are executed through deep OTC liquidity venues to ensure competitive pricing and minimal market impact.",
     "step3Detail1": "OTC liquidity venues",
     "step3Detail2": "Competitive institutional pricing",
     "step3Detail3": "Minimal market impact",
-
     "step4Title": "Physical Allocation",
     "step4Desc": "Metals are specifically allocated and recorded under client ownership. No pooled exposure.",
     "step4Detail1": "Specifically allocated metals",
     "step4Detail2": "Direct client ownership",
     "step4Detail3": "No pooled exposure",
-
     "step5Title": "Secure Vault Storage",
     "step5Desc": "Allocated metals are stored within professional vaulting networks under segregated custody structures.",
     "step5Detail1": "Professional vaulting networks",
     "step5Detail2": "Segregated custody",
     "step5Detail3": "Multi-jurisdiction storage",
-
     "step6Title": "Manage or Redeem",
     "step6Desc": "Clients may hold, transfer, deploy into yield strategies, or request physical redemption subject to minimum thresholds.",
     "step6Detail1": "Hold or transfer",
     "step6Detail2": "Deploy into yield strategies",
     "step6Detail3": "Physical redemption available",
-
     "diagramClient": "Client",
     "diagramExecution": "Execution",
     "diagramAllocation": "Allocation",
     "diagramCustody": "Custody",
     "diagramVerification": "Verification",
     "diagramCaption": "Every step is designed to protect client assets through structural safeguards.",
-
     "ownershipTitle": "Direct Beneficial Ownership",
     "ownershipDesc": "Clients retain full beneficial ownership of allocated metals at all times.",
     "pricingTitle": "Institutional Pricing",
     "pricingDesc": "Execution prices are derived from global spot markets with transparent institutional spreads.",
     "riskTitle": "Risk-First Infrastructure",
     "riskDesc": "Auxite prioritizes asset protection through custody, reconciliation, and liquidity partnerships.",
-
     "trustBoosterTitle": "Asset Protection First",
     "trustBoosterDesc": "Auxite is built for investors who prioritize security over speculation.",
-
     "comparisonTitle": "How Auxite Compares",
     "comparisonFeature": "Feature",
     "comparisonAuxite": "Auxite",
@@ -302,7 +292,6 @@
     "comparisonSegregated": "Segregated custody",
     "comparisonTransparency": "Reserve transparency",
     "comparisonPartial": "Partial",
-
     "ctaTitle": "Own Precious Metals the Institutional Way.",
     "ctaDesc": "A structured approach to precious metals ownership — from execution to custody.",
     "ctaPrimary": "Access the Platform",
@@ -765,5 +754,19 @@
     "howVerificationWorksDesc": "Holdings are reconciled against custodial records from LBMA-accredited facilities in London, Zurich, Dubai, and Singapore. Independent reviews verify the integrity of allocation data.",
     "smartContracts": "Verified Records",
     "viewOnEtherscan": "View on Etherscan"
+  },
+  "blog": {
+    "badge": "Insights",
+    "indexTitle": "Auxite",
+    "indexTitleHighlight": "Journal",
+    "indexDescription": "Research, market commentary, and product updates from the Auxite team on tokenized precious metals and institutional custody.",
+    "emptyTitle": "No posts in this language yet.",
+    "emptyHint": "Check the English edition for the full archive.",
+    "backToIndex": "Back to Journal",
+    "byAuthor": "By {author}",
+    "alsoAvailableIn": "Also available in:",
+    "ctaTitle": "Ready to allocate?",
+    "ctaDescription": "Open an Auxite account and own physically allocated gold, silver, platinum, and palladium — fully on-chain.",
+    "ctaButton": "Access Platform"
   }
 }

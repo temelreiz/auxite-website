@@ -237,60 +237,50 @@
     "titleHighlight": "Nasıl Çalışır",
     "subtitle": "Fiziksel metallerin güvenli kurumsal sahipliği için tasarlanmış yapılandırılmış bir süreç.",
     "heroLine": "Yürütmeden saklamaya — her adım müşteri varlıklarını korumak üzere inşa edilmiştir.",
-
     "step1Title": "Müşteri Kabul Süreci",
     "step1Desc": "Müşteriler, kurumsal düzeyde altyapıya erişim için kimlik doğrulama ve uygunluk değerlendirmesini tamamlar.",
     "step1Detail1": "Yapılandırılmış doğrulama süreci",
     "step1Detail2": "Uygunluk değerlendirmesi",
     "step1Detail3": "Kurumsal hesap açılışı",
-
     "step2Title": "Sermaye Aktarımı",
     "step2Desc": "Sermaye, güvenli bankacılık kanalları veya onaylı dijital takas yöntemleri aracılığıyla aktarılır.",
     "step2Detail1": "Güvenli bankacılık kanalları",
     "step2Detail2": "Onaylı dijital takas",
     "step2Detail3": "Kurumsal düzeyde işlem",
-
     "step3Title": "Kurumsal Yürütme",
     "step3Desc": "Emirler, rekabetçi fiyatlandırma ve minimum piyasa etkisi sağlamak amacıyla derin OTC likidite mekanları aracılığıyla yürütülür.",
     "step3Detail1": "OTC likidite mekanları",
     "step3Detail2": "Rekabetçi kurumsal fiyatlandırma",
     "step3Detail3": "Minimum piyasa etkisi",
-
     "step4Title": "Fiziksel Tahsis",
     "step4Desc": "Metaller, müşteri sahipliği altında özel olarak tahsis edilir ve kayıt altına alınır. Havuzlanmış maruziyet yoktur.",
     "step4Detail1": "Özel olarak tahsis edilmiş metaller",
     "step4Detail2": "Doğrudan müşteri sahipliği",
     "step4Detail3": "Havuzlanmış maruziyet yok",
-
     "step5Title": "Güvenli Kasa Depolama",
     "step5Desc": "Tahsis edilmiş metaller, ayrılmış saklama yapıları altında profesyonel kasa ağlarında depolanır.",
     "step5Detail1": "Profesyonel kasa ağları",
     "step5Detail2": "Ayrılmış saklama",
     "step5Detail3": "Çoklu yargı alanı depolama",
-
     "step6Title": "Yönetim veya Fiziksel Teslimat",
     "step6Desc": "Müşteriler varlıklarını tutabilir, transfer edebilir, getiri stratejilerine yönlendirebilir veya minimum eşik değerlere tabi olarak fiziksel teslimat talep edebilir.",
     "step6Detail1": "Tutma veya transfer",
     "step6Detail2": "Getiri stratejilerine yönlendirme",
     "step6Detail3": "Fiziksel teslimat imkanı",
-
     "diagramClient": "Müşteri",
     "diagramExecution": "Yürütme",
     "diagramAllocation": "Tahsis",
     "diagramCustody": "Saklama",
     "diagramVerification": "Doğrulama",
     "diagramCaption": "Her adım, yapısal güvenceler aracılığıyla müşteri varlıklarını korumak üzere tasarlanmıştır.",
-
     "ownershipTitle": "Doğrudan İntifa Hakkı Sahipliği",
     "ownershipDesc": "Müşteriler, tahsis edilmiş metallerin tam intifa hakkını her zaman ellerinde tutar.",
     "pricingTitle": "Kurumsal Fiyatlandırma",
     "pricingDesc": "Yürütme fiyatları, şeffaf kurumsal spreadlerle küresel spot piyasalardan türetilir.",
     "riskTitle": "Risk Öncelikli Altyapı",
     "riskDesc": "Auxite, saklama, mutabakat ve likidite ortaklıkları aracılığıyla varlık korumasına öncelik verir.",
-
     "trustBoosterTitle": "Öncelik: Varlık Koruması",
     "trustBoosterDesc": "Auxite, spekülatif yaklaşım yerine güvenliğe öncelik veren yatırımcılar için inşa edilmiştir.",
-
     "comparisonTitle": "Auxite Karşılaştırması",
     "comparisonFeature": "Özellik",
     "comparisonAuxite": "Auxite",
@@ -302,7 +292,6 @@
     "comparisonSegregated": "Ayrılmış saklama",
     "comparisonTransparency": "Rezerv şeffaflığı",
     "comparisonPartial": "Kısmi",
-
     "ctaTitle": "Kıymetli Madenlere Kurumsal Yöntemle Sahip Olun.",
     "ctaDesc": "Yürütmeden saklamaya — kıymetli maden sahipliğine yapılandırılmış bir yaklaşım.",
     "ctaPrimary": "Platforma Erişin",
@@ -765,5 +754,19 @@
     "howVerificationWorksDesc": "Varlıklar, Londra, Zürih, Dubai ve Singapur'daki LBMA akrediteli tesislerden gelen saklama kayıtlarıyla mutabakat edilir. Bağımsız incelemeler, tahsis verilerinin bütünlüğünü doğrular.",
     "smartContracts": "Doğrulanmış Kayıtlar",
     "viewOnEtherscan": "Etherscan'de Görüntüle"
+  },
+  "blog": {
+    "badge": "Analiz",
+    "indexTitle": "Auxite",
+    "indexTitleHighlight": "Journal",
+    "indexDescription": "Auxite ekibinden tokenize edilmiş değerli metaller ve kurumsal saklama üzerine araştırma, piyasa yorumu ve ürün güncellemeleri.",
+    "emptyTitle": "Bu dilde henüz yazı yok.",
+    "emptyHint": "Tüm arşiv için İngilizce versiyona göz atabilirsiniz.",
+    "backToIndex": "Journal'a Dön",
+    "byAuthor": "{author}",
+    "alsoAvailableIn": "Bu yazı şu dillerde de mevcut:",
+    "ctaTitle": "Allokasyona hazır mısınız?",
+    "ctaDescription": "Auxite hesabı açın, fiziksel olarak ayrılmış altın, gümüş, platin ve paladyuma blockchain üzerinde sahip olun.",
+    "ctaButton": "Platforma Geç"
   }
 }

@@ -1,0 +1,114 @@
+---
+title: "Auxite vs PAXG, Tether Gold and Kinesis: How Tokenized Precious Metals Actually Compare"
+description: "An honest, side-by-side look at the four most actively traded gold-backed tokens — backing, custody, audits, fees, redemption, and where each one quietly falls short."
+date: "2026-06-05"
+author: "Auxite Team"
+category: "Comparison"
+tags:
+  - "tokenized gold"
+  - "PAXG"
+  - "Tether Gold"
+  - "Kinesis"
+  - "RWA"
+hero: "/blog/auxite-vs-paxg.jpg"
+---
+
+If you're researching gold-backed tokens, you've probably narrowed it down to a handful of names: **PAXG** (Paxos Gold), **XAUT** (Tether Gold), **KAU** (Kinesis Gold), and **AUXG** (Auxite Gold). They all promise "1 token = 1 unit of physical gold." They all show you a custodian. They all publish *some* form of attestation.
+
+So why pick one over another?
+
+Below is the comparison we wish someone had handed us when we started building Auxite — the one that doesn't dodge the awkward details. Numbers and links are accurate as of June 2026; some product specs change quietly, so always verify with the issuer before allocating real capital.
+
+## The short answer
+
+- **PAXG** is the most regulated and the most liquid on centralised exchanges, but it's gold-only and the on-chain footprint is Ethereum mainnet — fees and finality reflect that.
+- **XAUT** is operationally similar to PAXG with a larger but less independent custody story; redemption is theoretical for most retail holders.
+- **KAU** lives inside the Kinesis Monetary System ecosystem and pays a yield from network fees, but only inside that ecosystem; portability is limited.
+- **AUXG** (and its siblings AUXS, AUXPT, AUXPD) covers all four monetary metals, settles on Base for low fees, and pairs each issuance with a daily NAV feed on rwa.xyz plus a third-party attestation rhythm.
+
+The rest of this post is the long version.
+
+## What "tokenized gold" should actually mean
+
+A tokenized precious metal worth holding has to clear four bars:
+
+1. **Allocated metal** — your share is identified by serial-numbered bars, not a pooled claim on a balance sheet.
+2. **Segregated custody** — client metal is legally separated from the issuer's own balance sheet, so an issuer insolvency doesn't sweep your gold.
+3. **Independent attestation** — a real auditor (not the issuer's own staff) confirms the metal exists at a published cadence.
+4. **A working redemption path** — you, or an institution acting for you, can actually take the bar.
+
+Anything missing one of these is a gold-flavoured IOU, not allocated metal.
+
+## Side-by-side
+
+| | **AUXG (Auxite)** | **PAXG (Paxos)** | **XAUT (Tether Gold)** | **KAU (Kinesis)** |
+|---|---|---|---|---|
+| Issuer | Aurum Ledger Ltd (Hong Kong) | Paxos Trust Company (US, NYDFS-regulated) | TG Commodities Ltd (BVI) | Kinesis Money Ltd (Cayman / Liechtenstein) |
+| Unit of account | 1 token = 1 gram | 1 token = 1 troy ounce | 1 token = 1 troy ounce | 1 KAU = 1 gram |
+| Other metals on same platform | Silver, platinum, palladium (AUXS / AUXPT / AUXPD) | Gold only | Gold only | Silver (KAG) only |
+| Vault location | Singapore (Silver Bullion SG) | London (Brink's) | Switzerland | Switzerland, UK, US |
+| Custody model | Allocated, segregated, bankruptcy-remote | Allocated, bankruptcy-remote | Allocated, segregated | Allocated, segregated |
+| Attestation | The Network Firm (monthly) | WithumSmith+Brown (monthly) | BDO (semiannual) | Bureau Veritas / inventory audits |
+| Settlement chain | Base (L2) | Ethereum L1 | Ethereum L1, Tron | Kinesis Blockchain (Stellar fork) |
+| Transaction cost (typical) | ~$0.01 | $2–$20 (gas-dependent) | $2–$20 ETH / ~$1 Tron | <$0.01 internal |
+| Issuance fee | 0.35% trading fee | 0.02% creation / 1.49% buy via Paxos | None disclosed; built into spread | 0.22% mint, 0.45% transfer |
+| Redemption to physical | Through institutional partner, 100g+ allocations | 430-oz London Good Delivery bars only | 1 kg bars, 4–7 day notice | 1g+ via Kinesis Direct |
+| Yield on holdings | Optional structured lease (90 / 180 / 365 day) | None native | None | Holder + minter yield from network fees |
+| Public NAV feed | rwa.xyz, daily | Paxos site | Tether reserves page | Kinesis dashboard |
+
+## Where each product quietly falls short
+
+### PAXG
+
+PAXG is the institutional benchmark and deserves the reputation. Paxos Trust is a chartered New York limited-purpose trust company, and the monthly attestations are the cleanest in the space. The trade-off is everything else: it's gold-only, you settle on Ethereum L1 (so a 5-gram transfer can cost more than a small purchase), and physical redemption is gated to 430-oz London Good Delivery bars — a structural choice that prices retail holders out of the redemption story.
+
+For an institution that just needs a regulated, auditable gold position on Ethereum, PAXG is hard to beat. For anyone who actually wants to move metal in and out, it's a holding instrument, not a payment one.
+
+### XAUT (Tether Gold)
+
+XAUT is operationally similar to PAXG: 1 token = 1 troy ounce, allocated bars, Swiss vault. The harder question is the **issuer**. TG Commodities is a Tether-affiliated BVI entity, attested semiannually by BDO. The metal exists; the governance and disclosure cadence are lighter than Paxos's, and BVI law gives less recourse than New York trust law if something goes wrong.
+
+Redemption is real — 1 kg bars, 4–7 day notice — but functionally retail-inaccessible. Most XAUT changes hands on centralised exchanges and is held for price exposure rather than as a claim on bars.
+
+### KAU (Kinesis Gold)
+
+Kinesis is a different design entirely: it runs its own blockchain (a Stellar fork) and pays a yield on holdings, sourced from the transaction fees of its proprietary network. Allocated metal is real, audits are conducted. The catch is **portability**. KAU lives inside the Kinesis ecosystem; it doesn't ship to mainnet liquidity, it doesn't compose with DeFi, and the yield only exists as long as the network's own transaction volume holds up.
+
+If you're committed to using Kinesis as a daily-spend metal-backed currency, the model is internally consistent. If you want a token that travels — to Base, to Ethereum, into DEX liquidity, into a custodian's reporting stack — KAU is the wrong tool.
+
+### AUXG (Auxite)
+
+We'll be direct about our own gaps because nothing here is closer to magic than the others:
+
+- **Custody concentration**: AUXG metal currently sits with one custodian (Silver Bullion Pte Ltd, Singapore). We have a second-vault commitment on the roadmap, but as of this writing it's single-custodian.
+- **Issuer geography**: Aurum Ledger Ltd is a Hong Kong limited company. Hong Kong is a credible commercial jurisdiction but is not a chartered trust jurisdiction the way New York is for Paxos.
+- **Attestation maturity**: We publish monthly attestations from The Network Firm, but our public attestation history is short relative to PAXG's multi-year cadence.
+
+What we believe we do better:
+
+- **All four monetary metals on one rail.** AUXG, AUXS, AUXPT, AUXPD share custody, settlement, and reporting. Reallocating between gold and silver is a single on-chain transaction, not a sell-buy round trip.
+- **Base, not Ethereum L1.** A real transfer costs about a cent, so the token is usable, not just holdable.
+- **Daily NAV published to rwa.xyz**, with the yield rate sourced from our public lease-rates endpoint. The custodian field on rwa.xyz says "Silver Bullion SG"; the attestation field says "The Network Firm." No anonymised intermediaries.
+- **Optional structured yield**, 90 / 180 / 365 day leases, opt-in, not on by default. Holdings are not lent unless the holder explicitly enters a lease.
+
+## What "fully allocated" actually requires
+
+A useful sanity check before allocating real money to *any* of these tokens:
+
+- **Bar list or weight list**: ask the issuer for it. Allocated metal has serial numbers.
+- **Auditor identity and engagement scope**: not just "audited" — *who*, *how often*, and *do they verify physical existence or just records*.
+- **Insolvency walk-through**: if the issuer fails tomorrow, name the legal entity that holds the bars and the trust instrument that protects them.
+- **A redemption test**: even if you have no intention of redeeming, the redemption path tells you whether the bar story is real.
+
+If any of those four answers come back slow, defensive, or "contact our sales team," that itself is information.
+
+## Practical takeaways
+
+- **You want regulated, gold-only, Ethereum-native, willing to wear the gas costs?** PAXG.
+- **You're an institutional XAUT user with an existing operational pipeline to Tether?** XAUT works.
+- **You're committed to the Kinesis monetary thesis and want yield from inside that ecosystem?** KAU.
+- **You want all four metals, low-cost settlement on Base, daily public NAV, and the option to lease for yield?** AUXG / AUXS / AUXPT / AUXPD.
+
+There's no single "best" tokenized metal — there are different design choices, each with real trade-offs. Pick the one whose trade-offs you can defend.
+
+If you want to look at the AUXG side of that comparison in detail, the [Trust Center](/trust-center) lays out custody, attestation, and reserves; the [Whitepaper](/whitepaper) covers the legal and technical architecture; and [vault.auxite.io](https://vault.auxite.io) is the platform itself.

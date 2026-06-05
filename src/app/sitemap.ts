@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { listAllPostParams, BLOG_LOCALES, listAllSlugs } from '@/lib/blog';
 
 const primaryLocales = ['en', 'tr'];
 const secondaryLocales = ['de', 'fr', 'ar', 'ru'];
@@ -21,6 +22,7 @@ const mediumPriorityPages = [
   '/trust-center',
   '/vaults',
   '/whitepaper',
+  '/blog',
 ];
 
 const lowPriorityPages = [
@@ -79,6 +81,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       });
     }
+  }
+
+  // Blog posts — one sitemap entry per (slug, locale) pair that has an
+  // MDX file. hreflang alternates only point at locales that actually
+  // ship for that slug; we don't fabricate missing translations.
+  const postParams = listAllPostParams();
+  const slugLocales = new Map<string, Set<string>>();
+  for (const { slug, locale } of postParams) {
+    if (!slugLocales.has(slug)) slugLocales.set(slug, new Set());
+    slugLocales.get(slug)!.add(locale);
+  }
+  for (const { slug, locale } of postParams) {
+    const url = `${baseUrl}/${locale}/blog/${slug}`;
+    const languages: Record<string, string> = {};
+    for (const l of slugLocales.get(slug) ?? []) {
+      languages[l] = `${baseUrl}/${l}/blog/${slug}`;
+    }
+    if (languages['en']) languages['x-default'] = languages['en'];
+    sitemapEntries.push({
+      url,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: primaryLocales.includes(locale) ? 0.7 : 0.5,
+      alternates: { languages },
+    });
   }
 
   return sitemapEntries;

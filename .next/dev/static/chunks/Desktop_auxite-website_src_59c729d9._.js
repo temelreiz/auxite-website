@@ -3,14 +3,24 @@
 "use strict";
 
 __turbopack_context__.s([
+    "Link",
+    ()=>Link,
     "localeNames",
     ()=>localeNames,
+    "redirect",
+    ()=>redirect,
     "routing",
     ()=>routing,
     "rtlLocales",
-    ()=>rtlLocales
+    ()=>rtlLocales,
+    "usePathname",
+    ()=>usePathname,
+    "useRouter",
+    ()=>useRouter
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/routing/defineRouting.js [app-client] (ecmascript) <export default as defineRouting>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$client$2f$createNavigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/navigation/react-client/createNavigation.js [app-client] (ecmascript) <export default as createNavigation>");
+;
 ;
 const routing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__["defineRouting"])({
     locales: [
@@ -21,8 +31,12 @@ const routing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$a
         'ar',
         'ru'
     ],
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    localePrefix: 'always'
 });
+const rtlLocales = [
+    'ar'
+];
 const localeNames = {
     en: 'English',
     tr: 'Türkçe',
@@ -31,9 +45,7 @@ const localeNames = {
     ar: 'العربية',
     ru: 'Русский'
 };
-const rtlLocales = [
-    'ar'
-];
+const { Link, redirect, usePathname, useRouter } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$client$2f$createNavigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__["createNavigation"])(routing);
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -46,13 +58,12 @@ __turbopack_context__.s([
     ()=>Navigation
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/src/i18n/routing.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/use-intl/dist/esm/development/react.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/src/i18n/routing.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -65,19 +76,17 @@ var _s = __turbopack_context__.k.signature();
 function Navigation() {
     _s();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('nav');
-    const tBanner = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('banner');
-    const tMetals = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('metals');
     const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"])();
     const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [isScrolled, setIsScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [metalsOpen, setMetalsOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [langOpen, setLangOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navigation.useEffect": ()=>{
             const handleScroll = {
-                "Navigation.useEffect.handleScroll": ()=>setIsScrolled(window.scrollY > 20)
+                "Navigation.useEffect.handleScroll": ()=>{
+                    setIsScrolled(window.scrollY > 20);
+                }
             }["Navigation.useEffect.handleScroll"];
             window.addEventListener('scroll', handleScroll);
             return ({
@@ -85,172 +94,60 @@ function Navigation() {
             })["Navigation.useEffect"];
         }
     }["Navigation.useEffect"], []);
-    // Body scroll lock when mobile menu is open
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Navigation.useEffect": ()=>{
-            if (mobileMenuOpen) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = 'unset';
-            }
-            return ({
-                "Navigation.useEffect": ()=>{
-                    document.body.style.overflow = 'unset';
-                }
-            })["Navigation.useEffect"];
+    const handleLocaleChange = (newLocale)=>{
+        // Mevcut path'ten locale prefix'ini kaldır
+        const segments = pathname.split('/').filter(Boolean);
+        // İlk segment locale ise kaldır
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"].locales.includes(segments[0])) {
+            segments.shift();
         }
-    }["Navigation.useEffect"], [
-        mobileMenuOpen
-    ]);
-    const switchLocale = (newLocale)=>{
-        const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-        router.push(`/${newLocale}${pathWithoutLocale}`);
-        setLangOpen(false);
+        const newPath = segments.length > 0 ? `/${newLocale}/${segments.join('/')}` : `/${newLocale}`;
+        router.push(newPath);
     };
     const navLinks = [
         {
-            href: `/${locale}/metals`,
-            label: t('metals'),
-            hasDropdown: true
+            href: '/metals',
+            label: t('metals')
         },
         {
-            href: `/${locale}/buy-sell`,
-            label: t('buySell')
+            href: '/how-it-works',
+            label: t('howItWorks')
         },
         {
-            href: `/${locale}/staking`,
+            href: '/yield',
             label: t('staking')
         },
         {
-            href: `/${locale}/trust-center`,
+            href: '/trust-center',
             label: t('trustCenter')
         },
         {
-            href: `/${locale}/how-it-works`,
-            label: t('howItWorks')
+            href: '/whitepaper',
+            label: 'Whitepaper'
         }
     ];
-    const metalLinks = [
-        {
-            href: `/${locale}/metals/auxg`,
-            symbol: 'AUXG',
-            name: tMetals('gold'),
-            icon: '/metals/gold.png'
-        },
-        {
-            href: `/${locale}/metals/auxs`,
-            symbol: 'AUXS',
-            name: tMetals('silver'),
-            icon: '/metals/silver.png'
-        },
-        {
-            href: `/${locale}/metals/auxpt`,
-            symbol: 'AUXPT',
-            name: tMetals('platinum'),
-            icon: '/metals/platinum.png'
-        },
-        {
-            href: `/${locale}/metals/auxpd`,
-            symbol: 'AUXPD',
-            name: tMetals('palladium'),
-            icon: '/metals/palladium.png'
-        }
-    ];
+    const isActive = (href)=>{
+        const currentPath = pathname.replace(`/${locale}`, '');
+        return currentPath === href || currentPath.startsWith(href + '/');
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
                 style: {
-                    background: 'linear-gradient(to right, rgba(120,53,15,0.9), rgba(146,64,14,0.9), rgba(120,53,15,0.9))',
-                    color: '#FDE68A',
-                    padding: '10px 16px',
-                    textAlign: 'center',
-                    fontSize: '13px',
                     position: 'fixed',
                     top: 0,
                     left: 0,
                     right: 0,
-                    zIndex: 60,
-                    letterSpacing: '0.02em'
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    style: {
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '10px',
-                        flexWrap: 'wrap',
-                        justifyContent: 'center'
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                width: '6px',
-                                height: '6px',
-                                background: '#FBBF24',
-                                borderRadius: '50%',
-                                boxShadow: '0 0 8px #FBBF24'
-                            }
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            style: {
-                                fontWeight: 500
-                            },
-                            children: tBanner('softLaunch')
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                            lineNumber: 78,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "hide-mobile",
-                            style: {
-                                color: '#FCD34D',
-                                opacity: 0.7
-                            },
-                            children: "•"
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                            lineNumber: 79,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "hide-mobile",
-                            style: {
-                                opacity: 0.9
-                            },
-                            children: tBanner('limits')
-                        }, void 0, false, {
-                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                            lineNumber: 80,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                    lineNumber: 76,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                lineNumber: 63,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                style: {
-                    position: 'fixed',
-                    top: '38px',
-                    left: 0,
-                    right: 0,
                     zIndex: 50,
-                    transition: 'all 0.3s ease',
-                    background: isScrolled ? 'rgba(10,15,28,0.98)' : 'transparent',
+                    padding: '16px 0',
+                    background: isScrolled ? 'rgba(11, 14, 17, 0.95)' : 'transparent',
                     backdropFilter: isScrolled ? 'blur(20px)' : 'none',
-                    borderBottom: isScrolled ? '1px solid rgba(255,255,255,0.05)' : 'none'
+                    WebkitBackdropFilter: isScrolled ? 'blur(20px)' : 'none',
+                    borderBottom: isScrolled ? '1px solid var(--line)' : 'none',
+                    transition: 'all 0.3s ease'
                 },
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "mobile-padding",
                     style: {
                         maxWidth: '1280px',
                         margin: '0 auto',
@@ -260,194 +157,63 @@ function Navigation() {
                         style: {
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'space-between',
-                            height: '72px'
+                            justifyContent: 'space-between'
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: `/${locale}`,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                href: "/",
                                 style: {
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '12px',
                                     textDecoration: 'none'
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                     src: "/auxite-wallet-logo.png",
                                     alt: "Auxite",
-                                    width: 140,
+                                    width: 120,
                                     height: 40,
                                     style: {
                                         objectFit: 'contain'
-                                    }
+                                    },
+                                    priority: true
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                    lineNumber: 100,
+                                    lineNumber: 69,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 99,
+                                lineNumber: 68,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "desktop-nav",
+                                className: "hide-mobile",
                                 style: {
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '36px'
+                                    gap: '32px'
                                 },
-                                children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                        href: link.href,
                                         style: {
-                                            position: 'relative'
+                                            color: isActive(link.href) ? 'var(--aux-gold)' : 'var(--text-secondary)',
+                                            fontSize: '14px',
+                                            fontWeight: 500,
+                                            textDecoration: 'none',
+                                            transition: 'color 0.2s'
                                         },
-                                        onMouseEnter: ()=>link.hasDropdown && setMetalsOpen(true),
-                                        onMouseLeave: ()=>link.hasDropdown && setMetalsOpen(false),
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                href: link.href,
-                                                style: {
-                                                    color: '#A1A1AA',
-                                                    textDecoration: 'none',
-                                                    fontWeight: 500,
-                                                    fontSize: '14px',
-                                                    transition: 'color 0.2s',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    gap: '4px'
-                                                },
-                                                children: [
-                                                    link.label,
-                                                    link.hasDropdown && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        style: {
-                                                            width: '12px',
-                                                            height: '12px',
-                                                            transition: 'transform 0.2s',
-                                                            transform: metalsOpen ? 'rotate(180deg)' : 'rotate(0)'
-                                                        },
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M19 9l-7 7-7-7"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                            lineNumber: 134,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                        lineNumber: 133,
-                                                        columnNumber: 23
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 118,
-                                                columnNumber: 19
-                                            }, this),
-                                            link.hasDropdown && metalsOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                style: {
-                                                    position: 'absolute',
-                                                    top: '100%',
-                                                    left: '-20px',
-                                                    paddingTop: '12px'
-                                                },
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    style: {
-                                                        background: 'rgba(20,27,45,0.98)',
-                                                        backdropFilter: 'blur(20px)',
-                                                        border: '1px solid rgba(255,255,255,0.08)',
-                                                        borderRadius: '16px',
-                                                        padding: '8px',
-                                                        minWidth: '220px',
-                                                        boxShadow: '0 20px 40px rgba(0,0,0,0.4)'
-                                                    },
-                                                    children: metalLinks.map((metal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                            href: metal.href,
-                                                            style: {
-                                                                display: 'flex',
-                                                                alignItems: 'center',
-                                                                gap: '12px',
-                                                                padding: '12px 16px',
-                                                                borderRadius: '10px',
-                                                                textDecoration: 'none',
-                                                                transition: 'background 0.2s'
-                                                            },
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                    src: metal.icon,
-                                                                    alt: metal.name,
-                                                                    width: 32,
-                                                                    height: 32
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                                    lineNumber: 170,
-                                                                    columnNumber: 29
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            style: {
-                                                                                color: 'white',
-                                                                                fontWeight: 600,
-                                                                                fontSize: '14px'
-                                                                            },
-                                                                            children: metal.symbol
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                                            lineNumber: 172,
-                                                                            columnNumber: 31
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            style: {
-                                                                                color: '#71717A',
-                                                                                fontSize: '12px'
-                                                                            },
-                                                                            children: metal.name
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                                            lineNumber: 173,
-                                                                            columnNumber: 31
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                                    lineNumber: 171,
-                                                                    columnNumber: 29
-                                                                }, this)
-                                                            ]
-                                                        }, metal.href, true, {
-                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                            lineNumber: 157,
-                                                            columnNumber: 27
-                                                        }, this))
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                    lineNumber: 147,
-                                                    columnNumber: 23
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 141,
-                                                columnNumber: 21
-                                            }, this)
-                                        ]
-                                    }, link.href, true, {
+                                        children: link.label
+                                    }, link.href, false, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 82,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 110,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "desktop-nav",
                                 style: {
                                     display: 'flex',
                                     alignItems: 'center',
@@ -455,355 +221,297 @@ function Navigation() {
                                 },
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "hide-mobile",
                                         style: {
                                             position: 'relative'
                                         },
-                                        onMouseEnter: ()=>setLangOpen(true),
-                                        onMouseLeave: ()=>setLangOpen(false),
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                style: {
-                                                    background: 'rgba(255,255,255,0.05)',
-                                                    border: '1px solid rgba(255,255,255,0.1)',
-                                                    color: '#A1A1AA',
-                                                    padding: '8px 12px',
-                                                    borderRadius: '8px',
-                                                    fontSize: '13px',
-                                                    fontWeight: 500,
-                                                    cursor: 'pointer',
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    gap: '6px'
-                                                },
-                                                children: [
-                                                    locale.toUpperCase(),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                        style: {
-                                                            width: '10px',
-                                                            height: '10px'
-                                                        },
-                                                        fill: "none",
-                                                        viewBox: "0 0 24 24",
-                                                        stroke: "currentColor",
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                            strokeLinecap: "round",
-                                                            strokeLinejoin: "round",
-                                                            strokeWidth: 2,
-                                                            d: "M19 9l-7 7-7-7"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                            lineNumber: 207,
-                                                            columnNumber: 21
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                        lineNumber: 206,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 192,
-                                                columnNumber: 17
-                                            }, this),
-                                            langOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                style: {
-                                                    position: 'absolute',
-                                                    top: '100%',
-                                                    right: 0,
-                                                    paddingTop: '8px'
-                                                },
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                            value: locale,
+                                            onChange: (e)=>handleLocaleChange(e.target.value),
+                                            style: {
+                                                background: 'var(--bg-tertiary)',
+                                                border: '1px solid var(--line)',
+                                                borderRadius: '8px',
+                                                padding: '8px 12px',
+                                                color: 'var(--text-primary)',
+                                                fontSize: '13px',
+                                                cursor: 'pointer',
+                                                outline: 'none'
+                                            },
+                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"].locales.map((loc)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: loc,
                                                     style: {
-                                                        background: 'rgba(20,27,45,0.98)',
-                                                        backdropFilter: 'blur(20px)',
-                                                        border: '1px solid rgba(255,255,255,0.08)',
-                                                        borderRadius: '12px',
-                                                        padding: '6px',
-                                                        minWidth: '120px',
-                                                        boxShadow: '0 10px 30px rgba(0,0,0,0.4)'
+                                                        background: 'var(--bg-primary)'
                                                     },
-                                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"].locales.map((loc)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                            onClick: ()=>switchLocale(loc),
-                                                            style: {
-                                                                display: 'block',
-                                                                width: '100%',
-                                                                padding: '10px 14px',
-                                                                background: loc === locale ? 'rgba(226,184,87,0.1)' : 'transparent',
-                                                                border: 'none',
-                                                                borderRadius: '8px',
-                                                                color: loc === locale ? '#E2B857' : '#A1A1AA',
-                                                                fontSize: '13px',
-                                                                fontWeight: loc === locale ? 600 : 400,
-                                                                cursor: 'pointer',
-                                                                textAlign: 'left'
-                                                            },
-                                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["localeNames"][loc]
-                                                        }, loc, false, {
-                                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                            lineNumber: 228,
-                                                            columnNumber: 25
-                                                        }, this))
+                                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["localeNames"][loc]
+                                                }, loc, false, {
+                                                    fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                                    lineNumber: 117,
+                                                    columnNumber: 21
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                        lineNumber: 101,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://vault.auxite.io",
+                                        className: "hide-mobile",
+                                        style: {
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '6px',
+                                            background: 'var(--aux-gold)',
+                                            color: 'var(--bg-primary)',
+                                            padding: '10px 20px',
+                                            borderRadius: '10px',
+                                            fontWeight: 600,
+                                            fontSize: '13px',
+                                            textDecoration: 'none',
+                                            boxShadow: '0 4px 16px rgba(201,162,77,0.25)'
+                                        },
+                                        children: [
+                                            t('launchApp'),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                style: {
+                                                    width: '14px',
+                                                    height: '14px'
+                                                },
+                                                fill: "none",
+                                                viewBox: "0 0 24 24",
+                                                stroke: "currentColor",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                    strokeLinecap: "round",
+                                                    strokeLinejoin: "round",
+                                                    strokeWidth: 2.5,
+                                                    d: "M17 8l4 4m0 0l-4 4m4-4H3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                    lineNumber: 218,
-                                                    columnNumber: 21
+                                                    lineNumber: 144,
+                                                    columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 212,
-                                                columnNumber: 19
+                                                lineNumber: 143,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 187,
+                                        lineNumber: 125,
                                         columnNumber: 15
                                     }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: "https://wallet.auxite.io",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        className: "show-mobile",
+                                        onClick: ()=>setIsMobileMenuOpen(!isMobileMenuOpen),
                                         style: {
-                                            background: 'linear-gradient(135deg, #E2B857 0%, #F5D77E 50%, #E2B857 100%)',
-                                            color: '#0B1121',
-                                            padding: '10px 24px',
-                                            borderRadius: '10px',
-                                            fontWeight: 600,
-                                            fontSize: '14px',
-                                            textDecoration: 'none',
-                                            boxShadow: '0 4px 20px rgba(226,184,87,0.3)',
-                                            transition: 'all 0.2s'
+                                            display: 'none',
+                                            background: 'transparent',
+                                            border: 'none',
+                                            padding: '8px',
+                                            cursor: 'pointer'
                                         },
-                                        children: t('signIn')
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            style: {
+                                                width: '24px',
+                                                height: '24px',
+                                                color: 'var(--text-primary)'
+                                            },
+                                            fill: "none",
+                                            viewBox: "0 0 24 24",
+                                            stroke: "currentColor",
+                                            children: isMobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M6 18L18 6M6 6l12 12"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                                lineNumber: 162,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M4 6h16M4 12h16M4 18h16"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                                lineNumber: 164,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                            lineNumber: 160,
+                                            columnNumber: 17
+                                        }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 149,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 185,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: `hamburger ${mobileMenuOpen ? 'open' : ''}`,
-                                onClick: ()=>setMobileMenuOpen(!mobileMenuOpen),
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
-                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 274,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
-                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 275,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
-                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 276,
-                                        columnNumber: 15
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 270,
+                                lineNumber: 99,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                        lineNumber: 97,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                    lineNumber: 96,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                lineNumber: 85,
+                lineNumber: 52,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `mobile-menu ${mobileMenuOpen ? 'open' : ''}`,
+                className: "mobile-menu",
+                style: {
+                    transform: isMobileMenuOpen ? 'translateX(0)' : 'translateX(100%)',
+                    transition: 'transform 0.3s ease'
+                },
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
                             display: 'flex',
-                            gap: '8px',
-                            flexWrap: 'wrap',
-                            marginBottom: '16px'
+                            flexDirection: 'column',
+                            gap: '24px'
                         },
-                        children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"].locales.map((loc)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>{
-                                    switchLocale(loc);
-                                    setMobileMenuOpen(false);
-                                },
+                        children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                href: link.href,
+                                onClick: ()=>setIsMobileMenuOpen(false),
                                 style: {
-                                    padding: '8px 14px',
-                                    background: loc === locale ? 'rgba(226,184,87,0.15)' : 'rgba(255,255,255,0.03)',
-                                    border: loc === locale ? '1px solid rgba(226,184,87,0.3)' : '1px solid rgba(255,255,255,0.05)',
-                                    borderRadius: '8px',
-                                    color: loc === locale ? '#E2B857' : '#A1A1AA',
-                                    fontSize: '12px',
-                                    fontWeight: loc === locale ? 600 : 400,
-                                    cursor: 'pointer'
+                                    color: isActive(link.href) ? 'var(--aux-gold)' : 'var(--text-primary)',
+                                    fontSize: '20px',
+                                    fontWeight: 500,
+                                    textDecoration: 'none'
                                 },
-                                children: loc.toUpperCase()
-                            }, loc, false, {
+                                children: link.label
+                            }, link.href, false, {
                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 287,
+                                lineNumber: 183,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                        lineNumber: 285,
+                        lineNumber: 181,
                         columnNumber: 9
                     }, this),
-                    navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            href: link.href,
-                            onClick: ()=>setMobileMenuOpen(false),
-                            children: link.label
-                        }, link.href, false, {
-                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                            lineNumber: 307,
-                            columnNumber: 11
-                        }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         style: {
-                            marginTop: '16px',
-                            paddingTop: '16px',
-                            borderTop: '1px solid rgba(255,255,255,0.1)'
+                            marginTop: 'auto',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '16px'
                         },
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                style: {
-                                    color: '#71717A',
-                                    fontSize: '12px',
-                                    marginBottom: '12px',
-                                    textTransform: 'uppercase',
-                                    letterSpacing: '0.1em'
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                value: locale,
+                                onChange: (e)=>{
+                                    handleLocaleChange(e.target.value);
+                                    setIsMobileMenuOpen(false);
                                 },
-                                children: t('metals')
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 318,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 style: {
-                                    display: 'grid',
-                                    gridTemplateColumns: 'repeat(2, 1fr)',
-                                    gap: '12px'
+                                    background: 'var(--bg-tertiary)',
+                                    border: '1px solid var(--line)',
+                                    borderRadius: '8px',
+                                    padding: '12px 16px',
+                                    color: 'var(--text-primary)',
+                                    fontSize: '14px',
+                                    cursor: 'pointer',
+                                    outline: 'none'
                                 },
-                                children: metalLinks.map((metal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: metal.href,
-                                        onClick: ()=>setMobileMenuOpen(false),
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["routing"].locales.map((loc)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: loc,
                                         style: {
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '10px',
-                                            padding: '12px',
-                                            background: 'rgba(255,255,255,0.03)',
-                                            borderRadius: '12px',
-                                            textDecoration: 'none',
-                                            border: '1px solid rgba(255,255,255,0.05)'
+                                            background: 'var(--bg-primary)'
                                         },
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: metal.icon,
-                                                alt: metal.name,
-                                                width: 28,
-                                                height: 28
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 336,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        style: {
-                                                            color: 'white',
-                                                            fontWeight: 600,
-                                                            fontSize: '14px'
-                                                        },
-                                                        children: metal.symbol
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                        lineNumber: 338,
-                                                        columnNumber: 19
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        style: {
-                                                            color: '#71717A',
-                                                            fontSize: '11px'
-                                                        },
-                                                        children: metal.name
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                        lineNumber: 339,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                                lineNumber: 337,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, metal.href, true, {
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["localeNames"][loc]
+                                    }, loc, false, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                        lineNumber: 321,
+                                        lineNumber: 219,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                                lineNumber: 319,
+                                lineNumber: 201,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://vault.auxite.io",
+                                style: {
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    gap: '8px',
+                                    background: 'var(--aux-gold)',
+                                    color: 'var(--bg-primary)',
+                                    padding: '14px 24px',
+                                    borderRadius: '10px',
+                                    fontWeight: 600,
+                                    fontSize: '15px',
+                                    textDecoration: 'none'
+                                },
+                                children: [
+                                    t('launchApp'),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                        style: {
+                                            width: '16px',
+                                            height: '16px'
+                                        },
+                                        fill: "none",
+                                        viewBox: "0 0 24 24",
+                                        stroke: "currentColor",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                            strokeLinecap: "round",
+                                            strokeLinejoin: "round",
+                                            strokeWidth: 2.5,
+                                            d: "M17 8l4 4m0 0l-4 4m4-4H3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                            lineNumber: 244,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                        lineNumber: 243,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
+                                lineNumber: 226,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                        lineNumber: 317,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "https://wallet.auxite.io",
-                        onClick: ()=>setMobileMenuOpen(false),
-                        style: {
-                            marginTop: 'auto',
-                            background: 'linear-gradient(135deg, #E2B857 0%, #C9A227 100%)',
-                            color: '#0B1121',
-                            padding: '16px 24px',
-                            borderRadius: '12px',
-                            fontWeight: 600,
-                            fontSize: '16px',
-                            textDecoration: 'none',
-                            textAlign: 'center',
-                            boxShadow: '0 8px 32px rgba(226,184,87,0.3)'
-                        },
-                        children: t('signIn')
-                    }, void 0, false, {
-                        fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                        lineNumber: 347,
+                        lineNumber: 199,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Desktop/auxite-website/src/components/Navigation.tsx",
-                lineNumber: 283,
+                lineNumber: 174,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(Navigation, "IPHgYdV1mL93wh0vIJGoeNJwHWc=", false, function() {
+_s(Navigation, "8E1lR0IV9V5BGej1MpQz/vt9gwo=", false, function() {
     return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"],
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"],
@@ -825,10 +533,9 @@ __turbopack_context__.s([
     ()=>Footer
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/src/i18n/routing.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/react-client/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/use-intl/dist/esm/development/react.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
@@ -838,226 +545,635 @@ var _s = __turbopack_context__.k.signature();
 function Footer() {
     _s();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('footer');
-    const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"])();
-    const footerLinks = {
-        [t('products')]: [
-            {
-                label: 'AUXG (Gold)',
-                href: `/${locale}/metals/auxg`
-            },
-            {
-                label: 'AUXS (Silver)',
-                href: `/${locale}/metals/auxs`
-            },
-            {
-                label: 'AUXPT (Platinum)',
-                href: `/${locale}/metals/auxpt`
-            },
-            {
-                label: 'AUXPD (Palladium)',
-                href: `/${locale}/metals/auxpd`
-            },
-            {
-                label: 'Staking',
-                href: `/${locale}/staking`
-            }
-        ],
-        [t('resources')]: [
-            {
-                label: 'How It Works',
-                href: `/${locale}/how-it-works`
-            },
-            {
-                label: 'Whitepaper',
-                href: `/${locale}/whitepaper`
-            },
-            {
-                label: 'FAQ',
-                href: `/${locale}/faq`
-            }
-        ],
-        [t('trust')]: [
-            {
-                label: 'Trust Center',
-                href: `/${locale}/trust-center`
-            },
-            {
-                label: 'Proof of Reserves',
-                href: `/${locale}/trust-center/proof-of-reserves`
-            },
-            {
-                label: 'Smart Contracts',
-                href: `/${locale}/trust-center/smart-contracts`
-            },
-            {
-                label: 'Custody',
-                href: `/${locale}/trust-center/custody`
-            }
-        ],
-        [t('legal')]: [
-            {
-                label: 'Terms of Service',
-                href: `/${locale}/legal/terms`
-            },
-            {
-                label: 'Privacy Policy',
-                href: `/${locale}/legal/privacy`
-            },
-            {
-                label: 'Risk Disclosure',
-                href: `/${locale}/legal/risk`
-            },
-            {
-                label: 'Contact',
-                href: `/${locale}/contact`
-            }
-        ]
-    };
+    const tNav = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('nav');
+    const tCommon = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('common');
+    const year = new Date().getFullYear();
+    const productLinks = [
+        {
+            href: '/metals/auxg',
+            label: 'AUXG (Gold)'
+        },
+        {
+            href: '/metals/auxs',
+            label: 'AUXS (Silver)'
+        },
+        {
+            href: '/metals/auxpt',
+            label: 'AUXPT (Platinum)'
+        },
+        {
+            href: '/metals/auxpd',
+            label: 'AUXPD (Palladium)'
+        }
+    ];
+    const resourceLinks = [
+        {
+            href: '/how-it-works',
+            label: tNav('howItWorks')
+        },
+        {
+            href: '/whitepaper',
+            label: tNav('whitepaper')
+        },
+        {
+            href: '/faq',
+            label: tNav('faq')
+        },
+        {
+            href: '/yield',
+            label: tNav('staking')
+        }
+    ];
+    const trustLinks = [
+        {
+            href: '/trust-center',
+            label: tNav('trustCenter')
+        },
+        {
+            href: '/trust-center/custody',
+            label: t('custodyArchitecture')
+        },
+        {
+            href: '/trust-center/reserves',
+            label: t('reserveVerification')
+        },
+        {
+            href: '/trust-center/faq',
+            label: t('institutionalFaq')
+        }
+    ];
+    const legalLinks = [
+        {
+            href: '/legal/terms',
+            label: tNav('terms')
+        },
+        {
+            href: '/legal/privacy',
+            label: tNav('privacy')
+        },
+        {
+            href: '/legal/risk',
+            label: tNav('risk')
+        }
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
         style: {
-            background: '#070D1A',
-            borderTop: '1px solid rgba(255,255,255,0.05)'
+            background: 'var(--bg-primary)',
+            borderTop: '1px solid var(--line)',
+            padding: '80px 0 40px'
         },
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "mobile-padding",
-                style: {
-                    maxWidth: '1280px',
-                    margin: '0 auto',
-                    padding: '64px 24px'
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "mobile-padding",
+            style: {
+                maxWidth: '1280px',
+                margin: '0 auto',
+                padding: '0 24px'
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "footer-grid",
                     style: {
                         display: 'grid',
                         gridTemplateColumns: '2fr 1fr 1fr 1fr 1fr',
-                        gap: '48px'
+                        gap: '48px',
+                        marginBottom: '64px'
                     },
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "footer-brand",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    href: `/${locale}`,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                    href: "/",
                                     style: {
-                                        display: 'block',
-                                        marginBottom: '24px'
+                                        display: 'inline-block',
+                                        marginBottom: '16px'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                         src: "/auxite-wallet-logo.png",
                                         alt: "Auxite",
-                                        width: 130,
-                                        height: 38,
+                                        width: 140,
+                                        height: 45,
                                         style: {
-                                            objectFit: 'contain',
-                                            opacity: 0.9
+                                            objectFit: 'contain'
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                        lineNumber: 46,
+                                        lineNumber: 59,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     style: {
-                                        color: '#71717A',
+                                        color: 'var(--aux-gold)',
+                                        fontSize: '12px',
+                                        fontWeight: 600,
+                                        letterSpacing: '0.05em',
+                                        marginBottom: '16px',
+                                        opacity: 0.9
+                                    },
+                                    children: tCommon('slogan')
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 68,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
                                         fontSize: '14px',
                                         lineHeight: 1.7,
-                                        marginBottom: '24px',
-                                        maxWidth: '280px'
+                                        maxWidth: '280px',
+                                        margin: 0
                                     },
                                     children: t('description')
                                 }, void 0, false, {
                                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 79,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    style: {
+                                        fontFamily: "'Inter', sans-serif",
+                                        fontSize: '13px',
+                                        fontWeight: 600,
+                                        color: 'var(--text-primary)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.1em',
+                                        marginBottom: '20px'
+                                    },
+                                    children: t('products')
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    style: {
+                                        listStyle: 'none',
+                                        padding: 0,
+                                        margin: 0
+                                    },
+                                    children: productLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            style: {
+                                                marginBottom: '12px'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                                href: link.href,
+                                                style: {
+                                                    color: 'var(--text-muted)',
+                                                    fontSize: '14px',
+                                                    textDecoration: 'none'
+                                                },
+                                                children: link.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, link.href, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 103,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    style: {
+                                        fontFamily: "'Inter', sans-serif",
+                                        fontSize: '13px',
+                                        fontWeight: 600,
+                                        color: 'var(--text-primary)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.1em',
+                                        marginBottom: '20px'
+                                    },
+                                    children: t('resources')
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 123,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    style: {
+                                        listStyle: 'none',
+                                        padding: 0,
+                                        margin: 0
+                                    },
+                                    children: resourceLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            style: {
+                                                marginBottom: '12px'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                                href: link.href,
+                                                style: {
+                                                    color: 'var(--text-muted)',
+                                                    fontSize: '14px',
+                                                    textDecoration: 'none'
+                                                },
+                                                children: link.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 137,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, link.href, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 136,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 134,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 122,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    style: {
+                                        fontFamily: "'Inter', sans-serif",
+                                        fontSize: '13px',
+                                        fontWeight: 600,
+                                        color: 'var(--text-primary)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.1em',
+                                        marginBottom: '20px'
+                                    },
+                                    children: t('trust')
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 154,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    style: {
+                                        listStyle: 'none',
+                                        padding: 0,
+                                        margin: 0
+                                    },
+                                    children: trustLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            style: {
+                                                marginBottom: '12px'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                                href: link.href,
+                                                style: {
+                                                    color: 'var(--text-muted)',
+                                                    fontSize: '14px',
+                                                    textDecoration: 'none'
+                                                },
+                                                children: link.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 168,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, link.href, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 167,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 165,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 153,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    style: {
+                                        fontFamily: "'Inter', sans-serif",
+                                        fontSize: '13px',
+                                        fontWeight: 600,
+                                        color: 'var(--text-primary)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.1em',
+                                        marginBottom: '20px'
+                                    },
+                                    children: t('legal')
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    style: {
+                                        listStyle: 'none',
+                                        padding: 0,
+                                        margin: 0
+                                    },
+                                    children: legalLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            style: {
+                                                marginBottom: '12px'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Link"], {
+                                                href: link.href,
+                                                style: {
+                                                    color: 'var(--text-muted)',
+                                                    fontSize: '14px',
+                                                    textDecoration: 'none'
+                                                },
+                                                children: link.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 199,
+                                                columnNumber: 19
+                                            }, this)
+                                        }, link.href, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 198,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 184,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                    lineNumber: 49,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    style: {
+                        borderTop: '1px solid var(--line)',
+                        paddingTop: '40px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '32px'
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: '16px',
+                                padding: '32px 0',
+                                borderBottom: '1px solid var(--line)'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-primary)',
+                                        fontSize: '16px',
+                                        fontWeight: 500,
+                                        margin: 0,
+                                        letterSpacing: '-0.01em'
+                                    },
+                                    children: [
+                                        "Operated by ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            style: {
+                                                color: 'var(--aux-gold)'
+                                            },
+                                            children: "Aurum Ledger Ltd"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 239,
+                                            columnNumber: 27
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 232,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
+                                        fontSize: '14px',
+                                        margin: 0
+                                    },
+                                    children: "Hong Kong"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 241,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "mailto:contact@aurumledger.com",
+                                    style: {
+                                        color: 'var(--aux-gold)',
+                                        fontSize: '14px',
+                                        textDecoration: 'none',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '6px'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            style: {
+                                                width: '14px',
+                                                height: '14px'
+                                            },
+                                            fill: "none",
+                                            viewBox: "0 0 24 24",
+                                            stroke: "currentColor",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 260,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 259,
+                                            columnNumber: 15
+                                        }, this),
+                                        "contact@aurumledger.com"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 248,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
+                                        fontSize: '13px',
+                                        margin: 0,
+                                        marginTop: '8px',
+                                        fontStyle: 'italic'
+                                    },
+                                    children: "Auxite is a product and brand of Aurum Ledger Limited."
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 264,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://auxiteglobal.com",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    style: {
+                                        color: 'var(--aux-gold)',
+                                        fontSize: '13px',
+                                        textDecoration: 'none',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '6px',
+                                        padding: '10px 20px',
+                                        border: '1px solid rgba(201,162,77,0.3)',
+                                        borderRadius: '8px',
+                                        marginTop: '8px',
+                                        transition: 'all 0.2s ease'
+                                    },
+                                    children: [
+                                        "Corporate Information",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            style: {
+                                                width: '14px',
+                                                height: '14px'
+                                            },
+                                            fill: "none",
+                                            viewBox: "0 0 24 24",
+                                            stroke: "currentColor",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                strokeLinecap: "round",
+                                                strokeLinejoin: "round",
+                                                strokeWidth: 2,
+                                                d: "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 293,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 292,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 273,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 224,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                gap: '20px',
+                                padding: '32px 0',
+                                borderBottom: '1px solid var(--line)'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-primary)',
+                                        fontSize: '16px',
+                                        fontWeight: 500,
+                                        margin: 0,
+                                        letterSpacing: '-0.01em'
+                                    },
+                                    children: "Join Our Community"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 307,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
                                         display: 'flex',
-                                        gap: '12px'
+                                        gap: '16px',
+                                        flexWrap: 'wrap',
+                                        justifyContent: 'center'
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "https://twitter.com/auxite",
+                                            href: "https://x.com/AuxiteGlobal",
                                             target: "_blank",
                                             rel: "noopener noreferrer",
                                             style: {
-                                                color: '#52525B',
-                                                width: '36px',
-                                                height: '36px',
-                                                borderRadius: '8px',
-                                                background: 'rgba(255,255,255,0.03)',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center',
-                                                transition: 'all 0.2s'
-                                            },
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                style: {
-                                                    width: '16px',
-                                                    height: '16px'
-                                                },
-                                                fill: "currentColor",
-                                                viewBox: "0 0 24 24",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                    d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                    lineNumber: 69,
-                                                    columnNumber: 104
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                lineNumber: 69,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                            lineNumber: 58,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "https://discord.gg/auxite",
-                                            target: "_blank",
-                                            rel: "noopener noreferrer",
-                                            style: {
-                                                color: '#52525B',
-                                                width: '36px',
-                                                height: '36px',
+                                                gap: '8px',
+                                                color: 'var(--text-muted)',
+                                                fontSize: '14px',
+                                                textDecoration: 'none',
+                                                padding: '10px 18px',
+                                                border: '1px solid var(--line)',
                                                 borderRadius: '8px',
-                                                background: 'rgba(255,255,255,0.03)',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                transition: 'all 0.2s'
+                                                transition: 'all 0.2s ease'
                                             },
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                style: {
-                                                    width: '16px',
-                                                    height: '16px'
-                                                },
-                                                fill: "currentColor",
-                                                viewBox: "0 0 24 24",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                    d: "M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    style: {
+                                                        width: '16px',
+                                                        height: '16px'
+                                                    },
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                        lineNumber: 341,
+                                                        columnNumber: 19
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                    lineNumber: 82,
-                                                    columnNumber: 104
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                lineNumber: 82,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
+                                                    lineNumber: 340,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "X"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 323,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1065,194 +1181,289 @@ function Footer() {
                                             target: "_blank",
                                             rel: "noopener noreferrer",
                                             style: {
-                                                color: '#52525B',
-                                                width: '36px',
-                                                height: '36px',
-                                                borderRadius: '8px',
-                                                background: 'rgba(255,255,255,0.03)',
                                                 display: 'flex',
                                                 alignItems: 'center',
-                                                justifyContent: 'center',
-                                                transition: 'all 0.2s'
+                                                gap: '8px',
+                                                color: 'var(--text-muted)',
+                                                fontSize: '14px',
+                                                textDecoration: 'none',
+                                                padding: '10px 18px',
+                                                border: '1px solid var(--line)',
+                                                borderRadius: '8px',
+                                                transition: 'all 0.2s ease'
                                             },
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                                style: {
-                                                    width: '16px',
-                                                    height: '16px'
-                                                },
-                                                fill: "currentColor",
-                                                viewBox: "0 0 24 24",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                    d: "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    style: {
+                                                        width: '16px',
+                                                        height: '16px'
+                                                    },
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                        lineNumber: 364,
+                                                        columnNumber: 19
+                                                    }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                    lineNumber: 95,
-                                                    columnNumber: 104
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                lineNumber: 95,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
+                                                    lineNumber: 363,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Telegram"
+                                            ]
+                                        }, void 0, true, {
                                             fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 346,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.linkedin.com/company/auxiteofficial",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            style: {
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '8px',
+                                                color: 'var(--text-muted)',
+                                                fontSize: '14px',
+                                                textDecoration: 'none',
+                                                padding: '10px 18px',
+                                                border: '1px solid var(--line)',
+                                                borderRadius: '8px',
+                                                transition: 'all 0.2s ease'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    style: {
+                                                        width: '16px',
+                                                        height: '16px'
+                                                    },
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                        lineNumber: 387,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                    lineNumber: 386,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "LinkedIn"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 369,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://instagram.com/auxiteofficial",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            style: {
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '8px',
+                                                color: 'var(--text-muted)',
+                                                fontSize: '14px',
+                                                textDecoration: 'none',
+                                                padding: '10px 18px',
+                                                border: '1px solid var(--line)',
+                                                borderRadius: '8px',
+                                                transition: 'all 0.2s ease'
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    style: {
+                                                        width: '16px',
+                                                        height: '16px'
+                                                    },
+                                                    viewBox: "0 0 24 24",
+                                                    fill: "currentColor",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                        d: "M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                        lineNumber: 410,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                    lineNumber: 409,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "Instagram"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 392,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 316,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                            lineNumber: 44,
+                            lineNumber: 299,
                             columnNumber: 11
                         }, this),
-                        Object.entries(footerLinks).map(([title, links])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                        style: {
-                                            fontFamily: "'Space Grotesk', sans-serif",
-                                            fontWeight: 600,
-                                            color: 'white',
-                                            marginBottom: '20px',
-                                            fontSize: '14px',
-                                            letterSpacing: '0.02em'
-                                        },
-                                        children: title
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: '8px',
+                                padding: '16px 24px',
+                                background: 'rgba(47,111,98,0.08)',
+                                border: '1px solid rgba(47,111,98,0.15)',
+                                borderRadius: '8px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                    style: {
+                                        width: '16px',
+                                        height: '16px',
+                                        color: '#2F6F62',
+                                        flexShrink: 0
+                                    },
+                                    fill: "none",
+                                    viewBox: "0 0 24 24",
+                                    stroke: "currentColor",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                        strokeLinecap: "round",
+                                        strokeLinejoin: "round",
+                                        strokeWidth: 2,
+                                        d: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
                                     }, void 0, false, {
                                         fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                        lineNumber: 103,
-                                        columnNumber: 15
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        style: {
-                                            listStyle: 'none',
-                                            padding: 0,
-                                            margin: 0
-                                        },
-                                        children: links.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                style: {
-                                                    marginBottom: '12px'
-                                                },
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                    href: link.href,
-                                                    style: {
-                                                        color: '#71717A',
-                                                        textDecoration: 'none',
-                                                        fontSize: '13px',
-                                                        transition: 'color 0.2s'
-                                                    },
-                                                    children: link.label
-                                                }, void 0, false, {
-                                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                    lineNumber: 107,
-                                                    columnNumber: 21
-                                                }, this)
-                                            }, link.href, false, {
-                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                                lineNumber: 106,
-                                                columnNumber: 19
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 429,
                                         columnNumber: 15
                                     }, this)
-                                ]
-                            }, title, true, {
-                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                lineNumber: 102,
-                                columnNumber: 13
-                            }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 428,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
+                                        fontSize: '13px',
+                                        margin: 0,
+                                        lineHeight: 1.5
+                                    },
+                                    children: "Auxite never requests private keys, recovery phrases, or unsolicited downloads."
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 431,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 418,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            style: {
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                flexWrap: 'wrap',
+                                gap: '16px'
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
+                                        fontSize: '13px',
+                                        margin: 0
+                                    },
+                                    children: t('copyright', {
+                                        year
+                                    })
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 449,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    style: {
+                                        color: 'var(--text-muted)',
+                                        fontSize: '13px',
+                                        margin: 0,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        gap: '6px'
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                            style: {
+                                                width: '14px',
+                                                height: '14px',
+                                                color: 'var(--state-success)'
+                                            },
+                                            fill: "currentColor",
+                                            viewBox: "0 0 20 20",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                fillRule: "evenodd",
+                                                d: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z",
+                                                clipRule: "evenodd"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                                lineNumber: 455,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                            lineNumber: 454,
+                                            columnNumber: 15
+                                        }, this),
+                                        t('backed')
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                                    lineNumber: 453,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+                            lineNumber: 442,
+                            columnNumber: 11
+                        }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                    lineNumber: 42,
+                    lineNumber: 216,
                     columnNumber: 9
                 }, this)
-            }, void 0, false, {
-                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                style: {
-                    borderTop: '1px solid rgba(255,255,255,0.05)'
-                },
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mobile-padding",
-                    style: {
-                        maxWidth: '1280px',
-                        margin: '0 auto',
-                        padding: '20px 24px'
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "footer-bottom",
-                        style: {
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            flexWrap: 'wrap',
-                            gap: '12px'
-                        },
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                style: {
-                                    color: '#52525B',
-                                    fontSize: '13px',
-                                    margin: 0
-                                },
-                                children: t('copyright', {
-                                    year: new Date().getFullYear()
-                                })
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                lineNumber: 120,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "hide-mobile",
-                                style: {
-                                    fontSize: '13px',
-                                    color: '#52525B'
-                                },
-                                children: t('backed')
-                            }, void 0, false, {
-                                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                                lineNumber: 121,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                        lineNumber: 119,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                    lineNumber: 118,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-                lineNumber: 117,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
+            lineNumber: 46,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
         fileName: "[project]/Desktop/auxite-website/src/components/Footer.tsx",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }
-_s(Footer, "ibHvjDxkLpek5QWjIfNYywjof5I=", false, function() {
+_s(Footer, "3H0PRP9uhwOXLH6TC7XDgZSseN4=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
-        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"]
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$client$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
     ];
 });
 _c = Footer;

@@ -3,14 +3,24 @@ module.exports = [
 "use strict";
 
 __turbopack_context__.s([
+    "Link",
+    ()=>Link,
     "localeNames",
     ()=>localeNames,
+    "redirect",
+    ()=>redirect,
     "routing",
     ()=>routing,
     "rtlLocales",
-    ()=>rtlLocales
+    ()=>rtlLocales,
+    "usePathname",
+    ()=>usePathname,
+    "useRouter",
+    ()=>useRouter
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/routing/defineRouting.js [app-rsc] (ecmascript) <export default as defineRouting>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$server$2f$createNavigation$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/navigation/react-server/createNavigation.js [app-rsc] (ecmascript) <export default as createNavigation>");
+;
 ;
 const routing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$routing$2f$defineRouting$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__defineRouting$3e$__["defineRouting"])({
     locales: [
@@ -21,8 +31,12 @@ const routing = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$a
         'ar',
         'ru'
     ],
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    localePrefix: 'always'
 });
+const rtlLocales = [
+    'ar'
+];
 const localeNames = {
     en: 'English',
     tr: 'Türkçe',
@@ -31,9 +45,7 @@ const localeNames = {
     ar: 'العربية',
     ru: 'Русский'
 };
-const rtlLocales = [
-    'ar'
-];
+const { Link, redirect, usePathname, useRouter } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$navigation$2f$react$2d$server$2f$createNavigation$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__createNavigation$3e$__["createNavigation"])(routing);
 }),
 "[project]/Desktop/auxite-website/src/i18n/request.ts [app-rsc] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -44,10 +56,23 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getRequestConfig$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getRequestConfig$3e$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next-intl/dist/esm/development/server/react-server/getRequestConfig.js [app-rsc] (ecmascript) <export default as getRequestConfig>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/src/i18n/routing.ts [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/auxite-website/node_modules/next/headers.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getRequestConfig$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getRequestConfig$3e$__["getRequestConfig"])(async ({ requestLocale })=>{
+    // Önce requestLocale'i dene
     let locale = await requestLocale;
+    // Eğer yoksa, URL'den parse et
+    if (!locale) {
+        const headersList = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$headers$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["headers"])();
+        const pathname = headersList.get('x-pathname') || headersList.get('x-invoke-path') || '';
+        const segments = pathname.split('/').filter(Boolean);
+        if (segments.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["routing"].locales.includes(segments[0])) {
+            locale = segments[0];
+        }
+    }
+    // Hala yoksa default kullan
     if (!locale || !__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["routing"].locales.includes(locale)) {
         locale = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["routing"].defaultLocale;
     }
@@ -188,6 +213,7 @@ async function generateMetadata({ params }) {
         namespace: 'meta'
     });
     const baseUrl = 'https://auxite.io';
+    const currentUrl = `${baseUrl}/${locale}`;
     return {
         metadataBase: new URL(baseUrl),
         title: {
@@ -217,16 +243,16 @@ async function generateMetadata({ params }) {
         openGraph: {
             type: 'website',
             locale: locale,
-            url: baseUrl,
+            url: currentUrl,
             siteName: 'Auxite',
             title: t('title'),
             description: t('description'),
             images: [
                 {
-                    url: '/og-image.png',
+                    url: `${baseUrl}/api/og`,
                     width: 1200,
                     height: 630,
-                    alt: 'Auxite - Tokenized Precious Metals'
+                    alt: 'Auxite - The Digital Form of Tradition'
                 }
             ]
         },
@@ -235,33 +261,100 @@ async function generateMetadata({ params }) {
             title: t('title'),
             description: t('description'),
             images: [
-                '/og-image.png'
+                `${baseUrl}/api/og`
             ],
             creator: '@auxite'
         },
         alternates: {
-            canonical: baseUrl,
             languages: {
-                'en': '/en',
-                'tr': '/tr',
-                'de': '/de',
-                'fr': '/fr',
-                'ar': '/ar',
-                'ru': '/ru'
+                'en': `${baseUrl}/en`,
+                'tr': `${baseUrl}/tr`,
+                'de': `${baseUrl}/de`,
+                'fr': `${baseUrl}/fr`,
+                'ar': `${baseUrl}/ar`,
+                'ru': `${baseUrl}/ru`,
+                'x-default': `${baseUrl}/en`
             }
         },
         icons: {
             icon: '/favicon.ico',
             shortcut: '/favicon-16x16.png',
             apple: '/apple-touch-icon.png'
-        },
-        manifest: '/site.webmanifest'
+        }
     };
 }
 function generateStaticParams() {
     return __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["routing"].locales.map((locale)=>({
             locale
         }));
+}
+// JSON-LD Structured Data — Organization + WebSite + SiteNavigationElement
+//
+// Brand-entity model: this site is the Auxite *platform* (the product),
+// operated by Aurum Ledger Limited. The corporate site is auxiteglobal.com.
+// Declaring `parentOrganization` keeps the two domains as separate but
+// related entities — Google ranks auxite.io for "auxite" (the product /
+// platform brand) and auxiteglobal.com for "aurum ledger" / "auxite global".
+function buildJsonLd(locale) {
+    return {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'Organization',
+                '@id': 'https://auxite.io/#organization',
+                name: 'Auxite',
+                alternateName: [
+                    'Auxite Vault',
+                    'Auxite Platform'
+                ],
+                url: 'https://auxite.io',
+                logo: {
+                    '@type': 'ImageObject',
+                    url: 'https://auxite.io/auxite-wallet-logo.png',
+                    width: 512,
+                    height: 512
+                },
+                description: 'Auxite is a digital-asset custody platform for tokenized precious metals (AUXG gold, AUXS silver, AUXPT platinum, AUXPD palladium). Buy, sell, and deploy physically allocated metals into institutional yield programs — fully on-chain with real-time proof of reserves.',
+                parentOrganization: {
+                    '@type': 'Organization',
+                    '@id': 'https://auxiteglobal.com/#organization',
+                    name: 'Aurum Ledger Limited',
+                    alternateName: [
+                        'Auxite Global'
+                    ],
+                    url: 'https://auxiteglobal.com'
+                },
+                sameAs: [
+                    'https://x.com/AuxiteGlobal',
+                    'https://auxiteglobal.com'
+                ],
+                contactPoint: {
+                    '@type': 'ContactPoint',
+                    contactType: 'customer support',
+                    url: 'https://auxite.io/contact'
+                }
+            },
+            {
+                '@type': 'WebSite',
+                '@id': 'https://auxite.io/#website',
+                url: 'https://auxite.io',
+                name: 'Auxite',
+                description: 'The Digital Form of Tradition — tokenized precious metals on-chain.',
+                publisher: {
+                    '@id': 'https://auxite.io/#organization'
+                },
+                inLanguage: locale,
+                potentialAction: {
+                    '@type': 'SearchAction',
+                    target: {
+                        '@type': 'EntryPoint',
+                        urlTemplate: 'https://auxite.io/' + locale + '/metals?q={search_term_string}'
+                    },
+                    'query-input': 'required name=search_term_string'
+                }
+            }
+        ]
+    };
 }
 async function LocaleLayout({ children, params }) {
     const { locale } = await params;
@@ -270,37 +363,50 @@ async function LocaleLayout({ children, params }) {
     }
     const messages = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$server$2f$react$2d$server$2f$getMessages$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__getMessages$3e$__["getMessages"])();
     const isRTL = __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$i18n$2f$routing$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["rtlLocales"].includes(locale);
+    const jsonLd = buildJsonLd(locale);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         dir: isRTL ? 'rtl' : 'ltr',
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$NextIntlClientProviderServer$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__NextIntlClientProvider$3e$__["NextIntlClientProvider"], {
-            messages: messages,
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
-                    lineNumber: 107,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                    children: children
-                }, void 0, false, {
-                    fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
-                    lineNumber: 108,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
-                    lineNumber: 109,
-                    columnNumber: 9
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
-            lineNumber: 106,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                type: "application/ld+json",
+                dangerouslySetInnerHTML: {
+                    __html: JSON.stringify(jsonLd)
+                }
+            }, void 0, false, {
+                fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
+                lineNumber: 169,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2d$server$2f$NextIntlClientProviderServer$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__NextIntlClientProvider$3e$__["NextIntlClientProvider"], {
+                messages: messages,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$Navigation$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
+                        lineNumber: 174,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                        children: children
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
+                        lineNumber: 175,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$auxite$2d$website$2f$src$2f$components$2f$Footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
+                        lineNumber: 176,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
+                lineNumber: 173,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/Desktop/auxite-website/src/app/[locale]/layout.tsx",
-        lineNumber: 105,
+        lineNumber: 168,
         columnNumber: 5
     }, this);
 }

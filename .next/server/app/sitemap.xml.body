@@ -9,7 +9,7 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -22,9 +22,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/metals/auxg</loc>
@@ -35,9 +35,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/metals/auxs</loc>
@@ -48,9 +48,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/metals/auxpt</loc>
@@ -61,9 +61,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/metals/auxpd</loc>
@@ -74,9 +74,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/how-it-works</loc>
@@ -87,21 +87,21 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://auxite.io/en/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<loc>https://auxite.io/en/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -113,21 +113,8 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/en/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -139,8 +126,8 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -152,9 +139,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/faq</loc>
@@ -165,9 +230,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/contact</loc>
@@ -178,9 +243,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/en/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/legal/terms</loc>
@@ -191,9 +295,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/legal/privacy</loc>
@@ -204,9 +308,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/en/legal/risk</loc>
@@ -217,9 +321,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr</loc>
@@ -230,7 +334,7 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
 <priority>1</priority>
 </url>
@@ -243,9 +347,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/metals/auxg</loc>
@@ -256,9 +360,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/metals/auxs</loc>
@@ -269,9 +373,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/metals/auxpt</loc>
@@ -282,9 +386,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/metals/auxpd</loc>
@@ -295,9 +399,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>1</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/how-it-works</loc>
@@ -308,21 +412,21 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://auxite.io/tr/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<loc>https://auxite.io/tr/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -334,21 +438,8 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/tr/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -360,8 +451,8 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
@@ -373,9 +464,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/faq</loc>
@@ -386,9 +555,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/contact</loc>
@@ -399,9 +568,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://auxite.io/tr/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/legal/terms</loc>
@@ -412,9 +620,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/legal/privacy</loc>
@@ -425,9 +633,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/tr/legal/risk</loc>
@@ -438,9 +646,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
 </url>
 <url>
 <loc>https://auxite.io/de</loc>
@@ -451,9 +659,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
-<priority>1</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/metals</loc>
@@ -464,9 +672,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/metals/auxg</loc>
@@ -477,9 +685,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/metals/auxs</loc>
@@ -490,9 +698,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/metals/auxpt</loc>
@@ -503,9 +711,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/metals/auxpd</loc>
@@ -516,9 +724,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/how-it-works</loc>
@@ -529,22 +737,22 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
-<loc>https://auxite.io/de/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<loc>https://auxite.io/de/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/trust-center</loc>
@@ -555,22 +763,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/de/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/vaults</loc>
@@ -581,9 +776,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/whitepaper</loc>
@@ -594,9 +789,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/faq</loc>
@@ -607,9 +880,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/contact</loc>
@@ -620,9 +893,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/de/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/legal/terms</loc>
@@ -633,9 +945,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/legal/privacy</loc>
@@ -646,9 +958,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/de/legal/risk</loc>
@@ -659,9 +971,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr</loc>
@@ -672,9 +984,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
-<priority>1</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/metals</loc>
@@ -685,9 +997,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/metals/auxg</loc>
@@ -698,9 +1010,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/metals/auxs</loc>
@@ -711,9 +1023,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/metals/auxpt</loc>
@@ -724,9 +1036,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/metals/auxpd</loc>
@@ -737,9 +1049,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/how-it-works</loc>
@@ -750,22 +1062,22 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
-<loc>https://auxite.io/fr/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<loc>https://auxite.io/fr/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/trust-center</loc>
@@ -776,22 +1088,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/fr/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/vaults</loc>
@@ -802,9 +1101,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/whitepaper</loc>
@@ -815,9 +1114,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/faq</loc>
@@ -828,9 +1205,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/contact</loc>
@@ -841,9 +1218,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/fr/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/legal/terms</loc>
@@ -854,9 +1270,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/legal/privacy</loc>
@@ -867,9 +1283,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/fr/legal/risk</loc>
@@ -880,9 +1296,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar</loc>
@@ -893,9 +1309,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
-<priority>1</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/metals</loc>
@@ -906,9 +1322,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/metals/auxg</loc>
@@ -919,9 +1335,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/metals/auxs</loc>
@@ -932,9 +1348,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/metals/auxpt</loc>
@@ -945,9 +1361,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/metals/auxpd</loc>
@@ -958,9 +1374,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/how-it-works</loc>
@@ -971,22 +1387,22 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
-<loc>https://auxite.io/ar/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<loc>https://auxite.io/ar/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/trust-center</loc>
@@ -997,22 +1413,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/ar/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/vaults</loc>
@@ -1023,9 +1426,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/whitepaper</loc>
@@ -1036,9 +1439,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/faq</loc>
@@ -1049,9 +1530,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/contact</loc>
@@ -1062,9 +1543,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ar/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/legal/terms</loc>
@@ -1075,9 +1595,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/legal/privacy</loc>
@@ -1088,9 +1608,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ar/legal/risk</loc>
@@ -1101,9 +1621,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru</loc>
@@ -1114,9 +1634,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>daily</changefreq>
-<priority>1</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/metals</loc>
@@ -1127,9 +1647,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/metals/auxg</loc>
@@ -1140,9 +1660,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxg" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxg" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/metals/auxs</loc>
@@ -1153,9 +1673,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxs" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxs" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/metals/auxpt</loc>
@@ -1166,9 +1686,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpt" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpt" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/metals/auxpd</loc>
@@ -1179,9 +1699,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/metals/auxpd" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/metals/auxpd" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
 <changefreq>weekly</changefreq>
-<priority>0.9</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/how-it-works</loc>
@@ -1192,22 +1712,22 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/how-it-works" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/how-it-works" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/how-it-works" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
-<loc>https://auxite.io/ru/staking</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/staking" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/staking" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/staking" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/staking" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/staking" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/staking" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/staking" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<loc>https://auxite.io/ru/yield</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/yield" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/yield" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/yield" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/yield" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/yield" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/yield" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/yield" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/trust-center</loc>
@@ -1218,22 +1738,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://auxite.io/ru/trust-center/on-chain-supply</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
-<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/vaults</loc>
@@ -1244,9 +1751,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/vaults" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/vaults" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/vaults" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/whitepaper</loc>
@@ -1257,9 +1764,87 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/whitepaper" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/whitepaper" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/whitepaper" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/custody</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/custody" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/custody" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/reserves</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/reserves" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/reserves" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/risk</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/risk" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/risk" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/faq</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/faq" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/faq" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/trust-center/on-chain-supply</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/trust-center/on-chain-supply" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/trust-center/on-chain-supply" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/faq</loc>
@@ -1270,9 +1855,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/faq" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/faq" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/faq" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/contact</loc>
@@ -1283,9 +1868,48 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/contact" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/contact" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/contact" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/roadmap</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/roadmap" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/roadmap" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/roadmap" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/roadmap" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/roadmap" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/roadmap" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/roadmap" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/team</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/team" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/team" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/team" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/team" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/team" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/team" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/team" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://auxite.io/ru/legal</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://auxite.io/en/legal" />
+<xhtml:link rel="alternate" hreflang="tr" href="https://auxite.io/tr/legal" />
+<xhtml:link rel="alternate" hreflang="de" href="https://auxite.io/de/legal" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://auxite.io/fr/legal" />
+<xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal" />
+<xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal" />
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/legal/terms</loc>
@@ -1296,9 +1920,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/terms" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/terms" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/terms" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/legal/privacy</loc>
@@ -1309,9 +1933,9 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/privacy" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/privacy" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 <url>
 <loc>https://auxite.io/ru/legal/risk</loc>
@@ -1322,8 +1946,8 @@
 <xhtml:link rel="alternate" hreflang="ar" href="https://auxite.io/ar/legal/risk" />
 <xhtml:link rel="alternate" hreflang="ru" href="https://auxite.io/ru/legal/risk" />
 <xhtml:link rel="alternate" hreflang="x-default" href="https://auxite.io/en/legal/risk" />
-<lastmod>2026-02-04T16:04:09.364Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
+<lastmod>2026-05-25T13:07:22.629Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 </urlset>

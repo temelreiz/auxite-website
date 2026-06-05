@@ -16,20 +16,44 @@
     {
       "source": "/",
       "destination": "/en",
-      "statusCode": 307,
+      "statusCode": 308,
       "regex": "^(?!/_next)/(?:/)?$"
     },
     {
       "source": "/wallet",
-      "destination": "https://wallet.auxite.io",
+      "destination": "https://vault.auxite.io",
       "statusCode": 308,
       "regex": "^(?!/_next)/wallet(?:/)?$"
     },
     {
       "source": "/wallet/:path*",
-      "destination": "https://wallet.auxite.io/:path*",
+      "destination": "https://vault.auxite.io/:path*",
       "statusCode": 308,
       "regex": "^(?!/_next)/wallet(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/vault",
+      "destination": "https://vault.auxite.io",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/vault(?:/)?$"
+    },
+    {
+      "source": "/vault/:path*",
+      "destination": "https://vault.auxite.io/:path*",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/vault(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+    },
+    {
+      "source": "/stake",
+      "destination": "/en/yield",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/stake(?:/)?$"
+    },
+    {
+      "source": "/:locale/stake",
+      "destination": "/:locale/yield",
+      "statusCode": 308,
+      "regex": "^(?!/_next)(?:/([^/]+?))/stake(?:/)?$"
     }
   ],
   "headers": [
@@ -192,12 +216,52 @@
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center(?:/)?$"
     },
     {
+      "page": "/[locale]/trust-center/custody",
+      "regex": "^/([^/]+?)/trust\\-center/custody(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/custody(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center/faq",
+      "regex": "^/([^/]+?)/trust\\-center/faq(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/faq(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center/legal",
+      "regex": "^/([^/]+?)/trust\\-center/legal(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/legal(?:/)?$"
+    },
+    {
       "page": "/[locale]/trust-center/on-chain-supply",
       "regex": "^/([^/]+?)/trust\\-center/on\\-chain\\-supply(?:/)?$",
       "routeKeys": {
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/on\\-chain\\-supply(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center/reserves",
+      "regex": "^/([^/]+?)/trust\\-center/reserves(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/reserves(?:/)?$"
+    },
+    {
+      "page": "/[locale]/trust-center/risk",
+      "regex": "^/([^/]+?)/trust\\-center/risk(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/trust\\-center/risk(?:/)?$"
     },
     {
       "page": "/[locale]/vaults",
@@ -214,6 +278,14 @@
         "nxtPlocale": "nxtPlocale"
       },
       "namedRegex": "^/(?<nxtPlocale>[^/]+?)/whitepaper(?:/)?$"
+    },
+    {
+      "page": "/[locale]/yield",
+      "regex": "^/([^/]+?)/yield(?:/)?$",
+      "routeKeys": {
+        "nxtPlocale": "nxtPlocale"
+      },
+      "namedRegex": "^/(?<nxtPlocale>[^/]+?)/yield(?:/)?$"
     }
   ],
   "staticRoutes": [

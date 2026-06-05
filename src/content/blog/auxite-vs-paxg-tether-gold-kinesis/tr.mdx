@@ -1,0 +1,114 @@
+---
+title: "Auxite vs PAXG, Tether Gold ve Kinesis: Tokenize Edilmiş Değerli Metaller Gerçekten Nasıl Karşılaştırılır"
+description: "Aktif olarak işlem gören dört altın destekli token'in dürüst karşılaştırması — teminat, saklama, denetim, ücretler, geri alım ve her birinin sessizce nerede yetersiz kaldığı."
+date: "2026-06-05"
+author: "Auxite Ekibi"
+category: "Karşılaştırma"
+tags:
+  - "tokenize altın"
+  - "PAXG"
+  - "Tether Gold"
+  - "Kinesis"
+  - "RWA"
+hero: "/blog/auxite-vs-paxg.jpg"
+---
+
+Altın destekli token araştırıyorsanız listeyi büyük ihtimalle birkaç isme indirmişsinizdir: **PAXG** (Paxos Gold), **XAUT** (Tether Gold), **KAU** (Kinesis Gold) ve **AUXG** (Auxite Gold). Hepsi "1 token = 1 birim fiziksel altın" sözü verir. Hepsi bir saklama kuruluşunu (custodian) gösterir. Hepsi *bir tür* doğrulama yayımlar.
+
+Peki neden birini diğerine tercih edesiniz?
+
+Aşağıdaki karşılaştırma, Auxite'ı kurmaya başladığımızda birinin bize verseydi diye dileyeceğimiz türden — rahatsız edici detayları atlamayan türden. Sayılar ve linkler Haziran 2026 itibarıyla doğru; ürün özellikleri sessizce değişebiliyor, gerçek sermaye allokasyonundan önce ihraççıdan doğrulayın.
+
+## Kısa cevap
+
+- **PAXG** en regüle ve merkezi borsalarda en likit olanı, ama sadece altın ve on-chain ayağı Ethereum mainnet — ücretler ve finality bunu yansıtıyor.
+- **XAUT** operasyonel olarak PAXG'ye benziyor, daha büyük ama daha az bağımsız bir custody hikayesi var; geri alım çoğu perakende sahibi için teorik.
+- **KAU** Kinesis Monetary System ekosistemi içinde yaşıyor ve ağ ücretlerinden bir verim ödüyor — ama sadece o ekosistemde; taşınabilirliği sınırlı.
+- **AUXG** (ve kardeşleri AUXS, AUXPT, AUXPD) dört parasal metalin tamamını kapsıyor, düşük ücretler için Base üzerinde settle oluyor ve her ihraç ile rwa.xyz'de günlük NAV beslemesi + üçüncü taraf attestation ritmi eşleştiriliyor.
+
+Bu yazının kalanı uzun versiyonu.
+
+## "Tokenize edilmiş değerli metal" gerçekten ne anlama gelmeli
+
+Tutulmaya değer bir tokenize değerli metal dört çıtayı geçmeli:
+
+1. **Allocated (tahsisli) metal** — payınız seri numaralı külçelerle tanımlanmalı, bilanço üzerinde havuzlanmış bir alacak değil.
+2. **Segregated custody (ayrılmış saklama)** — müşteri metali ihraççının kendi bilançosundan yasal olarak ayrılmış olmalı; ihraççının iflası altınınızı süpürmemeli.
+3. **Bağımsız attestation** — gerçek bir denetçi (ihraççının kendi ekibi değil), metalin var olduğunu yayımlanmış bir kadansta doğrulamalı.
+4. **Çalışan bir geri alım yolu** — siz ya da sizin adınıza hareket eden bir kurum, gerçekten külçeyi alabilmeli.
+
+Bunlardan birini eksik olan şey, altın aromalı bir IOU'dur — allocated metal değil.
+
+## Yan yana
+
+| | **AUXG (Auxite)** | **PAXG (Paxos)** | **XAUT (Tether Gold)** | **KAU (Kinesis)** |
+|---|---|---|---|---|
+| İhraççı | Aurum Ledger Ltd (Hong Kong) | Paxos Trust Company (ABD, NYDFS regülasyonu) | TG Commodities Ltd (BVI) | Kinesis Money Ltd (Cayman / Liechtenstein) |
+| Hesap birimi | 1 token = 1 gram | 1 token = 1 troy ounce | 1 token = 1 troy ounce | 1 KAU = 1 gram |
+| Aynı platformda diğer metaller | Gümüş, platin, paladyum (AUXS / AUXPT / AUXPD) | Sadece altın | Sadece altın | Sadece gümüş (KAG) |
+| Vault lokasyonu | Singapur (Silver Bullion SG) | Londra (Brink's) | İsviçre | İsviçre, İngiltere, ABD |
+| Saklama modeli | Tahsisli, ayrılmış, iflastan korunmuş | Tahsisli, iflastan korunmuş | Tahsisli, ayrılmış | Tahsisli, ayrılmış |
+| Attestation | The Network Firm (aylık) | WithumSmith+Brown (aylık) | BDO (altı aylık) | Bureau Veritas / envanter denetimleri |
+| Settlement zinciri | Base (L2) | Ethereum L1 | Ethereum L1, Tron | Kinesis Blockchain (Stellar fork) |
+| Tipik işlem maliyeti | ~$0.01 | $2–$20 (gas'a bağlı) | $2–$20 ETH / ~$1 Tron | <$0.01 dahili |
+| İhraç ücreti | 0.35% trading fee | %0.02 yaratım / Paxos'tan satın alımda %1.49 | Açıklanmamış; spread'e gömülü | %0.22 mint, %0.45 transfer |
+| Fiziksel geri alım | Kurumsal partner üzerinden, 100g+ allokasyonlar | Yalnızca 430 oz Londra Good Delivery külçeler | 1 kg külçeler, 4–7 gün ihbar | Kinesis Direct ile 1g+ |
+| Holding'lerde verim | Opsiyonel yapılandırılmış lease (90 / 180 / 365 gün) | Yerel olarak yok | Yok | Sahip + mint eden için ağ ücretlerinden verim |
+| Halka açık NAV beslemesi | rwa.xyz, günlük | Paxos sitesi | Tether rezerv sayfası | Kinesis paneli |
+
+## Her ürünün sessizce nerede yetersiz kaldığı
+
+### PAXG
+
+PAXG kurumsal kıyas noktası ve bu itibarı hak ediyor. Paxos Trust New York eyaletinde charter'lı bir sınırlı amaçlı trust company; aylık attestation'lar sektörün en temizleri. Karşılığında her şeyi alıyorsunuz: sadece altın, Ethereum L1'de settle oluyorsunuz (5 gramlık bir transfer küçük bir alımdan pahalı olabilir) ve fiziksel geri alım 430 oz Londra Good Delivery külçelere kapatılmış — perakende sahiplerini geri alım hikayesinden yapısal olarak fiyatlandıran bir tercih.
+
+Sadece regüle, denetlenebilir bir altın pozisyonuna Ethereum'da ihtiyacı olan bir kurum için PAXG zor yenilir. Aslında metali içeri/dışarı taşımak isteyen herkes için ise bu bir tutma enstrümanı, ödeme enstrümanı değil.
+
+### XAUT (Tether Gold)
+
+XAUT operasyonel olarak PAXG'ye benziyor: 1 token = 1 troy ounce, tahsisli külçeler, İsviçre vault'u. Daha zor soru **ihraççı**. TG Commodities BVI'de kurulu Tether bağlı bir kuruluş; BDO tarafından altı ayda bir attest ediliyor. Metal var; yönetişim ve açıklama kadansı Paxos'unkinden daha hafif ve BVI hukuku bir şeyler ters giderse New York trust hukukundan daha az koruma sağlıyor.
+
+Geri alım gerçek — 1 kg külçeler, 4-7 gün ihbar — ama işlevsel olarak perakendeye erişilemez durumda. XAUT'un çoğu merkezi borsalarda el değiştiriyor ve külçe üzerinde bir hak olarak değil, fiyat maruziyeti olarak tutuluyor.
+
+### KAU (Kinesis Gold)
+
+Kinesis tamamen farklı bir tasarım: kendi blok zincirini çalıştırıyor (bir Stellar fork) ve holding'lere kendi tescilli ağının işlem ücretlerinden bir verim ödüyor. Tahsisli metal gerçek, denetimler yapılıyor. Açmaz **taşınabilirlik**. KAU Kinesis ekosisteminde yaşıyor; mainnet likiditesine taşınmıyor, DeFi ile composable değil ve verim sadece ağın kendi işlem hacmi sürdüğü sürece var.
+
+Kinesis'i günlük harcanan, metal destekli bir para birimi olarak kullanmaya kararlıysanız model içsel olarak tutarlı. Eğer Base'e, Ethereum'a, DEX likiditesine, bir custodian'ın raporlama yığınına seyahat eden bir token istiyorsanız KAU yanlış araç.
+
+### AUXG (Auxite)
+
+Kendi açıklarımız konusunda doğrudan olacağız çünkü buradaki hiçbir şey diğerlerinden daha sihirli değil:
+
+- **Custody konsantrasyonu**: AUXG metali şu anda tek bir custodian'da duruyor (Silver Bullion Pte Ltd, Singapur). Roadmap'te ikinci-vault taahhüdümüz var ama bu yazı yazılırken tek custodian'da.
+- **İhraççı coğrafyası**: Aurum Ledger Ltd Hong Kong limited şirketi. Hong Kong güvenilir bir ticari yetki alanı ama Paxos için New York'un olduğu gibi charter'lı bir trust yetki alanı değil.
+- **Attestation olgunluğu**: The Network Firm'den aylık attestation yayımlıyoruz, ama PAXG'nin çok yıllık kadansına göre kamuya açık attestation geçmişimiz kısa.
+
+Daha iyi yaptığımıza inandığımız şey:
+
+- **Dört parasal metalin tamamı tek bir rayda.** AUXG, AUXS, AUXPT, AUXPD custody, settlement ve raporlamayı paylaşıyor. Altın ile gümüş arasında yeniden allokasyon tek bir on-chain işlem; sat-al gidiş-dönüşü değil.
+- **Base, Ethereum L1 değil.** Gerçek bir transfer yaklaşık bir sent — yani token kullanılabilir, sadece tutulabilir değil.
+- **Günlük NAV rwa.xyz'de yayımlanıyor**, verim oranı kamuya açık lease-rates endpoint'imizden çekiliyor. rwa.xyz'deki custodian alanı "Silver Bullion SG" diyor; attestation alanı "The Network Firm" diyor. Anonimleştirilmiş aracılar yok.
+- **Opsiyonel yapılandırılmış verim**, 90 / 180 / 365 gün lease'ler, opt-in — varsayılan olarak açık değil. Sahibi açıkça bir lease'e girmedikçe holding'ler ödünç verilmez.
+
+## "Tam tahsisli" gerçekten ne gerektirir
+
+Bu token'lardan *herhangi birine* gerçek para allokasyondan önce yararlı bir sağduyu kontrolü:
+
+- **Külçe listesi veya ağırlık listesi**: ihraççıdan isteyin. Tahsisli metalin seri numaraları olur.
+- **Denetçi kimliği ve angajman kapsamı**: sadece "denetlendi" değil — *kim*, *ne sıklıkta* ve *fiziksel varlığı mı yoksa sadece kayıtları mı doğruluyor*.
+- **İflas senaryosu**: ihraççı yarın iflas ederse, külçeleri tutan yasal varlığı ve onları koruyan trust enstrümanını adlandırın.
+- **Bir geri alım testi**: geri almak niyetiniz olmasa bile, geri alım yolu külçe hikayesinin gerçek olup olmadığını söyler.
+
+Bu dört cevaptan herhangi biri yavaş, savunmacı veya "satış ekibimizle iletişime geçin" diye dönerse, o cevap kendi başına bir bilgidir.
+
+## Pratik çıkarımlar
+
+- **Regüle, sadece altın, Ethereum-native ve gas maliyetlerini taşımaya razı mısınız?** PAXG.
+- **Tether'a mevcut operasyonel boru hattı olan kurumsal XAUT kullanıcısı mısınız?** XAUT işe yarar.
+- **Kinesis parasal tezine kararlı ve o ekosistem içinde verim mi istiyorsunuz?** KAU.
+- **Dört metalin tamamını, Base üzerinde düşük maliyetli settlement, günlük halka açık NAV ve verim için lease seçeneği istiyor musunuz?** AUXG / AUXS / AUXPT / AUXPD.
+
+Tek bir "en iyi" tokenize metal yok — gerçek ödünleşmeleri olan farklı tasarım tercihleri var. Ödünleşmesini savunabildiğinizi seçin.
+
+AUXG tarafını detaylı incelemek isterseniz, [Trust Center](/trust-center) custody, attestation ve rezervleri ortaya koyuyor; [Whitepaper](/whitepaper) yasal ve teknik mimariyi kapsıyor; ve [vault.auxite.io](https://vault.auxite.io) platformun kendisi.

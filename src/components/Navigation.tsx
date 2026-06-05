@@ -40,6 +40,7 @@ export default function Navigation() {
     { href: '/yield', label: t('staking') },
     { href: '/trust-center', label: t('trustCenter') },
     { href: '/whitepaper', label: 'Whitepaper' },
+    { href: '/blog', label: 'Journal' },
   ];
 
   const isActive = (href: string) => {

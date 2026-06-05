@@ -173,6 +173,33 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/[locale]/trust-center/custody/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/custody">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/trust-center/custody/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/[locale]/trust-center/faq/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/faq">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/trust-center/faq/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/[locale]/trust-center/legal/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/legal">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/trust-center/legal/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/[locale]/trust-center/on-chain-supply/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/on-chain-supply">> = Specific
@@ -191,6 +218,24 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   type __Unused = __Check
 }
 
+// Validate ../../src/app/[locale]/trust-center/reserves/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/reserves">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/trust-center/reserves/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/[locale]/trust-center/risk/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/trust-center/risk">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/trust-center/risk/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../src/app/[locale]/vaults/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/[locale]/vaults">> = Specific
@@ -204,6 +249,15 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   type __IsExpected<Specific extends AppPageConfig<"/[locale]/whitepaper">> = Specific
   const handler = {} as typeof import("../../src/app/[locale]/whitepaper/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../src/app/[locale]/yield/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/[locale]/yield">> = Specific
+  const handler = {} as typeof import("../../src/app/[locale]/yield/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
