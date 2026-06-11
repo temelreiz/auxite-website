@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import RadioWidget from "@/components/RadioWidget";
 
 export const metadata: Metadata = {
   title: "Auxite – On-Chain Tokenized Precious Metals",
@@ -162,6 +163,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <RadioWidget />
       </body>
     </html>
   );
