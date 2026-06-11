@@ -31,7 +31,6 @@ export default function RadioWidget() {
   const [buffering, setBuffering] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [segTitle, setSegTitle] = useState("");
-  const [script, setScript] = useState("");
 
   const musicRef = useRef<HTMLAudioElement | null>(null);
   const voiceRef = useRef<HTMLAudioElement | null>(null);
@@ -60,15 +59,6 @@ export default function RadioWidget() {
     if (typeof window === "undefined" || window.parent === window) return;
     window.parent.postMessage({ auxiteRadio: open ? "expanded" : "collapsed" }, "*");
   }, [open]);
-
-  // Transcript for the expanded card.
-  useEffect(() => {
-    if (!open) return;
-    let alive = true; setScript("");
-    fetch(`/api/radio?lang=${lang}`).then((r) => r.json())
-      .then((d) => { if (alive && d.success) setScript(d.script); }).catch(() => {});
-    return () => { alive = false; };
-  }, [open, lang]);
 
   const playVoice = useCallback(async (src: string) => {
     const v = voiceRef.current; if (!v) return;
@@ -170,10 +160,6 @@ export default function RadioWidget() {
               ))}
             </div>
           </div>
-
-          <p className="text-[11px] leading-snug text-slate-300 max-h-20 overflow-y-auto" dir={lang === "ar" ? "rtl" : "ltr"}>
-            {buffering ? "Tuning in…" : (script || "…")}
-          </p>
         </div>
       )}
 
