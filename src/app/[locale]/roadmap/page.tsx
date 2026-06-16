@@ -25,19 +25,19 @@ export default async function RoadmapPage() {
     },
     { 
       phase: 'Q3 2025',
-      status: 'active',
+      status: 'completed',
       title: t('phase3Title'),
       items: [t('phase3Item1'), t('phase3Item2'), t('phase3Item3')]
     },
     { 
       phase: 'Q4 2025',
-      status: 'upcoming',
+      status: 'completed',
       title: t('phase4Title'),
       items: [t('phase4Item1'), t('phase4Item2'), t('phase4Item3')]
     },
     { 
       phase: '2026',
-      status: 'upcoming',
+      status: 'active',
       title: t('phase5Title'),
       items: [t('phase5Item1'), t('phase5Item2'), t('phase5Item3')]
     },
