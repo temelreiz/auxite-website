@@ -34,7 +34,7 @@ export default async function RiskPage() {
               {t('title')}
             </h1>
             <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
-              {t('lastUpdated')}: January 15, 2024
+              {t('lastUpdated')}: January 15, 2026
             </p>
           </div>
 

@@ -17,21 +17,21 @@ export default async function LegalPage() {
       title: t('termsTitle'), 
       desc: t('termsDesc'),
       href: '/legal/terms',
-      updated: '2024-01-15'
+      updated: '2026-01-15'
     },
     { 
       icon: '🔒', 
       title: t('privacyTitle'), 
       desc: t('privacyDesc'),
       href: '/legal/privacy',
-      updated: '2024-01-15'
+      updated: '2026-01-15'
     },
     { 
       icon: '⚠️', 
       title: t('riskTitle'), 
       desc: t('riskDesc'),
       href: '/legal/risk',
-      updated: '2024-01-15'
+      updated: '2026-01-15'
     },
   ];
 
