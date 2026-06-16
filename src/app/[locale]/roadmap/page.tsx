@@ -12,31 +12,31 @@ export default async function RoadmapPage() {
 
   const phases = [
     { 
-      phase: 'Q1 2024', 
+      phase: 'Q1 2025',
       status: 'completed',
       title: t('phase1Title'),
       items: [t('phase1Item1'), t('phase1Item2'), t('phase1Item3')]
     },
     { 
-      phase: 'Q2 2024', 
+      phase: 'Q2 2025',
       status: 'completed',
       title: t('phase2Title'),
       items: [t('phase2Item1'), t('phase2Item2'), t('phase2Item3')]
     },
     { 
-      phase: 'Q3 2024', 
+      phase: 'Q3 2025',
       status: 'active',
       title: t('phase3Title'),
       items: [t('phase3Item1'), t('phase3Item2'), t('phase3Item3')]
     },
     { 
-      phase: 'Q4 2024', 
+      phase: 'Q4 2025',
       status: 'upcoming',
       title: t('phase4Title'),
       items: [t('phase4Item1'), t('phase4Item2'), t('phase4Item3')]
     },
     { 
-      phase: '2025', 
+      phase: '2026',
       status: 'upcoming',
       title: t('phase5Title'),
       items: [t('phase5Item1'), t('phase5Item2'), t('phase5Item3')]
