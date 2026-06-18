@@ -24,6 +24,10 @@
     "limits": "Real transactions with temporary limits"
   },
   "home": {
+    "appStores": {
+      "getApp": "Get the app",
+      "comingSoon": "Coming soon"
+    },
     "goldName": "Gold",
     "silverName": "Silver",
     "platinumName": "Platinum",

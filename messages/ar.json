@@ -24,6 +24,10 @@
     "limits": "معاملات حقيقية مع حدود مؤقتة"
   },
   "home": {
+    "appStores": {
+      "getApp": "حمّل التطبيق",
+      "comingSoon": "قريباً"
+    },
     "goldName": "ذهب",
     "silverName": "فضة",
     "platinumName": "بلاتين",

@@ -53,6 +53,10 @@ export default async function Home() {
           ctaPrimary: t('hero.ctaPrimary'),
           ctaSecondary: t('hero.ctaSecondary'),
         },
+        appStores: {
+          getApp: t('appStores.getApp'),
+          comingSoon: t('appStores.comingSoon'),
+        },
         trustBadges: {
           fullyAllocated: t('trustBadges.fullyAllocated'),
           segregated: t('trustBadges.segregated'),

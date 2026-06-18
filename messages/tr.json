@@ -24,6 +24,10 @@
     "limits": "Geçici limitlerle gerçek işlemler"
   },
   "home": {
+    "appStores": {
+      "getApp": "Uygulamayı indir",
+      "comingSoon": "Yakında"
+    },
     "goldName": "Altın",
     "silverName": "Gümüş",
     "platinumName": "Platin",

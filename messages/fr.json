@@ -24,6 +24,10 @@
     "limits": "Transactions réelles avec limites temporaires"
   },
   "home": {
+    "appStores": {
+      "getApp": "Télécharger l'application",
+      "comingSoon": "Bientôt disponible"
+    },
     "goldName": "Or",
     "silverName": "Argent",
     "platinumName": "Platine",

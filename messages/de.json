@@ -24,6 +24,10 @@
     "limits": "Echte Transaktionen mit temporären Limits"
   },
   "home": {
+    "appStores": {
+      "getApp": "Hol dir die App",
+      "comingSoon": "Demnächst"
+    },
     "goldName": "Gold",
     "silverName": "Silber",
     "platinumName": "Platin",

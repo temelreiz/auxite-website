@@ -24,6 +24,10 @@
     "limits": "Реальные транзакции с временными лимитами"
   },
   "home": {
+    "appStores": {
+      "getApp": "Скачать приложение",
+      "comingSoon": "Скоро"
+    },
     "goldName": "Золото",
     "silverName": "Серебро",
     "platinumName": "Платина",
