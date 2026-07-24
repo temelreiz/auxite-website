@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AUXR — Supply &amp; Distribution</title>
+<meta name="description" content="Supply, emission model and holder distribution for Auxite Reserve Index (AUXR) on Base.">
+<style>
+  :root{
+    --ink:#1a1814; --ink-soft:#57514a; --ink-faint:#8b837a;
+    --gold:#9a7b33; --gold-soft:#f5efe1; --rule:#e6e0d5; --bg:#fbf9f5; --card:#ffffff;
+    --serif:"Hoefler Text","Baskerville",Georgia,"Times New Roman",serif;
+    --sans:ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+    line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:56px 24px 80px}
+  header{border-bottom:2px solid var(--gold);padding-bottom:22px;margin-bottom:8px}
+  .brand{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0}
+  .asof{margin-top:12px;font-size:13px;color:var(--ink-faint)}
+  h2{font-family:var(--serif);font-weight:400;font-size:clamp(19px,3vw,25px);
+    margin:44px 0 14px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+  p{margin:0 0 14px;color:var(--ink-soft);max-width:68ch}
+  table{width:100%;border-collapse:collapse;margin:6px 0 8px;font-size:14.5px}
+  th{text-align:left;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-faint);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--rule)}
+  td{padding:10px;border-bottom:1px solid var(--rule);vertical-align:top}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .mono{font-family:var(--mono);font-size:12.5px;word-break:break-all}
+  tr.total td{font-weight:600;color:var(--ink);border-top:2px solid var(--rule);border-bottom:none}
+  .tag{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+    padding:2px 7px;border-radius:3px;white-space:nowrap}
+  .tag.out{background:#f4efe6;color:#8a6d2c}
+  .tag.in{background:#eaf2ec;color:#3d6b4a}
+  .note{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--gold);
+    padding:16px 18px;margin:18px 0;font-size:14.5px;color:var(--ink-soft)}
+  .note strong{color:var(--ink)}
+  a{color:var(--gold)}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);
+    font-size:12.5px;color:var(--ink-faint)}
+  .scroll{overflow-x:auto}
+  @media (max-width:560px){ .wrap{padding:36px 16px 60px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">Auxite</div>
+  <h1>AUXR — Supply &amp; Distribution</h1>
+  <div class="asof">Auxite Reserve Index (AUXR) · Base mainnet · Figures as of 24 July 2026</div>
+</header>
+
+<h2>Token</h2>
+<div class="scroll">
+<table>
+  <tr><td>Name</td><td>Auxite Reserve Index</td></tr>
+  <tr><td>Symbol</td><td>AUXR</td></tr>
+  <tr><td>Network</td><td>Base (Ethereum L2, chain ID 8453)</td></tr>
+  <tr><td>Standard / decimals</td><td>ERC-20 · 18</td></tr>
+  <tr><td>Contract</td><td class="mono">0xB145B8e9C02193d55454f534f917Cabe704FA042</td></tr>
+  <tr><td>Contract deployed</td><td>3 June 2026 (block 46,868,725)</td></tr>
+  <tr><td>Mint authority</td><td class="mono">Gnosis Safe multisig<br>0xEdC9163c5f8A2a76BD1CdDa6BAA4Eb576B481070</td></tr>
+  <tr><td>Issuer</td><td>Aurum Ledger Limited (Hong Kong)</td></tr>
+  <tr><td>Underlying basket</td><td>55% gold · 30% silver · 10% platinum · 5% palladium (USD-value weights)</td></tr>
+</table>
+</div>
+
+<h2>Emission model</h2>
+<p>
+  AUXR is minted against reserve rather than pre-allocated. Tokens are issued as hedged
+  basket exposure is added to the reserve; there is no pre-mined pool released on a
+  schedule, and no inflation or emission rate.
+</p>
+<p>
+  <code>MAX_SUPPLY</code> is fixed in the contract at 1,000,000,000 AUXR. This is a hard
+  ceiling enforced on-chain, not a planned issuance target — actual supply reflects
+  reserve size and stands at 26,211 AUXR.
+</p>
+
+<h2>Supply</h2>
+<div class="scroll">
+<table>
+  <tr><td>Maximum supply</td><td class="num">1,000,000,000</td></tr>
+  <tr><td>Total supply</td><td class="num">26,211</td></tr>
+  <tr><td>Circulating supply</td><td class="num">1,185</td></tr>
+  <tr><td>Issuer-controlled (excluded from circulating)</td><td class="num">25,026</td></tr>
+  <tr><td>Burned</td><td class="num">0</td></tr>
+</table>
+</div>
+<p>
+  Circulating supply excludes balances held by the issuer and its founder, in line with
+  the convention that tokens under project control are not counted as circulating.
+</p>
+
+<h2>Allocation</h2>
+<div class="scroll">
+<table>
+  <thead><tr>
+    <th>Allocation</th><th class="num">AUXR</th><th class="num">Share</th><th>Circulating</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Founder allocation</strong><br><span style="color:var(--ink-faint);font-size:13px">Held for exchange listing and market development use</span></td>
+      <td class="num">23,100</td><td class="num">88.13%</td><td><span class="tag out">Excluded</span></td>
+    </tr>
+    <tr>
+      <td><strong>Treasury</strong></td>
+      <td class="num">1,925</td><td class="num">7.34%</td><td><span class="tag out">Excluded</span></td>
+    </tr>
+    <tr>
+      <td><strong>Public holders</strong></td>
+      <td class="num">1,035</td><td class="num">3.95%</td><td><span class="tag in">Included</span></td>
+    </tr>
+    <tr>
+      <td><strong>Market maker seed</strong><br><span style="color:var(--ink-faint);font-size:13px">Supports the AUXR/USDT order book</span></td>
+      <td class="num">150</td><td class="num">0.57%</td><td><span class="tag in">Included</span></td>
+    </tr>
+    <tr>
+      <td><strong>Deployer</strong></td>
+      <td class="num">1</td><td class="num">0.00%</td><td><span class="tag out">Excluded</span></td>
+    </tr>
+    <tr class="total"><td>Total</td><td class="num">26,211</td><td class="num">100%</td><td></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <strong>No lock-up or vesting.</strong> Neither the founder allocation nor the treasury
+  holding is subject to a contractual lock-up, cliff or vesting schedule, and no such
+  restriction is enforced on-chain. They are excluded from circulating supply because they
+  are issuer-controlled, not because they are locked. The founder allocation is held to
+  fund exchange listings and market development, and is expected to be distributed as that
+  work proceeds; distribution will be reflected in updated circulating supply figures.
+</div>
+
+<h2>Holder distribution</h2>
+<p>All balances are verifiable on-chain and reconstructed from ERC-20 Transfer events.</p>
+<div class="scroll">
+<table>
+  <thead><tr><th>#</th><th>Address</th><th class="num">AUXR</th><th class="num">Share</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td class="mono">0x8d23E12cAc0f1D2a8c609b973f394396A4Da5011</td><td class="num">23,100</td><td class="num">88.13%</td></tr>
+    <tr><td>2</td><td class="mono">0x1f8E7da692F37fD8bAc164496D67673e0b9A4Ab1</td><td class="num">1,925</td><td class="num">7.34%</td></tr>
+    <tr><td>3</td><td class="mono">0xF2e6Ebf0A9a631938A1A7B70b0A5DE0fF0379279</td><td class="num">360</td><td class="num">1.37%</td></tr>
+    <tr><td>4</td><td class="mono">0xa5c43EBe5961e8EDc6cCDf4010837B0B46A77bf8</td><td class="num">300</td><td class="num">1.14%</td></tr>
+    <tr><td>5</td><td class="mono">0x728771961934d994148071Bbc4857F768D82519E</td><td class="num">150</td><td class="num">0.57%</td></tr>
+    <tr><td>6</td><td class="mono">0xDD9C91F532473f8588C8D009861780B05d658FF1</td><td class="num">150</td><td class="num">0.57%</td></tr>
+    <tr><td>7</td><td class="mono">0x0a5dFC442Ba42a83f3f2F040025E1b4B0b625Fe3</td><td class="num">100</td><td class="num">0.38%</td></tr>
+    <tr><td>8</td><td class="mono">0xfBF0d917865a029E43bc729cd010C1fb300B3b23</td><td class="num">75</td><td class="num">0.29%</td></tr>
+    <tr><td>9</td><td class="mono">0x09a4b1727e473cF16eE8574862461c4E3080cd57</td><td class="num">50</td><td class="num">0.19%</td></tr>
+    <tr><td>10</td><td class="mono">0xD4ceCfdf73ccCD0517F576e75BE469D75E0a1658</td><td class="num">1</td><td class="num">0.00%</td></tr>
+    <tr class="total"><td></td><td>10 holders</td><td class="num">26,211</td><td class="num">100%</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>References</h2>
+<div class="scroll">
+<table>
+  <tr><td>Whitepaper</td><td><a href="/documents/AUXR_Whitepaper_v2.0.pdf">AUXR Whitepaper v2.0</a></td></tr>
+  <tr><td>Block explorer</td><td><a href="https://basescan.org/token/0xB145B8e9C02193d55454f534f917Cabe704FA042">BaseScan — AUXR</a></td></tr>
+  <tr><td>Market</td><td>BitMart — AUXR/USDT</td></tr>
+</table>
+</div>
+
+<footer>
+  Figures are a point-in-time snapshot as of 24 July 2026 and change as tokens are minted
+  or transferred; on-chain data is authoritative. This document describes token supply and
+  distribution only. It is not investment advice and is not an offer to sell or a
+  solicitation to buy any asset. Crypto assets can lose value.
+  <br><br>Auxite · auxite.io
+</footer>
+
+</div>
+</body>
+</html>
