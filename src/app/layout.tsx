@@ -151,6 +151,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             src="https://www.facebook.com/tr?id=938812332212962&ev=PageView&noscript=1"
           />
         </noscript>
+        {/* X (Twitter) Pixel — same pixel id as the wallet at vault.auxite.io.
+            One pixel across both domains is deliberate: X ads land here, the
+            signup and purchase conversions fire in the wallet, and they only
+            reconcile into one funnel if both sides report to the same pixel.
+            Conversion events themselves live in the wallet — this side just
+            records the visit and feeds the retargeting audience. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){
+              s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+              },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,
+              u.src='https://static.ads-twitter.com/uwt.js',
+              a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
+              }(window,document,'script');
+              twq('config','rb03a');
+            `,
+          }}
+        />
       </head>
       <body style={{ fontFamily: "'Inter', sans-serif", margin: 0, padding: 0, background: '#0B1121', color: '#E8E8E8' }}>
         {/* Google Tag Manager (noscript) */}
