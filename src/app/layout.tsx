@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import RadioWidget from "@/components/RadioWidget";
+import CookieConsent from '@/components/CookieConsent';
+import MarketingPixels from '@/components/MarketingPixels';
 
 export const metadata: Metadata = {
   title: "Auxite – On-Chain Tokenized Precious Metals",
@@ -99,6 +101,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        {/* Google consent mode defaults — MUST run before GTM and gtag.
+            Storage starts denied for everyone; src/lib/consent.ts upgrades it
+            once the visitor accepts. A returning visitor's stored decision is
+            replayed here so they aren't held at denied on every page load. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('consent','default',{
+                analytics_storage:'denied',
+                ad_storage:'denied',
+                ad_user_data:'denied',
+                ad_personalization:'denied'
+              });
+              try{
+                var c=JSON.parse(localStorage.getItem('auxite_cookie_consent')||'null');
+                if(c&&c.analytics===true){
+                  gtag('consent','update',{
+                    analytics_storage:'granted',
+                    ad_storage:'granted',
+                    ad_user_data:'granted',
+                    ad_personalization:'granted'
+                  });
+                }
+              }catch(e){}
+            `,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
@@ -129,47 +160,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Meta Pixel */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '938812332212962');
-              fbq('track', 'PageView');
-            `,
-          }}
-        />
-        <noscript>
-          <img height="1" width="1" style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=938812332212962&ev=PageView&noscript=1"
-          />
-        </noscript>
-        {/* X (Twitter) Pixel — same pixel id as the wallet at vault.auxite.io.
-            One pixel across both domains is deliberate: X ads land here, the
-            signup and purchase conversions fire in the wallet, and they only
-            reconcile into one funnel if both sides report to the same pixel.
-            Conversion events themselves live in the wallet — this side just
-            records the visit and feeds the retargeting audience. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){
-              s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-              },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,
-              u.src='https://static.ads-twitter.com/uwt.js',
-              a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))
-              }(window,document,'script');
-              twq('config','rb03a');
-            `,
-          }}
-        />
       </head>
       <body style={{ fontFamily: "'Inter', sans-serif", margin: 0, padding: 0, background: '#0B1121', color: '#E8E8E8' }}>
         {/* Google Tag Manager (noscript) */}
@@ -182,6 +172,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         {children}
+        <CookieConsent />
+        {/* Meta + X pixels — mounted here so they only load after consent. */}
+        <MarketingPixels />
         <RadioWidget />
       </body>
     </html>
