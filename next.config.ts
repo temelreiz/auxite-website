@@ -32,6 +32,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/auxr',
+        destination: 'https://vault.auxite.io/auxr',
+        permanent: false,
+      },
+      {
+        source: '/:locale(en|tr|de|fr|ar|ru)/auxr',
+        destination: 'https://vault.auxite.io/auxr',
+        permanent: false,
+      },
+      {
         source: '/stake',
         destination: '/en/yield',
         permanent: true,
