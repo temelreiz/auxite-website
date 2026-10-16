@@ -152,6 +152,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              // Ads land here but sign-up / deposit happen on vault.auxite.io —
+              // carry the click id across so those conversions attribute.
+              gtag('set', 'linker', { domains: ['auxite.io', 'vault.auxite.io'] });
+              gtag('set', 'url_passthrough', true);
               gtag('config', 'AW-17999284951');
             `,
           }}
