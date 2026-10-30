@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/routing';
+import RiskNotice from '@/components/RiskNotice';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { pageMetadata } from '@/i18n/metadata';
@@ -168,6 +169,7 @@ export default async function MetalsPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
+            <RiskNotice />
           </div>
 
         </div>

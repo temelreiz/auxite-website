@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/routing';
+import RiskNotice from '@/components/RiskNotice';
 import { getTranslations } from 'next-intl/server';
 import { pageMetadata } from '@/i18n/metadata';
 import type { Metadata } from 'next';
@@ -499,6 +500,7 @@ export default async function HowItWorksPage() {
               {t('ctaSecondary')}
             </Link>
           </div>
+          <RiskNotice />
         </div>
       </section>
     </div>

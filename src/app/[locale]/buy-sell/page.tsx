@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/routing';
+import RiskNotice from '@/components/RiskNotice';
 import { getTranslations } from 'next-intl/server';
 import { pageMetadata } from '@/i18n/metadata';
 import type { Metadata } from 'next';
@@ -77,6 +78,7 @@ export default async function BuySellPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </a>
+            <RiskNotice />
           </div>
 
           {/* Features */}

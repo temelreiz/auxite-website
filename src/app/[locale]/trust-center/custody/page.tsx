@@ -11,11 +11,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function CustodyArchitecturePage() {
   const t = await getTranslations('custodyArchitecture');
 
+  // Metals are held in Istanbul today; the other locations are planned and
+  // must not be presented as live vaults.
   const jurisdictions = [
-    { name: t('london'), flag: '🇬🇧' },
-    { name: t('zurich'), flag: '🇨🇭' },
-    { name: t('dubai'), flag: '🇦🇪' },
-    { name: t('singapore'), flag: '🇸🇬' },
+    { name: t('istanbul'), flag: '🇹🇷', active: true },
+    { name: t('london'), flag: '🇬🇧', active: false },
+    { name: t('zurich'), flag: '🇨🇭', active: false },
+    { name: t('dubai'), flag: '🇦🇪', active: false },
+    { name: t('singapore'), flag: '🇸🇬', active: false },
   ];
 
   return (
@@ -139,11 +142,14 @@ export default async function CustodyArchitecturePage() {
             <p style={{ fontSize: '15px', color: 'var(--text-muted)', marginBottom: '32px', textAlign: 'center', lineHeight: 1.7 }}>
               {t('multiJurisdictionDesc')}
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '16px' }} className="grid-4">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '16px' }}>
               {jurisdictions.map((j) => (
-                <div key={j.name} className="card" style={{ padding: '28px 20px', textAlign: 'center' }}>
+                <div key={j.name} className="card" style={{ padding: '28px 20px', textAlign: 'center', opacity: j.active ? 1 : 0.6 }}>
                   <div style={{ fontSize: '32px', marginBottom: '12px' }}>{j.flag}</div>
                   <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--text-primary)', margin: 0 }}>{j.name}</p>
+                  <p style={{ fontSize: '12px', fontWeight: 600, margin: '8px 0 0', color: j.active ? 'var(--gold, #C9A245)' : 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                    {j.active ? t('active') : t('planned')}
+                  </p>
                 </div>
               ))}
             </div>
