@@ -1,4 +1,5 @@
 import { Link } from '@/i18n/routing';
+import RiskNotice from '@/components/RiskNotice';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -87,6 +88,7 @@ export default async function MetalDetailPage({ params }: { params: Promise<{ me
                 </svg>
               </a>
             </div>
+            <RiskNotice align="left" />
           </div>
 
           {/* Stats Grid */}

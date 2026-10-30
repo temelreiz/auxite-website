@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
+import RiskNotice from '@/components/RiskNotice';
 import { useRef } from 'react';
 
 interface HomeContentProps {
@@ -352,6 +353,7 @@ export default function HomeContent({ t, metals, isRTL = false }: HomeContentPro
                   </motion.span>
                 </Link>
               </div>
+              <RiskNotice align={isRTL ? 'center' : 'left'} />
             </FadeInDiv>
 
             {/* App store badges — Google Play live, iOS coming soon */}
