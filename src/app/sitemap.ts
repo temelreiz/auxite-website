@@ -14,6 +14,7 @@ const highPriorityPages = [
   '/metals/auxs',
   '/metals/auxpt',
   '/metals/auxpd',
+  '/precious-metals-basket',
 ];
 
 const mediumPriorityPages = [
