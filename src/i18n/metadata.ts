@@ -6,6 +6,7 @@ const BASE_URL = 'https://auxite.io';
 const ROUTES: Record<string, string> = {
   home: '',
   metals: 'metals',
+  basket: 'precious-metals-basket',
   buySell: 'buy-sell',
   staking: 'yield',
   howItWorks: 'how-it-works',
