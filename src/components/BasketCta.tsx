@@ -2,14 +2,14 @@
 
 // "Open an account" for the precious-metals basket page. Carries the ad's
 // utm_* tags (or a site default) to sign-up, so an account opened from a
-// Google ad is recorded with its source — and Google's click ids, without
+// Google or Bing ad is recorded with its source — and the click ids, without
 // which the sign-up and deposit conversions on vault.auxite.io (another
 // domain) cannot be tied back to the ad.
 
 import { useEffect, useState } from 'react';
 
 const REGISTER = 'https://vault.auxite.io/auth/register';
-const KEEP = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'gbraid', 'wbraid'];
+const KEEP = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'gbraid', 'wbraid', 'msclkid'];
 
 export default function BasketCta({ label }: { label: string }) {
   const [href, setHref] = useState(`${REGISTER}?utm_source=auxite.io&utm_medium=web&utm_campaign=basket`);
