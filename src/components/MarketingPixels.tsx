@@ -1,6 +1,7 @@
 'use client';
 
-// MarketingPixels — the Meta and X pixels, gated behind analytics consent.
+// MarketingPixels — the Meta, X and Microsoft (Bing UET) tags, gated behind
+// analytics consent.
 //
 // Both are pure marketing trackers with no essential function and neither has
 // a cookieless mode, so under GDPR they must not load until the user opts in.
@@ -23,6 +24,8 @@ import {
 const META_PIXEL_ID = '938812332212962';
 /** Same pixel as the wallet — one funnel across auxite.io and vault.auxite.io. */
 const X_PIXEL_ID = 'rb03a';
+/** Microsoft Ads UET tag (account G107C28T); same tag as the wallet. */
+const BING_UET_ID = '187285572';
 
 export default function MarketingPixels() {
   const [consented, setConsented] = useState(false);
@@ -75,6 +78,22 @@ export default function MarketingPixels() {
         twq('config','${X_PIXEL_ID}');
       `;
       document.head.appendChild(x);
+    }
+
+    if (!(window as unknown as { uetq?: unknown }).uetq) {
+      const uet = document.createElement('script');
+      uet.id = 'bing-uet';
+      uet.text = `
+        (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){
+        var o={ti:"${BING_UET_ID}",enableAutoSpaTracking:true};
+        o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},
+        n=d.createElement(t),n.src=r,n.async=1,
+        n.onload=n.onreadystatechange=function(){var s=this.readyState;
+        s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},
+        i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+        })(window,document,"script","https://bat.bing.net/bat.js","uetq");
+      `;
+      document.head.appendChild(uet);
     }
   }, [consented]);
 
