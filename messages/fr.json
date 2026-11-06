@@ -33,10 +33,10 @@
     "platinumName": "Platine",
     "palladiumName": "Palladium",
     "hero": {
-      "headline": "Accès institutionnel aux métaux précieux entièrement alloués",
-      "line1": "Propriété sécurisée.",
-      "line2": "Garde indépendante.",
-      "line3": "Exécution institutionnelle.",
+      "headline": "Quatre métaux précieux. Un seul compte.",
+      "line1": "Achetez de l'or, de l'argent, du platine et du palladium dès de petits montants.",
+      "line2": "Métal alloué, conservé dans un coffre bancaire à Istanbul.",
+      "line3": "Tous vos avoirs sont visibles dans votre compte.",
       "ctaPrimary": "Accéder à la plateforme",
       "ctaSecondary": "Parler à un spécialiste"
     },
@@ -55,7 +55,7 @@
       "fund": "Financer",
       "fundDesc": "Transférer des capitaux par virement bancaire ou canaux numériques approuvés.",
       "allocate": "Allouer",
-      "allocateDesc": "Acquérir du métal entièrement alloué à des prix d'exécution institutionnels.",
+      "allocateDesc": "Acquérir du métal entièrement alloué au prix affiché avant le paiement.",
       "store": "Stocker",
       "storeDesc": "Actifs sécurisés dans des structures de garde indépendantes, protégées contre la faillite.",
       "redeem": "Racheter",
@@ -63,10 +63,10 @@
     },
     "metals": {
       "headline": "Métaux disponibles",
-      "subtitle": "Accès de niveau institutionnel aux métaux monétaires mondialement reconnus.",
+      "subtitle": "Chaque métal vendu séparément, le tout dans un seul compte.",
       "lbma": "Source LBMA / LPPM",
       "allocated": "Alloué & Ségrégé",
-      "execution": "Exécution institutionnelle"
+      "execution": "Prix transparents"
     },
     "custody": {
       "headline": "Garde indépendante. Protection structurelle.",

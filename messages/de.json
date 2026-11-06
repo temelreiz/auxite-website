@@ -33,10 +33,10 @@
     "platinumName": "Platin",
     "palladiumName": "Palladium",
     "hero": {
-      "headline": "Institutioneller Zugang zu vollständig allokierten Edelmetallen",
-      "line1": "Sichere Eigentümerschaft.",
-      "line2": "Unabhängige Verwahrung.",
-      "line3": "Institutionelle Ausführung.",
+      "headline": "Vier Edelmetalle. Ein Konto.",
+      "line1": "Kaufen Sie Gold, Silber, Platin und Palladium schon mit kleinen Beträgen.",
+      "line2": "Allokiertes Metall, verwahrt in einem Banktresor in Istanbul.",
+      "line3": "Alle Bestände sind in Ihrem Konto sichtbar.",
       "ctaPrimary": "Plattform betreten",
       "ctaSecondary": "Mit einem Spezialisten sprechen"
     },
@@ -55,7 +55,7 @@
       "fund": "Einzahlen",
       "fundDesc": "Kapital per Banküberweisung oder genehmigten digitalen Kanälen bewegen.",
       "allocate": "Allokieren",
-      "allocateDesc": "Vollständig allokiertes Metall zu institutionellen Ausführungspreisen erwerben.",
+      "allocateDesc": "Vollständig allokiertes Metall zu dem Preis erwerben, der vor der Zahlung angezeigt wird.",
       "store": "Verwahren",
       "storeDesc": "Vermögenswerte in unabhängigen, insolvenzgeschützten Verwahrungsstrukturen gesichert.",
       "redeem": "Einlösen",
@@ -63,10 +63,10 @@
     },
     "metals": {
       "headline": "Verfügbare Metalle",
-      "subtitle": "Institutioneller Zugang zu weltweit anerkannten monetären Metallen.",
+      "subtitle": "Jedes Metall einzeln erhältlich, alles in einem Konto.",
       "lbma": "LBMA / LPPM Sourced",
       "allocated": "Allokiert & Segregiert",
-      "execution": "Institutionelle Ausführung"
+      "execution": "Transparente Preise"
     },
     "custody": {
       "headline": "Unabhängige Verwahrung. Struktureller Schutz.",
