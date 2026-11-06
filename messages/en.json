@@ -33,10 +33,10 @@
     "platinumName": "Platinum",
     "palladiumName": "Palladium",
     "hero": {
-      "headline": "Institutional Access to Fully Allocated Precious Metals",
-      "line1": "Secure ownership.",
-      "line2": "Independent custody.",
-      "line3": "Institutional execution.",
+      "headline": "Four precious metals. One account.",
+      "line1": "Buy gold, silver, platinum and palladium from small amounts.",
+      "line2": "Allocated metal, held in a bank vault in Istanbul.",
+      "line3": "Every holding visible in your account.",
       "ctaPrimary": "Enter Platform",
       "ctaSecondary": "Speak to a Specialist"
     },
@@ -55,7 +55,7 @@
       "fund": "Fund",
       "fundDesc": "Move capital via bank wire or approved digital rails.",
       "allocate": "Allocate",
-      "allocateDesc": "Acquire fully allocated metal at institutional execution prices.",
+      "allocateDesc": "Acquire fully allocated metal at the price shown before you pay.",
       "store": "Store",
       "storeDesc": "Assets secured within independent, bankruptcy-remote custody structures.",
       "redeem": "Redeem",
@@ -63,10 +63,10 @@
     },
     "metals": {
       "headline": "Available Metals",
-      "subtitle": "Institutional-grade access to globally recognized monetary metals.",
+      "subtitle": "Each metal sold separately, all in one account.",
       "lbma": "LBMA / LPPM Sourced",
       "allocated": "Allocated & Segregated",
-      "execution": "Institutional Execution"
+      "execution": "Transparent Pricing"
     },
     "custody": {
       "headline": "Independent Custody. Structural Protection.",

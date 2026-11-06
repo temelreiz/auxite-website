@@ -33,10 +33,10 @@
     "platinumName": "Platin",
     "palladiumName": "Paladyum",
     "hero": {
-      "headline": "Tamamen Tahsis Edilmiş Kıymetli Madenlere Kurumsal Erişim",
-      "line1": "Güvenli sahiplik.",
-      "line2": "Bağımsız saklama.",
-      "line3": "Kurumsal yürütme.",
+      "headline": "Dört değerli metal. Tek hesap.",
+      "line1": "Altın, gümüş, platin ve paladyumu küçük tutarlarla alın.",
+      "line2": "Tahsisli metaliniz İstanbul'da banka kasasında saklanır.",
+      "line3": "Tüm varlığınızı hesabınızdan görürsünüz.",
       "ctaPrimary": "Platforma Giriş",
       "ctaSecondary": "Uzmanla Görüşün"
     },
@@ -55,7 +55,7 @@
       "fund": "Fonlama",
       "fundDesc": "Banka havalesi veya onaylı dijital kanallar ile sermaye aktarın.",
       "allocate": "Tahsis",
-      "allocateDesc": "Kurumsal yürütme fiyatlarıyla tamamen tahsis edilmiş metal edinin.",
+      "allocateDesc": "Ödemeden önce gösterilen fiyatla tamamen tahsis edilmiş metal edinin.",
       "store": "Saklama",
       "storeDesc": "Varlıklar bağımsız, iflas korumalı saklama yapıları içinde güvence altında.",
       "redeem": "İade",
@@ -63,10 +63,10 @@
     },
     "metals": {
       "headline": "Mevcut Metaller",
-      "subtitle": "Küresel olarak tanınan parasal metallere kurumsal düzeyde erişim.",
+      "subtitle": "Her metal ayrı satılır, hepsi tek hesapta.",
       "lbma": "LBMA / LPPM Kaynaklı",
       "allocated": "Tahsis Edilmiş ve Ayrılmış",
-      "execution": "Kurumsal Yürütme"
+      "execution": "Şeffaf Fiyat"
     },
     "custody": {
       "headline": "Bağımsız Saklama. Yapısal Koruma.",
