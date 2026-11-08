@@ -144,6 +144,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <meta name="theme-color" content="#0B1121" />
+        {/* Microsoft Ads UET (tag 187285572). Ads land here, so this page stores the
+            msclkid; the sign_up / purchase events fire on vault.auxite.io. Consent
+            starts denied unless the visitor already accepted (src/lib/consent.ts). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.uetq = window.uetq || [];
+              var uc = null;
+              try { uc = JSON.parse(localStorage.getItem('auxite_cookie_consent') || 'null'); } catch (e) {}
+              window.uetq.push('consent', 'default', { ad_storage: uc && uc.analytics === true ? 'granted' : 'denied' });
+              (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"187285572", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+            `,
+          }}
+        />
         {/* Google Ads (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17999284951" />
         <script

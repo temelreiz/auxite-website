@@ -69,6 +69,9 @@ export function syncGoogleConsent(): void {
       ad_personalization: granted,
     },
   ]);
+  // Microsoft Ads UET has its own consent mode (ad_storage only).
+  const uetq = (window as unknown as { uetq?: { push: (...a: unknown[]) => void } }).uetq;
+  if (uetq && typeof uetq.push === 'function') uetq.push('consent', 'update', { ad_storage: granted });
 }
 
 /** Notify listeners (pixels, Google consent mode) that the decision changed. */
