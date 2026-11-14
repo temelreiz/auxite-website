@@ -77,8 +77,8 @@
       "cta": "Learn About Our Custody Framework"
     },
     "execution": {
-      "headline": "Institutional Liquidity & Execution",
-      "text": "Auxite sources liquidity through global bullion markets and OTC counterparties, enabling efficient pricing across varying ticket sizes."
+      "headline": "Spot Price, Small Spread",
+      "text": "Gold at spot + 1.5%; silver, platinum and palladium at spot + 2%. Sell back at spot − 3%. You see the exact price before you confirm. Card payments add the card processor's 4.5% fee; buying from a USDT or USDC balance does not."
     },
     "yield": {
       "headline": "Optional Yield Programs on Allocated Metals",
@@ -279,8 +279,8 @@
     "diagramCaption": "Every step is designed to protect client assets through structural safeguards.",
     "ownershipTitle": "Direct Beneficial Ownership",
     "ownershipDesc": "Clients retain full beneficial ownership of allocated metals at all times.",
-    "pricingTitle": "Institutional Pricing",
-    "pricingDesc": "Execution prices are derived from global spot markets with transparent institutional spreads.",
+    "pricingTitle": "Transparent Pricing",
+    "pricingDesc": "Prices follow international spot. Buy gold at spot + 1.5% and the other metals at spot + 2%; sell at spot − 3%. Card payments add the processor's 4.5% fee.",
     "riskTitle": "Risk-First Infrastructure",
     "riskDesc": "Auxite prioritizes asset protection through custody, reconciliation, and liquidity partnerships.",
     "trustBoosterTitle": "Asset Protection First",
