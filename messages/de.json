@@ -77,8 +77,8 @@
       "cta": "Mehr über unseren Verwahrungsrahmen erfahren"
     },
     "execution": {
-      "headline": "Institutionelle Liquidität & Ausführung",
-      "text": "Auxite bezieht Liquidität über globale Bullion-Märkte und OTC-Kontrahenten und ermöglicht effiziente Preisgestaltung über verschiedene Auftragsgrößen."
+      "headline": "Spotpreis, kleiner Aufschlag",
+      "text": "Gold zum Spotpreis + 1,5 %; Silber, Platin und Palladium zum Spotpreis + 2 %. Rückverkauf zum Spotpreis − 3 %. Sie sehen den genauen Preis, bevor Sie bestätigen. Bei Kartenzahlung kommt die Gebühr des Kartenabwicklers von 4,5 % hinzu; beim Kauf aus einem USDT- oder USDC-Guthaben nicht."
     },
     "yield": {
       "headline": "Optionale Renditeprogramme auf allokierte Metalle",
@@ -251,8 +251,8 @@
     "diagramCaption": "Jeder Schritt ist darauf ausgelegt, Kundenvermögen durch strukturelle Absicherungen zu schützen.",
     "ownershipTitle": "Direktes wirtschaftliches Eigentum",
     "ownershipDesc": "Kunden behalten jederzeit das volle wirtschaftliche Eigentum an allokierten Metallen.",
-    "pricingTitle": "Institutionelle Preisgestaltung",
-    "pricingDesc": "Ausführungspreise leiten sich von globalen Spotmärkten mit transparenten institutionellen Spreads ab.",
+    "pricingTitle": "Transparente Preise",
+    "pricingDesc": "Die Preise folgen dem internationalen Spotpreis. Gold kaufen Sie zum Spotpreis + 1,5 %, die anderen Metalle zum Spotpreis + 2 %; verkaufen zum Spotpreis − 3 %. Bei Kartenzahlung kommt die Gebühr des Abwicklers von 4,5 % hinzu.",
     "riskTitle": "Risikoorientierte Infrastruktur",
     "riskDesc": "Auxite priorisiert den Vermögensschutz durch Verwahrung, Abstimmung und Liquiditätspartnerschaften.",
     "trustBoosterTitle": "Vermögensschutz an erster Stelle",

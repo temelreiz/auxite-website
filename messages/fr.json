@@ -77,8 +77,8 @@
       "cta": "Découvrir notre cadre de garde"
     },
     "execution": {
-      "headline": "Liquidité & Exécution institutionnelles",
-      "text": "Auxite source sa liquidité via les marchés mondiaux de lingots et les contreparties OTC, permettant une tarification efficace pour différentes tailles d'ordres."
+      "headline": "Prix spot, écart réduit",
+      "text": "L'or au prix spot + 1,5 % ; l'argent, le platine et le palladium au prix spot + 2 %. Revente au prix spot − 3 %. Vous voyez le prix exact avant de confirmer. Le paiement par carte ajoute les frais de 4,5 % du processeur de carte ; l'achat depuis un solde en USDT ou USDC ne les ajoute pas."
     },
     "yield": {
       "headline": "Programmes de rendement optionnels sur métaux alloués",
@@ -251,8 +251,8 @@
     "diagramCaption": "Chaque étape est conçue pour protéger les actifs des clients grâce à des garanties structurelles.",
     "ownershipTitle": "Propriété effective directe",
     "ownershipDesc": "Les clients conservent la pleine propriété effective des métaux alloués en tout temps.",
-    "pricingTitle": "Tarification institutionnelle",
-    "pricingDesc": "Les prix d'exécution sont dérivés des marchés spot mondiaux avec des spreads institutionnels transparents.",
+    "pricingTitle": "Prix transparents",
+    "pricingDesc": "Les prix suivent le cours spot international. Achetez l'or au spot + 1,5 % et les autres métaux au spot + 2 % ; vendez au spot − 3 %. Le paiement par carte ajoute les frais de 4,5 % du processeur.",
     "riskTitle": "Infrastructure axée sur le risque",
     "riskDesc": "Auxite privilégie la protection des actifs par la garde, le rapprochement et les partenariats de liquidité.",
     "trustBoosterTitle": "Protection des actifs avant tout",

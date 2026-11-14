@@ -77,8 +77,8 @@
       "cta": "Saklama Çerçevemizi İnceleyin"
     },
     "execution": {
-      "headline": "Kurumsal Likidite ve Yürütme",
-      "text": "Auxite, küresel külçe piyasaları ve OTC karşı taraflar aracılığıyla likidite temin eder — çeşitli işlem büyüklüklerinde verimli fiyatlandırma sağlar."
+      "headline": "Spot Fiyat, Düşük Fark",
+      "text": "Altın spot + %1,5; gümüş, platin ve paladyum spot + %2. Geri satışta spot − %3. Onaylamadan önce kesin fiyatı görürsünüz. Kartla ödemede kart işlemcisinin %4,5 ücreti eklenir; USDT veya USDC bakiyesiyle alımda eklenmez."
     },
     "yield": {
       "headline": "Tahsis Edilmiş Metallerde Opsiyonel Getiri Programları",
@@ -279,8 +279,8 @@
     "diagramCaption": "Her adım, yapısal güvenceler aracılığıyla müşteri varlıklarını korumak üzere tasarlanmıştır.",
     "ownershipTitle": "Doğrudan İntifa Hakkı Sahipliği",
     "ownershipDesc": "Müşteriler, tahsis edilmiş metallerin tam intifa hakkını her zaman ellerinde tutar.",
-    "pricingTitle": "Kurumsal Fiyatlandırma",
-    "pricingDesc": "Yürütme fiyatları, şeffaf kurumsal spreadlerle küresel spot piyasalardan türetilir.",
+    "pricingTitle": "Şeffaf Fiyat",
+    "pricingDesc": "Fiyatlar uluslararası spot fiyatı izler. Altını spot + %1,5'ten, diğer metalleri spot + %2'den alırsınız; spot − %3'ten satarsınız. Kartla ödemede işlemcinin %4,5 ücreti eklenir.",
     "riskTitle": "Risk Öncelikli Altyapı",
     "riskDesc": "Auxite, saklama, mutabakat ve likidite ortaklıkları aracılığıyla varlık korumasına öncelik verir.",
     "trustBoosterTitle": "Öncelik: Varlık Koruması",
