@@ -24,7 +24,7 @@ const APP_STORE = 'https://apps.apple.com/app/id6779338404';
 const WEB = 'https://auxite.io/?radio=1';
 
 // Flip to true once the iOS app is live on the App Store (then iOS → App Store).
-const IOS_LIVE = false;
+const IOS_LIVE = true;
 
 export function GET(req: NextRequest) {
   const ua = (req.headers.get('user-agent') || '').toLowerCase();
